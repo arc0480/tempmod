@@ -23,7 +23,9 @@ research: {
     ]
 }
 
+#*******************
 #ブースト
+#*******************
 consumes: {
 	liquid: {
 		liquid: water
