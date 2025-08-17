@@ -5,7 +5,7 @@
 name: tempdrill
 description: '''Drill template'''
 research: {
-    parent: mechanicalDrill
+    parent: mechanical-drill
     requirements: [
         copper/30
     ]
