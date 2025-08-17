@@ -1,8 +1,8 @@
 {
-  "name": "cookmod",
+  "name": "tempmod",
   "minGameVersion": 145,
   "version": "v1.0",
-  "displayName": "cookmod",
+  "displayName": "tempmod",
   "author": "open chat",
-  "description": "cook MOD is FUN"
+  "description": "temp MOD is FUN"
 }
