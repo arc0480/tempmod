@@ -23,24 +23,20 @@ research: {
     ]
 }
 
+#ブースト
+consumes: {
+	liquid: {
+		liquid: water
+    amount: 0.31
+    booster: true
+    optional: true
+	}
+}
+
 ######################
 #drills固有フィールド
 ######################
 
 drillTime: 450
 
-#"liquidBoostIntensity": 3,
-#  "drawRim": true,
-#  "warmupSpeed": 0.0478,
-#  "updateEffectChance": 0.05,
-#  "hasLiquids": true,
-#  "liquidCapacity": 25,
-#  "expanded": true,
-  consumes: {
-    liquid: {
-      liquid: water
-      amount: 0.31
-      booster: true
-      optional: true
-    }
-  }
+
