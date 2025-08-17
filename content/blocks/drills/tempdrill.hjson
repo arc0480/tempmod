@@ -1,0 +1,22 @@
+######################
+#共通フィールド
+######################
+
+name: tempdrill
+description: '''Drill template'''
+research: {
+    parent: mechanicalDrill
+    requirements: [
+        Seed/30
+    ]
+}
+
+######################
+#固有フィールド
+######################
+
+type: Drill
+size: 3
+tier: 2
+drillTime: 450
+category: production
