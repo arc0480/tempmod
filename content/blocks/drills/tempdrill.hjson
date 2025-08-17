@@ -20,3 +20,6 @@ size: 3
 tier: 2
 drillTime: 450
 category: production
+requirements: [
+	cooper/100 
+]
