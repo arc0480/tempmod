@@ -7,7 +7,7 @@ description: '''Drill template'''
 research: {
     parent: mechanicalDrill
     requirements: [
-        cooper/30
+        copper/30
     ]
 }
 
@@ -20,6 +20,3 @@ size: 3
 tier: 2
 drillTime: 450
 category: production
-requirements: [
-	cooper/100 
-]
