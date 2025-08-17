@@ -7,7 +7,7 @@ description: '''Drill template'''
 research: {
     parent: mechanicalDrill
     requirements: [
-        Seed/30
+        cooper/30
     ]
 }
 
