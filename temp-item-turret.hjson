@@ -76,34 +76,31 @@ xRand: 2
 
 ammoTypes: {
     copper: {
-        # 弾の種類
         type: basicBulletType
-        
-        # 弾の幅
-        width: 10
-        
-        # 弾の描画サイズ
-        drawsize: 100
-        
-        # 弾のヒット時のサイズ
-        hitSize: 10
-        
-        # 弾薬の倍率
-        ammoMultiPlier: 2
-        
-        # リロード時間の倍率
-        reloadMultiPlier: 1.2
-        
-        # 弾の寿命（コメントアウト中）
-        # lifetime: 701.4
-        
-        # 弾の速度（コメントアウト中）
-        # speed: 3
-        
-        # 弾のダメージ量（コメントアウト中）
-        # damage: 214
-        
-        # 弾の縮小率（コメントアウト中）
-        # bulletShrink: 0
+    width: 10
+    drawsize: 100
+    hitSize: 10
+    bulletSprite: 
+    frontColor: 653200
+    backColor: 653200
+
+    ammoMultiPlier: 2
+    reloadMultiPlier: 1.2
+
+    lifetime: 701.4
+    speed: 3
+    weaveMag: 2
+    weaveScale: 5 
+    bulletShrink: 0
+
+    damage: 214
+    splashDamage: 31.4
+    splashDamageRadius: 50
+    status: Inspiration
+    statusDuration: 180
+    hitEffect: none
+    absorbable: true
+    pierce: true
+    pierceArmor: false
     }
 }
