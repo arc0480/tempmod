@@ -8,6 +8,7 @@ description: '''crafter template'''
 ######################
 #blocks共通フィールド
 ######################
+
 type: GenericCrafter
 size: 3
 tier: 2
