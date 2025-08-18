@@ -1,0 +1,38 @@
+######################
+#共通フィールド
+######################
+
+name: temp-Separator
+description: '''Separator template'''
+
+######################
+#blocks共通フィールド
+######################
+
+type: Separator
+size: 3
+tier: 2
+requirements: [copper/30]
+category: production
+research: {
+    parent: mechanical-drill
+    requirements: [copper/30]
+}
+
+hasPower: false
+hasItems: true
+
+consumes: {
+	power: 105
+	items: {items: [copper/1]}
+}
+
+outputItems: [copper/30]
+
+
+######################
+#crafter固有フィールド
+######################
+
+craftTime: 120
+updateEffect: smeltsmoke
