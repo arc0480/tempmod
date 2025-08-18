@@ -1,7 +1,9 @@
-このMODは参考用です。
-ゲームバランス等はテストしていません。
-hjson-modの参考にどうぞ
+#日本語
+このMODは参考用です。<br>
+ゲームバランス等はテストしていません。<br>
+hjson-modの参考にどうぞ<br>
 
-This MOD is for reference only.
-Game balance, etc. has not been tested.
-Please refer to hjson-mod for reference.
+#English
+This MOD is for reference only.<br>
+Game balance, etc. has not been tested.<br>
+Please refer to hjson-mod for reference.<br>
