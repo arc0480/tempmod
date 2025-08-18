@@ -38,6 +38,7 @@ inaccuaracy: 20
 xRand: 2
 
 ### 弾種 ###
+
 ammoTypes: {
 	copper: {
 		type: basicBulletType
