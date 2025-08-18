@@ -39,7 +39,7 @@ xRand: 2
 
 ### 弾種 ###
 ammoTypes: {
-	copper: {
+	copper: [
 		type: basicBulletType
 		width: 10
 		drawsize: 100
@@ -49,7 +49,7 @@ ammoTypes: {
 		lifetime: 701.4
 		speed: 3
 		damage: 214
-	}
+	]
 }
 
 
