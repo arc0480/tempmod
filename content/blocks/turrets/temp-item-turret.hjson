@@ -39,7 +39,7 @@ xRand: 2
 
 ### 弾種 ###
 ammoTypes: {
-	copper: [
+	copper: {
 		type: basicBulletType
 		width: 10
 		drawsize: 100
@@ -50,7 +50,7 @@ ammoTypes: {
 		#speed: 3
 		#damage: 214
 		#bulletShrink: 0
-	]
+	}
 }
 
 
