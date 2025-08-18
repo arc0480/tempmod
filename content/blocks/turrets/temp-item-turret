@@ -1,0 +1,36 @@
+######################
+#共通フィールド
+######################
+
+name: temp-item-turret
+description: '''turret template'''
+
+######################
+#blocks共通フィールド
+######################
+
+type: ItemTurret
+size: 3
+tier: 2
+requirements: [copper/30]
+category: turret
+research: {
+    parent: duo
+    requirements: [copper/20]
+}
+
+hasPower: false
+hasItems: true
+
+######################
+#turret共通フィールド
+######################
+
+reload: 15
+range: 160
+recoil: 0.3
+inaccuaracy: 20
+spread: 2
+
+
+
