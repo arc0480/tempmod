@@ -44,8 +44,8 @@ ammoTypes: {
 		width: 10
 		drawsize: 100
 		hitSize: 10
-		#ammoMultiPlier: 2
-		#reloadMultiPlier: 1.2
+		ammoMultiPlier: 2
+		reloadMultiPlier: 1.2
 		#lifetime: 701.4
 		#speed: 3
 		#damage: 214
