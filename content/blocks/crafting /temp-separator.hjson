@@ -36,3 +36,11 @@ outputItems: [copper/30]
 
 craftTime: 120
 updateEffect: smeltsmoke
+
+######################
+#Separator固有フィールド
+######################
+
+results: [
+	copper/30
+]
