@@ -1,19 +1,61 @@
-# Item Turret Configuration
+######################
+# 共通フィールド
+######################
 
-# The type of item the turret can hold
-item: "default_item"
+name: temp-item-turret # タレットの内部名
 
-# The firing rate of the turret in seconds
-fire_rate: 1.0
+description: '''turret template''' # タレットの説明
 
-# The range of the turret in units
-range: 10
+BuildVisibility : shown # 建設時の可視性設定
+buildTime : 128.4 # 建設にかかる時間（ゲーム内単位）
 
-# The damage dealt by the turret
-damage: 5
+######################
+# blocks共通フィールド
+######################
 
-# Whether the turret is active or not
-active: true
+type: ItemTurret # ブロックの種類（アイテムタレット）
 
-# The name of the turret
-name: "Temp Item Turret"
+size: 3 # タレットのサイズ（3x3タイル）
+tier: 2 # タレットのレベル（技術階層）
+
+requirements: [copper/30] # 建設に必要なリソースと量
+
+category: turret # カテゴリ（タレット）
+
+research: {
+    parent: duo # 研究ツリーの親要素
+    requirements: [copper/20] # 研究に必要なリソースと量
+}
+
+hasPower: false # 電力の使用有無
+hasItems: true # アイテムの使用有無
+
+######################
+# turret共通フィールド
+######################
+
+### 性能 ###
+
+reload: 15 # リロード時間
+chargeTime: 10 # チャージ時間
+range: 160 # 射程
+recoil: 0.3 # 反動
+inaccuaracy: 20 # 射撃の不正確さ（広がり）
+xRand: 2 # 弾のランダムな横方向偏差
+
+### 弾種 ###
+
+ammoTypes: {
+    copper: {
+        type: basicBulletType # 弾の種類
+        width: 10 # 弾の幅
+        drawsize: 100 # 弾の描画サイズ
+        hitSize: 10 # 弾のヒット時のサイズ
+        ammoMultiPlier: 2 # 弾薬の倍率
+        reloadMultiPlier: 1.2 # リロード時間の倍率
+        # lifetime: 701.4 # 弾の寿命（コメントアウト中）
+        # speed: 3 # 弾の速度（コメントアウト中）
+        # damage: 214 # 弾のダメージ量（コメントアウト中）
+        # bulletShrink: 0 # 弾の縮小率（コメントアウト中）
+    }
+}
