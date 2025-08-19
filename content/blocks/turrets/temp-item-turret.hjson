@@ -2,33 +2,51 @@
 # 共通フィールド
 ######################
 
-name: temp-item-turret # タレットの内部名
+# タレットの内部名
+name: temp-item-turret 
 
-description: '''turret template''' # タレットの説明
+# タレットの説明
+description: '''turret template''' 
 
-BuildVisibility : shown # 建設時の可視性設定
-buildTime : 128.4 # 建設にかかる時間（ゲーム内単位）
+# 建設時の可視性設定
+BuildVisibility : shown 
+
+# 建設にかかる時間（ゲーム内単位）
+buildTime : 128.4 
 
 ######################
 # blocks共通フィールド
 ######################
 
-type: ItemTurret # ブロックの種類（アイテムタレット）
+# ブロックの種類（アイテムタレット）
+type: ItemTurret 
 
-size: 3 # タレットのサイズ（3x3タイル）
-tier: 2 # タレットのレベル（技術階層）
+# タレットのサイズ（3x3タイル）
+size: 3 
 
-requirements: [copper/30] # 建設に必要なリソースと量
+# タレットのレベル（技術階層）
+tier: 2 
 
-category: turret # カテゴリ（タレット）
+# 建設に必要なリソースと量
+requirements: [copper/30] 
 
+# カテゴリ（タレット）
+category: turret 
+
+# 研究ツリーの設定
 research: {
-    parent: duo # 研究ツリーの親要素
-    requirements: [copper/20] # 研究に必要なリソースと量
+    # 研究ツリーの親要素
+    parent: duo 
+    
+    # 研究に必要なリソースと量
+    requirements: [copper/20] 
 }
 
-hasPower: false # 電力の使用有無
-hasItems: true # アイテムの使用有無
+# 電力の使用有無
+hasPower: false 
+
+# アイテムの使用有無
+hasItems: true 
 
 ######################
 # turret共通フィールド
@@ -36,26 +54,58 @@ hasItems: true # アイテムの使用有無
 
 ### 性能 ###
 
-reload: 15 # リロード時間
-chargeTime: 10 # チャージ時間
-range: 160 # 射程
-recoil: 0.3 # 反動
-inaccuaracy: 20 # 射撃の不正確さ（広がり）
-xRand: 2 # 弾のランダムな横方向偏差
+# リロード時間
+reload: 15 
+
+# チャージ時間
+chargeTime: 10 
+
+# 射程
+range: 160 
+
+# 反動
+recoil: 0.3 
+
+# 射撃の不正確さ（広がり）
+inaccuaracy: 20 
+
+# 弾のランダムな横方向偏差
+xRand: 2 
 
 ### 弾種 ###
 
+# 弾薬タイプの設定
 ammoTypes: {
     copper: {
-        type: basicBulletType # 弾の種類
-        width: 10 # 弾の幅
-        drawsize: 100 # 弾の描画サイズ
-        hitSize: 10 # 弾のヒット時のサイズ
-        ammoMultiPlier: 2 # 弾薬の倍率
-        reloadMultiPlier: 1.2 # リロード時間の倍率
-        # lifetime: 701.4 # 弾の寿命（コメントアウト中）
-        # speed: 3 # 弾の速度（コメントアウト中）
-        # damage: 214 # 弾のダメージ量（コメントアウト中）
-        # bulletShrink: 0 # 弾の縮小率（コメントアウト中）
+        # 弾の種類
+        type: basicBulletType 
+        
+        # 弾の幅
+        width: 10 
+        
+        # 弾の描画サイズ
+        drawsize: 100 
+        
+        # 弾のヒット時のサイズ
+        hitSize: 10 
+        
+        # 弾薬の倍率
+        ammoMultiPlier: 2 
+        
+        # リロード時間の倍率
+        reloadMultiPlier: 1.2 
+        
+        # 以下はコメントアウト中の設定項目
+        # 弾の寿命 
+        # lifetime: 701.4 
+        
+        # 弾の速度
+        # speed: 3 
+        
+        # 弾のダメージ量
+        # damage: 214 
+        
+        # 弾の縮小率
+        # bulletShrink: 0 
     }
 }
