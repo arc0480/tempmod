@@ -76,11 +76,14 @@ xRand: 2
 
 # 弾薬タイプの設定
 ammoTypes: {
-    #弾薬に使うアイテム
+    # 弾薬に使うアイテム
     copper: {
         # 弾の種類
-        type: basicBulletType 
-        
+        type: basicBulletType
+
+        # 弾の長さ
+        height: 15
+
         # 弾の幅
         width: 10 
         
