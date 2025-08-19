@@ -76,6 +76,7 @@ xRand: 2
 
 # 弾薬タイプの設定
 ammoTypes: {
+    #弾薬に使うアイテム
     copper: {
         # 弾の種類
         type: basicBulletType 
@@ -89,7 +90,7 @@ ammoTypes: {
         # 弾のヒット時のサイズ
         hitSize: 10 
         
-        # 弾薬の倍率
+        # 弾薬の倍率(アイテム1個で弾丸何発分か)
         ammoMultiPlier: 2 
         
         # リロード時間の倍率
