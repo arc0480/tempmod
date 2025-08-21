@@ -78,6 +78,11 @@ xRand: 2
 ammoTypes: {
     # 弾薬に使うアイテム
     copper: {
+
+######################
+# bullet共通フィールド
+######################
+
         # 弾の種類
         type: basicBulletType
 
