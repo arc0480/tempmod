@@ -12,7 +12,7 @@ description: '''turret template'''
 BuildVisibility : shown 
 
 # 建設にかかる時間（ゲーム内単位）
-buildTime : 128.4 
+buildTime : 10
 
 ######################
 # blocks共通フィールド
@@ -102,7 +102,7 @@ ammoTypes: {
         ammoMultiPlier: 2 
         
         # リロード時間の倍率(この弾種のリロード時間を何倍にするか)
-        reloadMultiPlier: 1.2 
+        reloadMultiPlier: 1.0
         
         # 弾の寿命 
         lifetime: 160
