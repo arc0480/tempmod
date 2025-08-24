@@ -127,5 +127,5 @@ ammoTypes: {
         speed: 5
         damage: 10
         bulletShilink: 0.0
-
+    }
 }
