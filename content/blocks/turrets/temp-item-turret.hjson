@@ -61,7 +61,7 @@ reload: 15
 chargeTime: 10 
 
 # 射程
-range: 160 
+range: 320 
 
 # 反動
 recoil: 0.3 
@@ -101,20 +101,19 @@ ammoTypes: {
         # 弾薬の倍率(アイテム1個で弾丸何発分か)
         ammoMultiPlier: 2 
         
-        # リロード時間の倍率
+        # リロード時間の倍率(この弾種のリロード時間を何倍にするか)
         reloadMultiPlier: 1.2 
         
-        # 以下はコメントアウト中の設定項目
         # 弾の寿命 
-        # lifetime: 701.4 
+        lifetime: 160
         
         # 弾の速度
-        # speed: 3 
+        speed: 2
         
         # 弾のダメージ量
-        # damage: 214 
+        damage: 15
         
         # 弾の縮小率
-        # bulletShrink: 0 
+        bulletShrink: 0 
     }
 }
