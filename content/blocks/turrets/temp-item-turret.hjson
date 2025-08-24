@@ -123,8 +123,8 @@ ammoTypes: {
         drawSize: 100
         hitSize: 10
         ammoMultiPrier: 2.0
-        lifetime: 32
-        speed: 5
+        lifetime: 53
+        speed: 3
         damage: 10
         bulletShilink: 0.0
     }
