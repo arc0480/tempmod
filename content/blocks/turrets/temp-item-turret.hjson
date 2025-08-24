@@ -114,6 +114,18 @@ ammoTypes: {
         damage: 15
         
         # 弾の縮小率
-        bulletShrink: 0 
+        bulletShrink: 0.2 
     }
+/*    prastanium: {
+        type: healBulletType
+        height: 10
+        width: 10
+        drawSize: 100
+        hitSize: 10
+        ammoMultiPrier: 2.0
+        lifetime: 32
+        speed: 5
+        damage: 10
+        bulletShilink: 0.0
+*/
 }
