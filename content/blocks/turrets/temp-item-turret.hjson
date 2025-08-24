@@ -116,7 +116,7 @@ ammoTypes: {
         # 弾の縮小率
         bulletShrink: 0.2 
     }
-/*    prastanium: {
+    prastanium: {
         type: healBulletType
         height: 10
         width: 10
@@ -127,5 +127,5 @@ ammoTypes: {
         speed: 5
         damage: 10
         bulletShilink: 0.0
-*/
+
 }
