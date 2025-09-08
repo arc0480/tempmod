@@ -1,6 +1,6 @@
 name: temp-item
 type: material
-parent: copper     # 既存の銅を親にする例
+   # 既存の銅を親にする例
 requirements: [
   copper/50
   lead/30
