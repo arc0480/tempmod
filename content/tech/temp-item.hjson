@@ -1,8 +1,5 @@
-name: temp-item
-type: material
+#name: temp-item
+#type: material
    # 既存の銅を親にする例
-requirements: [
-  copper/50
-  lead/30
-]
-researchTime: 45
+
+#researchTime: 45
