@@ -1,6 +1,6 @@
 name: temp-item
 type: material
-parent: titanium     # 既存の銅を親にする例
+parent: copper     # 既存の銅を親にする例
 requirements: [
   copper/50
   lead/30
