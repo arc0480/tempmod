@@ -1,0 +1,8 @@
+name: temp-item
+type: Item
+parent: titanium     # 既存の銅を親にする例
+requirements: [
+  copper/50
+  lead/30
+]
+researchTime: 45
