@@ -7,6 +7,8 @@ description: '''
   テンプレートのアイテム
   '''
 
+parent: copper  
+
 
 type: material
 color: 9AE21B
