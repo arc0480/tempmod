@@ -13,7 +13,7 @@ type: Separator
 size: 3
 tier: 2
 requirements: [copper/30]
-category: production
+category: crafting
 research: {
     parent: mechanical-drill
     requirements: [copper/30]
