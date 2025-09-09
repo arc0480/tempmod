@@ -19,7 +19,7 @@ research: {
     requirements: [copper/30]
 }
 
-hasPower: false
+hasPower: true
 hasItems: true
 
 consumes: {
