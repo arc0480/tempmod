@@ -116,17 +116,23 @@ ammoTypes: {
         # 弾の縮小率
         bulletShrink: 0.2 
     }
-/*    plastanium: {
-        type: healBulletType
+    plastanium: {
+        type: basicBulletType
         height: 10
         width: 10
         drawSize: 100
-        hitSize: 10
-        ammoMultiPrier: 2.0
+        bulletShilink: 0.0
+        hitSize: 12
+        ammoMultiPlier: 1.0
+        reloadMultiplier: 0.75
         lifetime: 53
         speed: 3
-        damage: 10
-        bulletShilink: 0.0
+        damage: 15
+
+        # 範囲ダメージ量
+        splashDamage: 5
+
+        # 範囲ダメージを与える範囲
+        splashDamageRadius: 10        
     }
-*/
 }
