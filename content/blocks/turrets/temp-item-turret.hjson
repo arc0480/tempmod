@@ -123,8 +123,8 @@ ammoTypes: {
         drawSize: 100
         bulletShilink: 0.0
         hitSize: 12
-        ammoMultiPlier: 1.0
-        reloadMultiplier: 0.75
+        ammoMultiplier: 1.0
+        reloadMultiplier: 1.0
         lifetime: 53
         speed: 3
         damage: 15
@@ -132,7 +132,7 @@ ammoTypes: {
         # 範囲ダメージ量
         splashDamage: 5
 
-        # 範囲ダメージを与える範囲
-        splashDamageRadius: 10        
+        # 範囲ダメージを与える範囲(デフォルトで-1(=マス)に設定されている。0.1マス単位なので､n*0.1+2マス)
+        #splashDamageRadius: 
     }
 }
