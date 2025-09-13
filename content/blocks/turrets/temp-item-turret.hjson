@@ -133,6 +133,6 @@ ammoTypes: {
         splashDamage: 5
 
         # 範囲ダメージを与える範囲(デフォルトで-1(=-0.1マス)に設定されている。0.1マス単位なので､n*0.1+2マス)
-        splashDamageRadius: 0
+        splashDamageRadius: 1
     }
 }
