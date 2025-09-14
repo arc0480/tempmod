@@ -28,7 +28,10 @@ size: 3
 tier: 2 
 
 # 建設に必要なリソースと量
-requirements: [copper/30] 
+requirements: [
+	copper/30
+	lead/20
+] 
 
 # カテゴリ（タレット）
 category: turret 
