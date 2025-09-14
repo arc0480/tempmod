@@ -39,7 +39,10 @@ research: {
     parent: duo 
     
     # 研究に必要なリソースと量
-    requirements: [copper/20] 
+    requirements: [
+			copper/20
+			lead/20
+		] 
 }
 
 # 電力の使用有無
