@@ -122,12 +122,37 @@ ammoTypes: {
         # 弾の縮小率
         bulletShrink: 0.2 
     }
-    plastanium: {
+	spore-pod: {
+		type: basicBulletType
+		height: 5
+		width: 15
+		drawSize: 100
+		bulletShrink: 0.25
+		hitSize: 15
+		ammoMultiplier: 2.0
+		reloadMultiplier: 1.0
+		lifeTime: 100
+		speed: 1
+		damage: 5
+
+		# 着弾した対象に与えるステータス効果
+		status: Sapped
+
+		# 与える効果の継続時間(n/60 s)
+		statusDuration: 60
+
+		# 弾着点から追加の弾丸を生成する
+		flagOnHit: true
+
+		# 
+		flagBullet: 
+
+	plastanium: {
         type: basicBulletType
         height: 10
         width: 10
         drawSize: 100
-        bulletShilink: 0.0
+        bulletShrink: 0.0
         hitSize: 12
         ammoMultiplier: 1.0
         reloadMultiplier: 1.0
