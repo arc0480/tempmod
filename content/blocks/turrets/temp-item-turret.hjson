@@ -122,18 +122,49 @@ ammoTypes: {
         # 弾の縮小率
         bulletShrink: 0.2 
     }
+/*	metaglass: {
+		type: basicBulletType
+		height: 2.5
+		width: 10
+		drawSize: 100
+		hitSize: 10
+		bulletShrink: 0.0
+		ammoMultiplier: 1.0
+		reloadMultiplier: 1.0
+		lifeTime: 50
+		speed: 2
+		damage: 5
+
+		# 着弾点から追加の弾丸(フラグバレット)を生成する設定
+		fragOnHit: true
+
+		# シールドに吸収された時にフラグバレットを生成する設定(デフォルトでtrue)
+		fragOnAbsorbable: false
+
+		# フラグバレットがランダムで飛び散る角度(主弾丸の進行方向を中心に360°まで設定できる。デフォルトで360)
+		fragRandomSpread: 120
+
+		# 飛び散る際のフラグバレット同士の角度の設定(デフォルトで0.0)
+		fragSpread: 0.0
+
+		# 
+
+*/
 	spore-pod: {
 		type: basicBulletType
 		height: 5
 		width: 15
 		drawSize: 100
-		bulletShrink: 0.25
 		hitSize: 15
+		bulletShrink: 0.5
 		ammoMultiplier: 2.0
 		reloadMultiplier: 1.0
 		lifeTime: 100
 		speed: 1
-		damage: 5
+		damage: 0
+
+		# シールドに吸収されるかどうか
+		absorutable: false
 
 		# 着弾した対象に与えるステータス効果
 		status: Sapped
@@ -141,19 +172,13 @@ ammoTypes: {
 		# 与える効果の継続時間(n/60 s)
 		statusDuration: 60
 
-		# 弾着点から追加の弾丸を生成する
-		flagOnHit: true
-
-		# 
-		flagBullet: 
-
 	plastanium: {
         type: basicBulletType
         height: 10
         width: 10
         drawSize: 100
-        bulletShrink: 0.0
         hitSize: 12
+        bulletShrink: 0.0
         ammoMultiplier: 1.0
         reloadMultiplier: 1.0
         lifetime: 53
@@ -163,7 +188,9 @@ ammoTypes: {
         # 範囲ダメージ量
         splashDamage: 5
 
-        # 範囲ダメージを与える範囲(デフォルトで-1に設定されている。計算式はn*0.12(有効数字1桁。端数処理は四捨五入))
-        splashDamageRadius: 14
+		#
+
+        # 範囲ダメージを与える範囲(デフォルトで-1に設定されている。計算式はn*0.12(小数点1位まで。端数処理は四捨五入))
+        splashDamageRadius: 100
     }
 }
