@@ -171,7 +171,7 @@ ammoTypes: {
 
 		# 与える効果の継続時間(n/60 s)
 		statusDuration: 60
-
+	}
 	plastanium: {
         type: basicBulletType
         height: 10
