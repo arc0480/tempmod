@@ -156,7 +156,7 @@ ammoTypes: {
 		width: 15
 		drawSize: 100
 		hitSize: 15
-		bulletShrink: 0.5
+		bulletShrink: 0.1
 		ammoMultiplier: 2.0
 		reloadMultiplier: 1.0
 		lifeTime: 300
