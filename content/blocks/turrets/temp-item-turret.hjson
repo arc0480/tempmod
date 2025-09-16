@@ -167,7 +167,7 @@ ammoTypes: {
 		absorutable: false
 
 		# 着弾した対象に与えるステータス効果
-		status: Sapped
+		status: sapped
 
 		# 与える効果の継続時間(n/60 s)
 		statusDuration: 60
