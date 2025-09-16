@@ -111,7 +111,7 @@ ammoTypes: {
         reloadMultiPlier: 1.0
         
         # 弾の寿命 
-        lifetime: 160
+        lifetime: 150
         
         # 弾の速度
         speed: 2
@@ -153,14 +153,14 @@ ammoTypes: {
 	spore-pod: {
 		type: basicBulletType
 		height: 5
-		width: 15
+		width: 10
 		drawSize: 100
 		hitSize: 15
-		bulletShrink: 0.1
+		bulletShrink: 0.0
 		ammoMultiplier: 2.0
 		reloadMultiplier: 1.0
-		lifeTime: 200
-		speed: 2
+		lifetime: 300
+		speed: 1
 		damage: 0
 
 		# シールドに吸収されるかどうか
