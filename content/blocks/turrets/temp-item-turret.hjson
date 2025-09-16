@@ -159,7 +159,7 @@ ammoTypes: {
 		bulletShrink: 0.5
 		ammoMultiplier: 2.0
 		reloadMultiplier: 1.0
-		lifeTime: 100
+		lifeTime: 
 		speed: 1
 		damage: 0
 
@@ -181,16 +181,20 @@ ammoTypes: {
         bulletShrink: 0.0
         ammoMultiplier: 1.0
         reloadMultiplier: 1.0
-        lifetime: 53
+        lifetime: 100
         speed: 3
         damage: 15
 
         # 範囲ダメージ量
         splashDamage: 5
 
-		#
+		# 範囲ダメージをユニットの大きさに比例させる設定(デフォルトでfalse)
+		scaledSplashDamage: true
 
-        # 範囲ダメージを与える範囲(デフォルトで-1に設定されている。計算式はn*0.12(小数点1位まで。端数処理は四捨五入))
-        splashDamageRadius: 100
+        # 範囲ダメージを与える範囲の半径(デフォルトで-1に設定されている。計算式はn*0.125小数点第2位切り捨て)
+        splashDamageRadius: 1000
+
+		# 範囲ダメージを貫通させる設定(デフォルトでfalse。ダメージ範囲内の全ての敵ユニットにダメージを与える)
+		splashDamagePierce: true
     }
 }
