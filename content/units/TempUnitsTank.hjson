@@ -8,12 +8,24 @@ size: 2
 health: 500
 armor: 10
 speed: 2
+
+#対象unit
 targetAir: false
 targetGround: false
+
+requirements:[lead/10]
+
+
 weapons: [
-
 {
-
+#メインウェポン設定
+  
+  "parts": [
+　#サブウェポン設定
+  
+  
+  ]
 
 }
+
 ]
