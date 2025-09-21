@@ -125,8 +125,8 @@ ammoTypes: {
 
 	metaglass: {
 		type: basicBulletType
-		height: 6
-		width: 4
+		height: 12
+		width: 8
 		drawSize: 100
 		hitSize: 10
 		bulletShrink: 0.0
@@ -167,8 +167,8 @@ ammoTypes: {
 		# フラグバレットがランダムで飛び散る最大角度(主弾丸の進行方向を中心に360°まで設定できる。デフォルトで360)
 		fragRandomSpread: 120
 
-		# 飛び散る際のフラグバレット同士の角度の設定(デフォルトで0.0)
-		fragSpread: 30.0
+		# 飛び散る際のフラグバレット同士の角度の設定　←と思っていたけどちょっと違うかも。要検証
+		# fragSpread: 30.0
 
 		# フラグバレットの最低飛翔速度
 		fragVelocityMin: 0.5
@@ -216,7 +216,7 @@ ammoTypes: {
         splashDamageRadius: 40
 
 		# 範囲ダメージを貫通させる設定(デフォルトでfalse。ダメージ範囲内の全ての敵ユニットにダメージを与える弾丸にできる)
-		splashDamagePierce: true
+		splashDamagePierce: false
     }
 
 	spore-pod: {
