@@ -1,0 +1,12 @@
+name: SporedLiquid
+description: "胞子ポッド内の液体。胞子ポッドが破裂すると胞子とともに飛び散る。燃えやすいかも。"
+  
+color: 5440AD
+barColor: 6400FA
+
+flammability: 0.6
+temperature: 0.5
+viscosity: 0.3
+explosiveness: 0.4
+
+alwaysUnlocked: true
