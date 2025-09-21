@@ -122,7 +122,7 @@ ammoTypes: {
         # 弾の縮小率
         bulletShrink: 0.2 
     }
-/*	metaglass: {
+	metaglass: {
 		type: basicBulletType
 		height: 2.5
 		width: 10
@@ -133,23 +133,64 @@ ammoTypes: {
 		reloadMultiplier: 1.0
 		lifeTime: 50
 		speed: 2
-		damage: 5
+		damage: 3
 
-		# 着弾点から追加の弾丸(フラグバレット)を生成する設定
+		# 弾丸が物体(ブロックやユニット)を貫通するようにする設定(デフォルトでfalse)
+		pierce: true
+
+		# 弾丸がブロックを貫通するようにする設定(デフォルトでfalse)
+		pierceBuilding: true
+
+		# pierce=trueの時、何個まで物体を貫通できるか(貫通可能数)の設定(設定しなかったら無限に貫通する)
+		pierceCap: 3
+
+		# 貫通する毎のダメージ倍率
+		pierceDamageFactor: 0.8
+
+		# 着弾した相手の装甲を無視したダメージ(確定ダメージ)を与えられるようにする設定
+		pierceArmor: true
+
+		# 着弾点から追加の弾丸(フラグバレット)を生成する設定(デフォルトでfalse)
 		fragOnHit: true
 
 		# シールドに吸収された時にフラグバレットを生成する設定(デフォルトでtrue)
 		fragOnAbsorb: false
 
+		# 主弾丸のpierce=trueの場合に、フラグバレットを生成する回数の設定(デフォルトで-1)
+		pierceFragCap: 2
+
+		# フラグバレットの飛翔数
+		fragBullets: 5
+
 		# フラグバレットがランダムで飛び散る角度(主弾丸の進行方向を中心に360°まで設定できる。デフォルトで360)
 		fragRandomSpread: 120
 
-		# 飛び散る際のフラグバレット同士の角度の設定(デフォルトで0.0。)
-		fragSpread: 0.0
+		# 飛び散る際のフラグバレット同士の角度の設定(デフォルトで0.0)
+		# fragSpread: 0.0
 
-		# 
+		# フラグバレットの最低飛翔速度
+		fragVelocityMin: 0.5
 
-*/
+		# フラグバレットの最高飛翔速度
+		fragVelocityMax: 3.0
+
+		# フラグバレットの最短寿命
+		fragLifeMin: 0.1
+
+		# フラグバレットの最長寿命
+		fragLifeMax: 1.0
+
+		# フラグバレットの設定
+		fragBullet: {
+			bulletType: basicBulletType
+			width: 10
+			drawSize: 50
+			hitSize: 5
+			bulletShrink: 0.0
+			damage: 5
+		}
+	}
+
 	spore-pod: {
 		type: basicBulletType
 		height: 5
@@ -161,7 +202,7 @@ ammoTypes: {
 		reloadMultiplier: 1.0
 		lifetime: 300
 		speed: 1
-		damage: 0
+		damage: 3
 
 		# シールドに吸収されるかどうか
 		absorutable: false
