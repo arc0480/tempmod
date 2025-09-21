@@ -230,7 +230,7 @@ ammoTypes: {
 		reloadMultiplier: 1.0
 		lifetime: 300
 		speed: 1
-		damage: 3
+		damage: 5
 
 		# 弾丸の横揺れの波長(デフォルトで0.0。数値が大きいほど長い波になる)
 		weaveScale: 5.0
@@ -265,10 +265,10 @@ ammoTypes: {
 		fragBullet: {
 			bulletType: LiquidBulletType
 			liquid: spored-liquid
-			damage: 0
+			damage: 3
 			puddleSize: 3.0
 			orbSize: 6.0
-			boilTime: 3
+			boilTime: 5
 			
 		}
 	}
