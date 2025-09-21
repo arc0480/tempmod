@@ -232,6 +232,12 @@ ammoTypes: {
 		speed: 1
 		damage: 3
 
+		# 弾丸の横揺れの波長(デフォルトで0.0。数値が大きいほど長い波になる)
+		weaveScale: 1.5
+
+		# 弾丸の横揺れの振幅(デフォルトで0.0。数値が大きいほど広い波になる)
+		weaveMag: 1.0
+
 		# シールドに吸収されるかどうか
 		absorutable: false
 
@@ -250,18 +256,16 @@ ammoTypes: {
 		sprashDamage: 10
 		sprashDamageRadius: 20
 
-/*
 		fragOnHit: false
 		fragOnAbsorb: false
 		fragBullets: 3
 		fragRandomSpread: 180
 		fragBullet: {
 			bulletType: liquidBulletType
-			liquid: 
+			liquid: spored-liquid
 			puddleSize: 3.0
 			orbSize: 6.0
 			boilTime: 3
 		}
-*/
 	}
 }
