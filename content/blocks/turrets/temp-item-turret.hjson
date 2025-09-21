@@ -220,7 +220,7 @@ ammoTypes: {
     }
 
 	spore-pod: {
-		type: basicBulletType
+		type: BasicBulletType
 		height: 5
 		width: 10
 		drawSize: 100
@@ -233,10 +233,10 @@ ammoTypes: {
 		damage: 3
 
 		# 弾丸の横揺れの波長(デフォルトで0.0。数値が大きいほど長い波になる)
-		weaveScale: 1.5
+		weaveScale: 3.0
 
 		# 弾丸の横揺れの振幅(デフォルトで0.0。数値が大きいほど広い波になる)
-		weaveMag: 1.0
+		weaveMag: 2.0
 
 		# シールドに吸収されるかどうか
 		absorutable: false
@@ -258,14 +258,18 @@ ammoTypes: {
 
 		fragOnHit: false
 		fragOnAbsorb: false
-		fragBullets: 3
-		fragRandomSpread: 180
+		fragBullets: 6
+		fragRandomSpread: 360
+		fragLifeMin: 0.5
+		fragLifeMax: 1.0
 		fragBullet: {
-			bulletType: liquidBulletType
+			bulletType: LiquidBulletType
 			liquid: spored-liquid
+			damage: 0
 			puddleSize: 3.0
 			orbSize: 6.0
 			boilTime: 3
+
 		}
 	}
 }
