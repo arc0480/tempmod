@@ -122,10 +122,11 @@ ammoTypes: {
         # 弾の縮小率
         bulletShrink: 0.2 
     }
+
 	metaglass: {
 		type: basicBulletType
-		height: 2.5
-		width: 10
+		height: 6
+		width: 4
 		drawSize: 100
 		hitSize: 10
 		bulletShrink: 0.0
@@ -150,7 +151,8 @@ ammoTypes: {
 		# 着弾した相手の装甲を無視したダメージ(確定ダメージ)を与えられるようにする設定
 		pierceArmor: true
 
-		# 着弾点から追加の弾丸(フラグバレット)を生成する設定(デフォルトでfalse)
+
+		# 着弾時に追加の弾丸(フラグバレット)を生成する設定(デフォルトでfalse)
 		fragOnHit: true
 
 		# シールドに吸収された時にフラグバレットを生成する設定(デフォルトでtrue)
@@ -191,28 +193,6 @@ ammoTypes: {
 		}
 	}
 
-	spore-pod: {
-		type: basicBulletType
-		height: 5
-		width: 10
-		drawSize: 100
-		hitSize: 15
-		bulletShrink: 0.0
-		ammoMultiplier: 2.0
-		reloadMultiplier: 1.0
-		lifetime: 300
-		speed: 1
-		damage: 3
-
-		# シールドに吸収されるかどうか
-		absorutable: false
-
-		# 着弾した対象に与えるステータス効果
-		status: sapped
-
-		# 与える効果の継続時間(n/60 s)
-		statusDuration: 180
-	}
 	plastanium: {
         type: basicBulletType
         height: 10
@@ -238,4 +218,50 @@ ammoTypes: {
 		# 範囲ダメージを貫通させる設定(デフォルトでfalse。ダメージ範囲内の全ての敵ユニットにダメージを与える弾丸にできる)
 		splashDamagePierce: true
     }
+
+	spore-pod: {
+		type: basicBulletType
+		height: 5
+		width: 10
+		drawSize: 100
+		hitSize: 15
+		bulletShrink: 0.0
+		ammoMultiplier: 2.0
+		reloadMultiplier: 1.0
+		lifetime: 300
+		speed: 1
+		damage: 3
+
+		# シールドに吸収されるかどうか
+		absorutable: false
+
+		# 粘着弾にする設定
+		sticky: true
+
+		# くっついてからの追加の寿命
+		stickyExtraLife: 3
+
+		# 着弾した対象に与えるステータス効果
+		status: sapped
+
+		# 与える効果の継続時間(n/60 s)
+		statusDuration: 180
+
+		sprashDamage: 10
+		sprashDamageRadius: 20
+
+/*
+		fragOnHit: false
+		fragOnAbsorb: false
+		fragBullets: 3
+		fragRandomSpread: 180
+		fragBullet: {
+			bulletType: liquidBulletType
+			liquid: 
+			puddleSize: 3.0
+			orbSize: 6.0
+			boilTime: 3
+		}
+*/
+	}
 }
