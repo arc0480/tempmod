@@ -131,11 +131,11 @@ ammoTypes: {
 		bulletShrink: 0.0
 		ammoMultiplier: 1.0
 		reloadMultiplier: 1.0
-		lifeTime: 50
+		lifeTime: 150
 		speed: 2
 		damage: 3
 
-		# 弾丸が物体(ブロックやユニット)を貫通するようにする設定(デフォルトでfalse)
+		# 弾丸がユニットを貫通するようにする設定(デフォルトでfalse)
 		pierce: true
 
 		# 弾丸がブロックを貫通するようにする設定(デフォルトでfalse)
@@ -162,11 +162,11 @@ ammoTypes: {
 		# フラグバレットの飛翔数
 		fragBullets: 5
 
-		# フラグバレットがランダムで飛び散る角度(主弾丸の進行方向を中心に360°まで設定できる。デフォルトで360)
+		# フラグバレットがランダムで飛び散る最大角度(主弾丸の進行方向を中心に360°まで設定できる。デフォルトで360)
 		fragRandomSpread: 120
 
 		# 飛び散る際のフラグバレット同士の角度の設定(デフォルトで0.0)
-		# fragSpread: 0.0
+		fragSpread: 30.0
 
 		# フラグバレットの最低飛翔速度
 		fragVelocityMin: 0.5
@@ -175,7 +175,7 @@ ammoTypes: {
 		fragVelocityMax: 3.0
 
 		# フラグバレットの最短寿命
-		fragLifeMin: 0.1
+		fragLifeMin: 0.3
 
 		# フラグバレットの最長寿命
 		fragLifeMax: 1.0
@@ -211,7 +211,7 @@ ammoTypes: {
 		status: sapped
 
 		# 与える効果の継続時間(n/60 s)
-		statusDuration: 60
+		statusDuration: 180
 	}
 	plastanium: {
         type: basicBulletType
