@@ -132,7 +132,7 @@ ammoTypes: {
 		bulletShrink: 0.0
 		ammoMultiplier: 1.0
 		reloadMultiplier: 1.0
-		lifeTime: 300
+		lifetime: 150
 		speed: 2
 		damage: 3
 
