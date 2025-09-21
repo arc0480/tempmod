@@ -233,10 +233,10 @@ ammoTypes: {
 		damage: 3
 
 		# 弾丸の横揺れの波長(デフォルトで0.0。数値が大きいほど長い波になる)
-		weaveScale: 3.0
+		weaveScale: 5.0
 
 		# 弾丸の横揺れの振幅(デフォルトで0.0。数値が大きいほど広い波になる)
-		weaveMag: 2.0
+		weaveMag: 5.0
 
 		# シールドに吸収されるかどうか
 		absorutable: false
@@ -245,7 +245,7 @@ ammoTypes: {
 		sticky: true
 
 		# くっついてからの追加の寿命
-		stickyExtraLife: 3
+		stickyExtraLifetime: 3
 
 		# 着弾した対象に与えるステータス効果
 		status: sapped
@@ -269,7 +269,7 @@ ammoTypes: {
 			puddleSize: 3.0
 			orbSize: 6.0
 			boilTime: 3
-
+			
 		}
 	}
 }
