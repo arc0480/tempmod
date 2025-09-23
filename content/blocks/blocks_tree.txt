@@ -1,0 +1,7157 @@
+└─ root
+   ├─ type
+   ├─ health
+   ├─ shieldHealth
+   ├─ size
+   ├─ liquidCapacity
+   ├─ itemCapacity
+   ├─ hasPower
+   ├─ canOverdrive
+   ├─ phaseUseTime
+   ├─ phaseShieldBoost
+   ├─ phaseRadiusBoost
+   ├─ solid
+   ├─ radius
+   ├─ cooldownNormal
+   ├─ cooldownLiquid
+   ├─ cooldownBrokenBase
+   ├─ consumes
+   │  ├─ power
+   │  ├─ items
+   │  │  ├─ items
+   │  │  │  └─ []
+   │  │  │     ├─ item
+   │  │  │     └─ amount
+   │  │  ├─ booster
+   │  │  ├─ optional
+   │  │  └─ []
+   │  ├─ remove
+   │  │  └─ []
+   │  ├─ liquids
+   │  │  ├─ []
+   │  │  │  ├─ liquid
+   │  │  │  ├─ amount
+   │  │  │  ├─ optional
+   │  │  │  └─ booster
+   │  │  └─ liquids
+   │  │     └─ []
+   │  ├─ liquid
+   │  │  ├─ liquid
+   │  │  ├─ amount
+   │  │  ├─ booster
+   │  │  └─ optional
+   │  ├─ itemFlammable
+   │  ├─ coolant
+   │  │  ├─ amount
+   │  │  └─ maxTemp
+   │  └─ powerBuffered
+   ├─ requirements
+   │  └─ []
+   │     ├─ item
+   │     └─ amount
+   ├─ category
+   ├─ research
+   │  ├─ root
+   │  ├─ name
+   │  ├─ requiresUnlock
+   │  ├─ planet
+   │  ├─ parent
+   │  ├─ objectives
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     └─ preset
+   │  └─ requirements
+   │     └─ []
+   ├─ researchCostMultiplier
+   ├─ loadEffect
+   │  ├─ type
+   │  ├─ line
+   │  ├─ particles
+   │  ├─ lifetime
+   │  ├─ length
+   │  ├─ cone
+   │  ├─ lenFrom
+   │  ├─ lenTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ strokeFrom
+   │  └─ strokeTo
+   ├─ unloadEffect
+   │  ├─ type
+   │  ├─ line
+   │  ├─ particles
+   │  ├─ lifetime
+   │  ├─ length
+   │  ├─ cone
+   │  ├─ lenFrom
+   │  ├─ lenTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ strokeFrom
+   │  └─ strokeTo
+   ├─ speed
+   ├─ localizedName
+   ├─ squareSprite
+   ├─ armor
+   ├─ unitCapModifier
+   ├─ buildCostMultiplier
+   ├─ unitType
+   ├─ absorbLasers
+   ├─ alwaysUnlocked
+   ├─ envRequired
+   ├─ baseColor
+   ├─ phaseColor
+   ├─ healPercent
+   ├─ phaseBoost
+   ├─ range
+   ├─ reload
+   ├─ phaseRangeBoost
+   ├─ useTime
+   ├─ isFirstTier
+   ├─ description
+   ├─ buildVisibility
+   ├─ isLiquid
+   ├─ shallow
+   ├─ liquidDrop
+   ├─ liquidMultiplier
+   ├─ cacheLayer
+   ├─ variants
+   ├─ attributes
+   │  ├─ flow
+   │  ├─ gravel
+   │  ├─ sand
+   │  ├─ heat
+   │  ├─ water
+   │  ├─ granite
+   │  ├─ chemical
+   │  ├─ spores
+   │  └─ oil
+   ├─ speedMultiplier
+   ├─ statusDuration
+   ├─ status
+   ├─ emitLight
+   ├─ lightRadius
+   ├─ lightColor
+   ├─ blendGroup
+   ├─ drownTime
+   ├─ albedo
+   ├─ itemDrop
+   ├─ needsSurface
+   ├─ wall
+   ├─ lobesMin
+   ├─ lobesMax
+   ├─ timeRange
+   ├─ sclMin
+   ├─ sclMax
+   ├─ magMin
+   ├─ magMax
+   ├─ destructible
+   ├─ hasShadow
+   ├─ underBullets
+   ├─ placeableLiquid
+   ├─ forceDark
+   ├─ drawer
+   │  ├─ []
+   │  │  ├─ type
+   │  │  ├─ basePrefix
+   │  │  ├─ parts
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ layer
+   │  │  │     ├─ outline
+   │  │  │     ├─ name
+   │  │  │     ├─ suffix
+   │  │  │     ├─ circle
+   │  │  │     ├─ radius
+   │  │  │     ├─ radiusTo
+   │  │  │     ├─ color
+   │  │  │     ├─ xScl
+   │  │  │     ├─ yScl
+   │  │  │     ├─ moves
+   │  │  │     │  └─ []
+   │  │  │     │     ├─ progress
+   │  │  │     │     │  ├─ type
+   │  │  │     │     │  └─ ops
+   │  │  │     │     │     └─ []
+   │  │  │     │     │        ├─ op
+   │  │  │     │     │        ├─ start
+   │  │  │     │     │        └─ end
+   │  │  │     │     └─ rot
+   │  │  │     └─ children
+   │  │  │        └─ []
+   │  │  │           ├─ type
+   │  │  │           ├─ suffix
+   │  │  │           ├─ outline
+   │  │  │           ├─ y
+   │  │  │           ├─ layer
+   │  │  │           ├─ color
+   │  │  │           ├─ colorTo
+   │  │  │           └─ moves
+   │  │  │              └─ []
+   │  │  │                 ├─ gy
+   │  │  │                 ├─ moveY
+   │  │  │                 └─ progress
+   │  │  │                    ├─ type
+   │  │  │                    ├─ op
+   │  │  │                    ├─ start
+   │  │  │                    └─ end
+   │  │  ├─ drawLiquid
+   │  │  ├─ padding
+   │  │  ├─ suffix
+   │  │  ├─ layer
+   │  │  ├─ rotateSpeed
+   │  │  └─ spinSprite
+   │  ├─ type
+   │  ├─ drawers
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ suffix
+   │  │     ├─ layer
+   │  │     ├─ turretLayer
+   │  │     ├─ shadowLayer
+   │  │     ├─ parts
+   │  │     │  └─ []
+   │  │     │     ├─ type
+   │  │     │     ├─ name
+   │  │     │     ├─ layer
+   │  │     │     ├─ outline
+   │  │     │     ├─ color
+   │  │     │     ├─ xScl
+   │  │     │     ├─ yScl
+   │  │     │     ├─ hollow
+   │  │     │     ├─ circle
+   │  │     │     ├─ radius
+   │  │     │     ├─ radiusTo
+   │  │     │     ├─ stroke
+   │  │     │     ├─ strokeTo
+   │  │     │     └─ progress
+   │  │     │        ├─ type
+   │  │     │        ├─ op
+   │  │     │        └─ interp
+   │  │     ├─ basePrefix
+   │  │     ├─ spinSprite
+   │  │     ├─ rotateSpeed
+   │  │     ├─ sides
+   │  │     ├─ sinScl
+   │  │     ├─ lenOffset
+   │  │     ├─ angleOffset
+   │  │     └─ sinOffset
+   │  ├─ flameColor
+   │  ├─ iconOverride
+   │  │  └─ []
+   │  ├─ basePrefix
+   │  ├─ parts
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ suffix
+   │  │     ├─ blending
+   │  │     ├─ mirror
+   │  │     ├─ outline
+   │  │     ├─ color
+   │  │     ├─ y
+   │  │     ├─ moveY
+   │  │     ├─ progress
+   │  │     │  ├─ type
+   │  │     │  ├─ op
+   │  │     │  ├─ start
+   │  │     │  ├─ end
+   │  │     │  ├─ other
+   │  │     │  ├─ amount
+   │  │     │  └─ interp
+   │  │     ├─ colorTo
+   │  │     ├─ moves
+   │  │     │  └─ []
+   │  │     │     ├─ y
+   │  │     │     ├─ progress
+   │  │     │     │  ├─ type
+   │  │     │     │  ├─ op
+   │  │     │     │  ├─ interp
+   │  │     │     │  ├─ ops
+   │  │     │     │  │  └─ []
+   │  │     │     │  │     ├─ op
+   │  │     │     │  │     ├─ start
+   │  │     │     │  │     └─ end
+   │  │     │     │  ├─ start
+   │  │     │     │  └─ end
+   │  │     │     ├─ gx
+   │  │     │     └─ gy
+   │  │     ├─ x
+   │  │     ├─ moveX
+   │  │     ├─ heatLayerOffset
+   │  │     ├─ turretHeatLayer
+   │  │     ├─ heatProgress
+   │  │     │  ├─ type
+   │  │     │  ├─ op
+   │  │     │  ├─ scl
+   │  │     │  └─ mag
+   │  │     ├─ mixColor
+   │  │     ├─ mixColorTo
+   │  │     ├─ name
+   │  │     ├─ layer
+   │  │     ├─ under
+   │  │     ├─ xScl
+   │  │     ├─ yScl
+   │  │     ├─ recoilIndex
+   │  │     ├─ moveRot
+   │  │     ├─ layerOffset
+   │  │     ├─ hollow
+   │  │     ├─ circle
+   │  │     ├─ stroke
+   │  │     ├─ strokeTo
+   │  │     ├─ radiusTo
+   │  │     ├─ radius
+   │  │     ├─ outlineLayerOffset
+   │  │     ├─ children
+   │  │     │  └─ []
+   │  │     │     ├─ type
+   │  │     │     ├─ layer
+   │  │     │     ├─ mirror
+   │  │     │     ├─ color
+   │  │     │     ├─ blending
+   │  │     │     ├─ outline
+   │  │     │     ├─ suffix
+   │  │     │     ├─ colorTo
+   │  │     │     ├─ progress
+   │  │     │     │  ├─ type
+   │  │     │     │  ├─ op
+   │  │     │     │  ├─ start
+   │  │     │     │  └─ end
+   │  │     │     ├─ tri
+   │  │     │     ├─ triLength
+   │  │     │     ├─ triLengthTo
+   │  │     │     ├─ shapes
+   │  │     │     ├─ radius
+   │  │     │     ├─ radiusTo
+   │  │     │     ├─ haloRadius
+   │  │     │     ├─ haloRadiusTo
+   │  │     │     └─ shapeRotation
+   │  │     ├─ heatColor
+   │  │     ├─ tri
+   │  │     ├─ triLength
+   │  │     ├─ triLengthTo
+   │  │     ├─ shapes
+   │  │     └─ shapeRotation
+   │  ├─ layer
+   │  └─ suffix
+   ├─ drawTeamOverlay
+   ├─ updateEffectSpread
+   ├─ updateEffect
+   │  ├─ particles
+   │  ├─ length
+   │  ├─ baseLength
+   │  ├─ lifetime
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ layer
+   │  ├─ type
+   │  ├─ line
+   │  ├─ cone
+   │  ├─ lenFrom
+   │  ├─ lenTo
+   │  └─ strokeFrom
+   ├─ update
+   ├─ breakable
+   ├─ wallOre
+   ├─ oreDefault
+   ├─ oreScale
+   ├─ oreThreshold
+   ├─ hasColor
+   ├─ allowCorePlacement
+   ├─ playerUnmineable
+   ├─ lightOpacity
+   ├─ walkEffect
+   │  ├─ type
+   │  ├─ line
+   │  ├─ particles
+   │  ├─ lifetime
+   │  ├─ length
+   │  ├─ cone
+   │  ├─ lenFrom
+   │  ├─ lenTo
+   │  ├─ colorFrom
+   │  └─ colorTo
+   ├─ powerProduction
+   ├─ maxHeat
+   ├─ chargeTime
+   ├─ leaks
+   ├─ liquidPressure
+   ├─ craftTime
+   ├─ outputItem
+   │  ├─ item
+   │  └─ amount
+   ├─ outputLiquid
+   ├─ displayedSpeed
+   ├─ speedBoost
+   ├─ speedBoostPhase
+   ├─ pumpAmount
+   ├─ drillTime
+   ├─ liquidBoostIntensity
+   ├─ baseEfficiency
+   ├─ ammoTypes
+   │  ├─ copper
+   │  │  └─ spawnUnit
+   │  ├─ lead
+   │  │  ├─ spawnUnit
+   │  │  ├─ type
+   │  │  ├─ collidesGround
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ hitEffect
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ hitColor
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     └─ despawnShake
+   │  │  ├─ serrations
+   │  │  ├─ fromColor
+   │  │  ├─ toColor
+   │  │  ├─ length
+   │  │  └─ pierce
+   │  ├─ anden
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ collidesAir
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ shootEffect
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ region
+   │  │  │  ├─ type
+   │  │  │  ├─ interp
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ layer
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ lightOpacity
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ baseLength
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ interp
+   │  │  │  │     └─ sizeInterp
+   │  │  │  └─ []
+   │  │  │     ├─ length
+   │  │  │     ├─ cone
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ region
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ sizeFrom
+   │  │  │     └─ sizeTo
+   │  │  ├─ smokeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ layer
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ cone
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ baseLength
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ line
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ sizeInterp
+   │  │  │  │     ├─ lenFrom
+   │  │  │  │     ├─ lenTo
+   │  │  │  │     ├─ strokeFrom
+   │  │  │  │     └─ strokeTo
+   │  │  │  └─ []
+   │  │  │     ├─ particles
+   │  │  │     ├─ length
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ cone
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ interp
+   │  │  │     └─ sizeInterp
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ startDelay
+   │  │  │  ├─ length
+   │  │  │  ├─ baseLength
+   │  │  │  ├─ randLength
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ useRotation
+   │  │  │  ├─ particles
+   │  │  │  ├─ cone
+   │  │  │  ├─ spin
+   │  │  │  ├─ baseRotation
+   │  │  │  ├─ offset
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ region
+   │  │  ├─ hitSound
+   │  │  ├─ hitShake
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragVelocityMax
+   │  │  ├─ fragBullet
+   │  │  │  ├─ damage
+   │  │  │  ├─ pierce
+   │  │  │  ├─ pierceCap
+   │  │  │  ├─ collidesAir
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ hitColor
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ useRotation
+   │  │  │  │  ├─ baseRotation
+   │  │  │  │  ├─ startDelay
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ baseLength
+   │  │  │  │  ├─ randLength
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ layer
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ despawnEffect
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ interp
+   │  │  │  │     └─ sizeInterp
+   │  │  │  ├─ sprite
+   │  │  │  ├─ collidesGround
+   │  │  │  ├─ homingPower
+   │  │  │  ├─ homingRange
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ trailInterval
+   │  │  │  ├─ trailRotation
+   │  │  │  ├─ trailEffect
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  └─ region
+   │  │  │  ├─ type
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragRandomSpread
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ speed
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ pierce
+   │  │  │  │  ├─ pierceBuilding
+   │  │  │  │  ├─ splashDamage
+   │  │  │  │  ├─ splashDamageRadius
+   │  │  │  │  ├─ pierceCap
+   │  │  │  │  ├─ damage
+   │  │  │  │  ├─ width
+   │  │  │  │  ├─ height
+   │  │  │  │  ├─ frontColor
+   │  │  │  │  ├─ backColor
+   │  │  │  │  ├─ trailColor
+   │  │  │  │  ├─ trailWidth
+   │  │  │  │  ├─ trailLength
+   │  │  │  │  ├─ hitEffect
+   │  │  │  │  │  ├─ type
+   │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  └─ effects
+   │  │  │  │  │     └─ []
+   │  │  │  │  │        ├─ length
+   │  │  │  │  │        ├─ lifetime
+   │  │  │  │  │        ├─ particles
+   │  │  │  │  │        ├─ line
+   │  │  │  │  │        ├─ interp
+   │  │  │  │  │        ├─ sizeInterp
+   │  │  │  │  │        ├─ lenFrom
+   │  │  │  │  │        ├─ lenTo
+   │  │  │  │  │        ├─ strokeFrom
+   │  │  │  │  │        ├─ strokeTo
+   │  │  │  │  │        ├─ colorFrom
+   │  │  │  │  │        └─ colorTo
+   │  │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ despawnHit
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ pierceEffect
+   │  │  │  │  ├─ fragOnHit
+   │  │  │  │  ├─ reflectable
+   │  │  │  │  ├─ collidesAir
+   │  │  │  │  ├─ sprite
+   │  │  │  │  ├─ shrinkY
+   │  │  │  │  ├─ shrinkX
+   │  │  │  │  ├─ fragBullets
+   │  │  │  │  ├─ fragRandomSpread
+   │  │  │  │  ├─ fragOffsetMin
+   │  │  │  │  ├─ fragOffsetMax
+   │  │  │  │  ├─ fragVelocityMin
+   │  │  │  │  ├─ fragVelocityMax
+   │  │  │  │  └─ fragBullet
+   │  │  │  │     ├─ damage
+   │  │  │  │     ├─ pierce
+   │  │  │  │     ├─ pierceBuilding
+   │  │  │  │     ├─ fragOnHit
+   │  │  │  │     ├─ speed
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ reflectable
+   │  │  │  │     ├─ collidesAir
+   │  │  │  │     ├─ sprite
+   │  │  │  │     ├─ width
+   │  │  │  │     ├─ height
+   │  │  │  │     ├─ shrinkY
+   │  │  │  │     ├─ shrinkX
+   │  │  │  │     ├─ frontColor
+   │  │  │  │     ├─ backColor
+   │  │  │  │     ├─ fragBullets
+   │  │  │  │     ├─ fragBullet
+   │  │  │  │     │  ├─ type
+   │  │  │  │     │  ├─ pierceEffect
+   │  │  │  │     │  ├─ damage
+   │  │  │  │     │  ├─ pierceDamageFactor
+   │  │  │  │     │  ├─ length
+   │  │  │  │     │  └─ collidesAir
+   │  │  │  │     ├─ hitSound
+   │  │  │  │     ├─ despawnEffect
+   │  │  │  │     │  └─ []
+   │  │  │  │     │     ├─ length
+   │  │  │  │     │     ├─ lifetime
+   │  │  │  │     │     ├─ particles
+   │  │  │  │     │     ├─ colorFrom
+   │  │  │  │     │     ├─ colorTo
+   │  │  │  │     │     ├─ interp
+   │  │  │  │     │     ├─ sizeInterp
+   │  │  │  │     │     ├─ sizeFrom
+   │  │  │  │     │     └─ sizeTo
+   │  │  │  │     └─ hitEffect
+   │  │  │  ├─ length
+   │  │  │  ├─ pierceDamageFactor
+   │  │  │  ├─ pierceEffect
+   │  │  │  ├─ knockback
+   │  │  │  ├─ pierceBuilding
+   │  │  │  ├─ ammoMultiplier
+   │  │  │  ├─ fragOnHit
+   │  │  │  ├─ hitShake
+   │  │  │  ├─ hitSound
+   │  │  │  ├─ reflectable
+   │  │  │  ├─ shrinkX
+   │  │  │  ├─ fragOffsetMin
+   │  │  │  ├─ fragOffsetMax
+   │  │  │  ├─ fragVelocityMin
+   │  │  │  ├─ fragVelocityMax
+   │  │  │  ├─ ignoreSpawnAngle
+   │  │  │  ├─ collides
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ keepVelocity
+   │  │  │  ├─ despawnUnit
+   │  │  │  └─ despawnHit
+   │  │  ├─ drag
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ homingDelay
+   │  │  ├─ collides
+   │  │  ├─ collidesTiles
+   │  │  ├─ collidesGround
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ sprite
+   │  │  ├─ shrinkY
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ interp
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ []
+   │  │  │  │  ├─ lightOpacity
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ interp
+   │  │  │  │  ├─ sizeInterp
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ baseRotation
+   │  │  │  │  └─ region
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ line
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ interp
+   │  │  │        └─ sizeInterp
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ type
+   │  │  ├─ pierce
+   │  │  ├─ pierceBuilding
+   │  │  ├─ pierceCap
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ status
+   │  │  ├─ spawnUnit
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragLifeMax
+   │  │  ├─ lightning
+   │  │  ├─ lightningCone
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningType
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  └─ effects
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ length
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ particles
+   │  │  │  │        ├─ line
+   │  │  │  │        ├─ interp
+   │  │  │  │        ├─ sizeInterp
+   │  │  │  │        ├─ lenFrom
+   │  │  │  │        ├─ lenTo
+   │  │  │  │        ├─ strokeFrom
+   │  │  │  │        ├─ strokeTo
+   │  │  │  │        ├─ colorFrom
+   │  │  │  │        └─ colorTo
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ collides
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragRandomSpread
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ speed
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ collides
+   │  │  │  │  ├─ hittable
+   │  │  │  │  ├─ absorbable
+   │  │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ fragBullets
+   │  │  │  │  ├─ fragRandomSpread
+   │  │  │  │  └─ fragBullet
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ width
+   │  │  │  │     ├─ serrations
+   │  │  │  │     ├─ serrationWidth
+   │  │  │  │     └─ toColor
+   │  │  │  ├─ lightning
+   │  │  │  ├─ lightningLength
+   │  │  │  ├─ lightningCone
+   │  │  │  ├─ lightningType
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ speed
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ collides
+   │  │  │  │  ├─ hittable
+   │  │  │  │  ├─ absorbable
+   │  │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ fragBullets
+   │  │  │  │  ├─ fragRandomSpread
+   │  │  │  │  ├─ fragBullet
+   │  │  │  │  │  ├─ type
+   │  │  │  │  │  ├─ speed
+   │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  ├─ collides
+   │  │  │  │  │  ├─ hittable
+   │  │  │  │  │  ├─ absorbable
+   │  │  │  │  │  ├─ hitEffect
+   │  │  │  │  │  ├─ despawnEffect
+   │  │  │  │  │  ├─ fragBullets
+   │  │  │  │  │  ├─ fragRandomSpread
+   │  │  │  │  │  ├─ fragAngle
+   │  │  │  │  │  └─ fragBullet
+   │  │  │  │  │     ├─ type
+   │  │  │  │  │     ├─ lifetime
+   │  │  │  │  │     ├─ length
+   │  │  │  │  │     ├─ width
+   │  │  │  │  │     ├─ serrations
+   │  │  │  │  │     ├─ serrationWidth
+   │  │  │  │  │     └─ toColor
+   │  │  │  │  ├─ lightning
+   │  │  │  │  ├─ lightningLength
+   │  │  │  │  ├─ lightningCone
+   │  │  │  │  └─ lightningType
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ speed
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ collides
+   │  │  │  │     ├─ hittable
+   │  │  │  │     ├─ absorbable
+   │  │  │  │     ├─ hitEffect
+   │  │  │  │     ├─ despawnEffect
+   │  │  │  │     ├─ fragBullets
+   │  │  │  │     ├─ fragRandomSpread
+   │  │  │  │     ├─ fragAngle
+   │  │  │  │     ├─ fragBullet
+   │  │  │  │     │  ├─ type
+   │  │  │  │     │  ├─ speed
+   │  │  │  │     │  ├─ lifetime
+   │  │  │  │     │  ├─ collides
+   │  │  │  │     │  ├─ hittable
+   │  │  │  │     │  ├─ absorbable
+   │  │  │  │     │  ├─ hitEffect
+   │  │  │  │     │  ├─ despawnEffect
+   │  │  │  │     │  ├─ fragBullets
+   │  │  │  │     │  ├─ fragRandomSpread
+   │  │  │  │     │  └─ fragBullet
+   │  │  │  │     │     ├─ type
+   │  │  │  │     │     ├─ lifetime
+   │  │  │  │     │     ├─ length
+   │  │  │  │     │     ├─ width
+   │  │  │  │     │     ├─ serrations
+   │  │  │  │     │     ├─ serrationWidth
+   │  │  │  │     │     └─ toColor
+   │  │  │  │     ├─ lightning
+   │  │  │  │     ├─ lightningLength
+   │  │  │  │     ├─ lightningCone
+   │  │  │  │     └─ lightningType
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ speed
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ collides
+   │  │  │  │        ├─ hittable
+   │  │  │  │        ├─ absorbable
+   │  │  │  │        ├─ hitEffect
+   │  │  │  │        ├─ despawnEffect
+   │  │  │  │        ├─ fragBullets
+   │  │  │  │        ├─ fragRandomSpread
+   │  │  │  │        └─ fragBullet
+   │  │  │  │           ├─ type
+   │  │  │  │           ├─ speed
+   │  │  │  │           ├─ lifetime
+   │  │  │  │           ├─ splashDamage
+   │  │  │  │           ├─ splashDamageRadius
+   │  │  │  │           ├─ collides
+   │  │  │  │           ├─ hittable
+   │  │  │  │           ├─ absorbable
+   │  │  │  │           ├─ hitEffect
+   │  │  │  │           │  ├─ type
+   │  │  │  │           │  ├─ lifetime
+   │  │  │  │           │  └─ effects
+   │  │  │  │           │     └─ []
+   │  │  │  │           │        ├─ length
+   │  │  │  │           │        ├─ lifetime
+   │  │  │  │           │        ├─ particles
+   │  │  │  │           │        ├─ colorFrom
+   │  │  │  │           │        ├─ colorTo
+   │  │  │  │           │        ├─ sizeFrom
+   │  │  │  │           │        ├─ sizeTo
+   │  │  │  │           │        ├─ interp
+   │  │  │  │           │        └─ sizeInterp
+   │  │  │  │           └─ despawnEffect
+   │  │  │  ├─ length
+   │  │  │  ├─ serrations
+   │  │  │  ├─ layer
+   │  │  │  └─ toColor
+   │  │  ├─ trailEffect
+   │  │  │  ├─ []
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ baseRotation
+   │  │  │  │  ├─ region
+   │  │  │  │  ├─ offset
+   │  │  │  │  ├─ interp
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  └─ layer
+   │  │  │  ├─ type
+   │  │  │  ├─ cone
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ interp
+   │  │  │  └─ sizeInterp
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ layer
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ useRotation
+   │  │  │        ├─ particles
+   │  │  │        ├─ cone
+   │  │  │        └─ region
+   │  │  ├─ despawnHit
+   │  │  ├─ displayAmmoMultiplier
+   │  │  ├─ bulletInterval
+   │  │  ├─ intervalRandomSpread
+   │  │  ├─ intervalBullets
+   │  │  ├─ intervalBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ collides
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ hittable
+   │  │  │  ├─ hitEffect
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ lightOpacity
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ interp
+   │  │  │  │     └─ sizeInterp
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragAngle
+   │  │  │  ├─ fragSpread
+   │  │  │  ├─ fragRandomSpread
+   │  │  │  └─ fragBullet
+   │  │  │     ├─ type
+   │  │  │     ├─ length
+   │  │  │     ├─ width
+   │  │  │     ├─ damage
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ serrations
+   │  │  │     └─ toColor
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ parts
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ name
+   │  │  │     ├─ y
+   │  │  │     ├─ outline
+   │  │  │     └─ layer
+   │  │  ├─ pierceDamageFactor
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ trailInterval
+   │  │  ├─ fragOffsetMin
+   │  │  ├─ fragOffsetMax
+   │  │  ├─ scaleLife
+   │  │  ├─ reflectable
+   │  │  ├─ shrinkX
+   │  │  ├─ trailRotation
+   │  │  ├─ trailChance
+   │  │  ├─ length
+   │  │  ├─ pointEffectSpace
+   │  │  ├─ pointEffect
+   │  │  │  ├─ line
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ cone
+   │  │  │  ├─ length
+   │  │  │  ├─ baseLength
+   │  │  │  ├─ particles
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ pierceEffect
+   │  │  │  └─ []
+   │  │  │     ├─ cone
+   │  │  │     ├─ baseLength
+   │  │  │     ├─ length
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ particles
+   │  │  │     ├─ interp
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     └─ colorTo
+   │  │  └─ spawnBullets
+   │  │     └─ []
+   │  │        ├─ ignoreSpawnAngle
+   │  │        ├─ lifetime
+   │  │        ├─ hitEffect
+   │  │        ├─ despawnEffect
+   │  │        └─ despawnUnit
+   │  ├─ thorium
+   │  │  ├─ damage
+   │  │  ├─ pierce
+   │  │  ├─ pierceCap
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ drag
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ sprite
+   │  │  ├─ shrinkY
+   │  │  ├─ spin
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ hitColor
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ line
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ offset
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ strokeTo
+   │  │  │  │     ├─ lightColor
+   │  │  │  │     ├─ strokeFrom
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     └─ colorTo
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ cone
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ offset
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ cone
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ offset
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ region
+   │  │  │  │     └─ offsetX
+   │  │  │  ├─ interp
+   │  │  │  ├─ region
+   │  │  │  └─ offsetX
+   │  │  ├─ smokeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ cone
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     └─ despawnShake
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ trailColor
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ shrinkX
+   │  │  ├─ knockback
+   │  │  ├─ hitSize
+   │  │  ├─ type
+   │  │  ├─ scaleLife
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ rotWithParent
+   │  │  │  ├─ followParent
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ trailChance
+   │  │  ├─ trailRotation
+   │  │  ├─ collides
+   │  │  ├─ scaledSplashDamage
+   │  │  ├─ hitShake
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ length
+   │  │  ├─ sideAngle
+   │  │  ├─ sideLength
+   │  │  ├─ sideWidth
+   │  │  ├─ lightningSpacing
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningDelay
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ lightningDamage
+   │  │  ├─ lightningAngleRand
+   │  │  ├─ lightColor
+   │  │  ├─ lightningColor
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ toColor
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ weaveScale
+   │  │  ├─ weaveMag
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ speed
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailParam
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ buildingDamageMultiplier
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ homingRange
+   │  │  │  ├─ homingPower
+   │  │  │  ├─ height
+   │  │  │  ├─ width
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ pierce
+   │  │  │  ├─ frontColor
+   │  │  │  └─ backColor
+   │  │  ├─ hitSound
+   │  │  ├─ reflectable
+   │  │  ├─ rangeChange
+   │  │  ├─ serrations
+   │  │  ├─ fromColor
+   │  │  ├─ collidesTiles
+   │  │  └─ trailSpacing
+   │  ├─ uranium
+   │  │  ├─ type
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ collides
+   │  │  ├─ absorbable
+   │  │  ├─ hittable
+   │  │  ├─ hitEffect
+   │  │  │  └─ []
+   │  │  │     ├─ layer
+   │  │  │     ├─ length
+   │  │  │     ├─ randLength
+   │  │  │     ├─ particles
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ interp
+   │  │  │     └─ sizeInterp
+   │  │  ├─ despawnEffect
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragLifeMax
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ fragVelocityMax
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragRandomSpread
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ speed
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ damage
+   │  │  │  │  ├─ width
+   │  │  │  │  ├─ height
+   │  │  │  │  ├─ frontColor
+   │  │  │  │  ├─ backColor
+   │  │  │  │  ├─ trailColor
+   │  │  │  │  ├─ trailWidth
+   │  │  │  │  ├─ trailLength
+   │  │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ fragBullets
+   │  │  │  │  ├─ fragLifeMin
+   │  │  │  │  └─ fragBullet
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ speed
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ hittable
+   │  │  │  │     ├─ collides
+   │  │  │  │     ├─ absorbable
+   │  │  │  │     ├─ hitEffect
+   │  │  │  │     │  ├─ lightOpacity
+   │  │  │  │     │  ├─ layer
+   │  │  │  │     │  ├─ length
+   │  │  │  │     │  ├─ particles
+   │  │  │  │     │  ├─ lifetime
+   │  │  │  │     │  ├─ sizeFrom
+   │  │  │  │     │  ├─ sizeTo
+   │  │  │  │     │  ├─ colorFrom
+   │  │  │  │     │  └─ colorTo
+   │  │  │  │     ├─ despawnEffect
+   │  │  │  │     ├─ fragBullets
+   │  │  │  │     └─ fragBullet
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ length
+   │  │  │  │        ├─ pierceEffect
+   │  │  │  │        ├─ damage
+   │  │  │  │        └─ pierceDamageFactor
+   │  │  │  ├─ hittable
+   │  │  │  ├─ collides
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ intervalBullets
+   │  │  │  ├─ bulletInterval
+   │  │  │  ├─ intervalBullet
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ pierceEffect
+   │  │  │  │  ├─ damage
+   │  │  │  │  ├─ splashDamage
+   │  │  │  │  ├─ splashDamageRadius
+   │  │  │  │  ├─ pierceDamageFactor
+   │  │  │  │  └─ collidesAir
+   │  │  │  ├─ trailInterval
+   │  │  │  └─ trailEffect
+   │  │  │     └─ []
+   │  │  │        ├─ layer
+   │  │  │        ├─ length
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ interp
+   │  │  │        └─ sizeInterp
+   │  │  ├─ lightning
+   │  │  ├─ lightningCone
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningType
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragLifeMin
+   │  │  │  └─ fragBullet
+   │  │  │     ├─ type
+   │  │  │     ├─ speed
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ hittable
+   │  │  │     ├─ collides
+   │  │  │     ├─ absorbable
+   │  │  │     ├─ hitEffect
+   │  │  │     │  ├─ lightOpacity
+   │  │  │     │  ├─ layer
+   │  │  │     │  ├─ length
+   │  │  │     │  ├─ particles
+   │  │  │     │  ├─ lifetime
+   │  │  │     │  ├─ sizeFrom
+   │  │  │     │  ├─ sizeTo
+   │  │  │     │  ├─ colorFrom
+   │  │  │     │  └─ colorTo
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ fragBullets
+   │  │  │     └─ fragBullet
+   │  │  │        ├─ type
+   │  │  │        ├─ length
+   │  │  │        ├─ pierceEffect
+   │  │  │        ├─ damage
+   │  │  │        └─ pierceDamageFactor
+   │  │  ├─ damage
+   │  │  ├─ collidesAir
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailColor
+   │  │  ├─ hitShake
+   │  │  └─ hitSound
+   │  ├─ baenite
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ collidesTeam
+   │  │  ├─ healPercent
+   │  │  ├─ pierce
+   │  │  ├─ pierceCap
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ type
+   │  │  ├─ length
+   │  │  ├─ lightningDelay
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningSpacing
+   │  │  └─ lightningType
+   │  │     ├─ type
+   │  │     ├─ speed
+   │  │     ├─ lifetime
+   │  │     ├─ absorbable
+   │  │     ├─ hittable
+   │  │     ├─ pierce
+   │  │     ├─ pierceBuilding
+   │  │     ├─ collidesTeam
+   │  │     ├─ healAmount
+   │  │     └─ despawnEffect
+   │  ├─ surge-alloy
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ trailWidth
+   │  │  ├─ trailLength
+   │  │  ├─ lightning
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ lightningDamage
+   │  │  ├─ lightningCone
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ baseLength
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ lightOpacity
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ line
+   │  │  │        ├─ offset
+   │  │  │        └─ cone
+   │  │  ├─ collidesTiles
+   │  │  ├─ absorbable
+   │  │  ├─ shrinkY
+   │  │  ├─ sprite
+   │  │  ├─ fragBullets
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ fragVelocityMax
+   │  │  ├─ fragBullet
+   │  │  │  ├─ collides
+   │  │  │  ├─ collidesTiles
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragVelocityMin
+   │  │  │  ├─ fragVelocityMax
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ speed
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ damage
+   │  │  │  │  ├─ homingPower
+   │  │  │  │  ├─ homingRange
+   │  │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ pierce
+   │  │  │  │  ├─ collidesTiles
+   │  │  │  │  ├─ width
+   │  │  │  │  ├─ height
+   │  │  │  │  ├─ shrinkY
+   │  │  │  │  ├─ sprite
+   │  │  │  │  ├─ fragBullets
+   │  │  │  │  ├─ fragVelocityMin
+   │  │  │  │  ├─ fragVelocityMax
+   │  │  │  │  └─ fragBullet
+   │  │  │  │     ├─ collides
+   │  │  │  │     ├─ collidesTiles
+   │  │  │  │     ├─ hittable
+   │  │  │  │     ├─ absorbable
+   │  │  │  │     ├─ speed
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ width
+   │  │  │  │     ├─ height
+   │  │  │  │     ├─ fragBullets
+   │  │  │  │     ├─ fragVelocityMin
+   │  │  │  │     ├─ fragVelocityMax
+   │  │  │  │     └─ fragBullet
+   │  │  │  │        ├─ speed
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ damage
+   │  │  │  │        ├─ homingPower
+   │  │  │  │        ├─ homingRange
+   │  │  │  │        ├─ hitEffect
+   │  │  │  │        ├─ pierce
+   │  │  │  │        ├─ collidesTiles
+   │  │  │  │        ├─ width
+   │  │  │  │        ├─ height
+   │  │  │  │        ├─ shrinkY
+   │  │  │  │        └─ sprite
+   │  │  │  ├─ type
+   │  │  │  ├─ length
+   │  │  │  ├─ damage
+   │  │  │  ├─ buildingDamageMultiplier
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ offset
+   │  │  │  │  ├─ interp
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ lightColor
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ colors
+   │  │  │  │  └─ []
+   │  │  │  ├─ sideAngle
+   │  │  │  ├─ sideLength
+   │  │  │  └─ sideWidth
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ drag
+   │  │  ├─ hittable
+   │  │  ├─ spin
+   │  │  ├─ type
+   │  │  ├─ length
+   │  │  ├─ pierceDamageFactor
+   │  │  ├─ pointEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ region
+   │  │  ├─ pierceEffect
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ line
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ offset
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ baseLength
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ lenFrom
+   │  │  │  │     ├─ lenTo
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ region
+   │  │  │  │     ├─ offsetX
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     └─ sizeTo
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ region
+   │  │  │  ├─ offsetX
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ smokeEffect
+   │  │  ├─ pointEffectSpace
+   │  │  ├─ collidesGround
+   │  │  ├─ pierce
+   │  │  ├─ pierceCap
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ bulletInterval
+   │  │  ├─ intervalBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ collidesGround
+   │  │  │  ├─ damage
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ despawnEffect
+   │  │  │  └─ status
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailColor
+   │  │  ├─ weaveScale
+   │  │  ├─ weaveMag
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ offset
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ cone
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ laserEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ interp
+   │  │  │  ├─ region
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ drawSize
+   │  │  ├─ sideAngle
+   │  │  ├─ sideWidth
+   │  │  ├─ sideLength
+   │  │  ├─ lightningSpacing
+   │  │  ├─ lightningDelay
+   │  │  ├─ lightningAngleRand
+   │  │  ├─ lightningType
+   │  │  │  ├─ type
+   │  │  │  ├─ lightning
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ lightningDamage
+   │  │  │  ├─ lightningColor
+   │  │  │  ├─ lightningCone
+   │  │  │  ├─ lightningLengthRand
+   │  │  │  └─ lightningLength
+   │  │  ├─ largeHit
+   │  │  ├─ lightColor
+   │  │  ├─ lightningColor
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ hitShake
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ region
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ reflectable
+   │  │  ├─ knockback
+   │  │  ├─ pierceBuilding
+   │  │  ├─ collidesAir
+   │  │  ├─ trailSpacing
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ hitColor
+   │  │  ├─ serrations
+   │  │  ├─ fromColor
+   │  │  └─ toColor
+   │  ├─ draconium
+   │  │  ├─ type
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ layer
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ lightOpacity
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ cone
+   │  │  │        ├─ particles
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        └─ sizeInterp
+   │  │  ├─ smokeEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ cone
+   │  │  │        ├─ line
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ particles
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        └─ strokeTo
+   │  │  ├─ hitSound
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ damage
+   │  │  │  ├─ length
+   │  │  │  ├─ pierceDamageFactor
+   │  │  │  ├─ pierceEffect
+   │  │  │  ├─ knockback
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ makeFire
+   │  │  │  ├─ incendChance
+   │  │  │  ├─ incendAmount
+   │  │  │  ├─ status
+   │  │  │  ├─ statusDuration
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ pierce
+   │  │  │  ├─ pierceBuilding
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ reflectable
+   │  │  │  └─ hittable
+   │  │  ├─ collides
+   │  │  ├─ absorbable
+   │  │  ├─ hittable
+   │  │  ├─ reflectable
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ pierce
+   │  │  ├─ pierceBuilding
+   │  │  ├─ pierceCap
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ sprite
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ trailLength
+   │  │  └─ trailWidth
+   │  ├─ altesin
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailColor
+   │  │  ├─ fragBullets
+   │  │  ├─ fragOffsetMax
+   │  │  ├─ fragOffsetMin
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragBullet
+   │  │  │  ├─ createChance
+   │  │  │  ├─ speed
+   │  │  │  ├─ damage
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ collides
+   │  │  │  ├─ keepVelocity
+   │  │  │  ├─ sprite
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ shrinkX
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  └─ effects
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ length
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ particles
+   │  │  │  │        ├─ line
+   │  │  │  │        ├─ interp
+   │  │  │  │        ├─ sizeInterp
+   │  │  │  │        ├─ lenFrom
+   │  │  │  │        ├─ lenTo
+   │  │  │  │        ├─ strokeFrom
+   │  │  │  │        ├─ strokeTo
+   │  │  │  │        ├─ colorFrom
+   │  │  │  │        └─ colorTo
+   │  │  │  ├─ hitShake
+   │  │  │  ├─ hitSound
+   │  │  │  ├─ fragBullets
+   │  │  │  └─ fragBullet
+   │  │  │     ├─ type
+   │  │  │     ├─ pierceEffect
+   │  │  │     ├─ length
+   │  │  │     ├─ damage
+   │  │  │     └─ pierceDamageFactor
+   │  │  ├─ hitShake
+   │  │  ├─ hitSound
+   │  │  ├─ hitEffect
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ interp
+   │  │  │     ├─ strokeFrom
+   │  │  │     └─ strokeTo
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ despawnEffect
+   │  │  └─ trailChance
+   │  ├─ renfrien
+   │  │  ├─ damage
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ scaleLife
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ reflectable
+   │  │  ├─ collidesAir
+   │  │  ├─ collides
+   │  │  ├─ sprite
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailColor
+   │  │  ├─ trailInterval
+   │  │  ├─ trailRotation
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ pierceEffect
+   │  │  │  ├─ damage
+   │  │  │  ├─ pierceDamageFactor
+   │  │  │  ├─ length
+   │  │  │  └─ collidesAir
+   │  │  ├─ bulletInterval
+   │  │  ├─ intervalBullets
+   │  │  ├─ intervalRandomSpread
+   │  │  ├─ intervalBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ damage
+   │  │  │  ├─ ammoMultiplier
+   │  │  │  ├─ homingRange
+   │  │  │  ├─ homingPower
+   │  │  │  ├─ scaleLife
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ reflectable
+   │  │  │  ├─ collides
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailInterval
+   │  │  │  ├─ trailRotation
+   │  │  │  ├─ trailEffect
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ hitColor
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ bulletInterval
+   │  │  │  ├─ intervalBullets
+   │  │  │  ├─ intervalRandomSpread
+   │  │  │  └─ intervalBullet
+   │  │  │     ├─ damage
+   │  │  │     ├─ homingRange
+   │  │  │     ├─ homingPower
+   │  │  │     ├─ scaleLife
+   │  │  │     ├─ speed
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ splashDamage
+   │  │  │     ├─ splashDamageRadius
+   │  │  │     ├─ splashDamagePierce
+   │  │  │     ├─ reflectable
+   │  │  │     ├─ collidesTiles
+   │  │  │     ├─ trailLength
+   │  │  │     ├─ trailWidth
+   │  │  │     ├─ trailColor
+   │  │  │     ├─ trailRotation
+   │  │  │     ├─ trailEffect
+   │  │  │     ├─ frontColor
+   │  │  │     ├─ backColor
+   │  │  │     ├─ width
+   │  │  │     ├─ height
+   │  │  │     ├─ hitColor
+   │  │  │     └─ hitEffect
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ cone
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ interp
+   │  │  │  └─ sizeInterp
+   │  │  ├─ shootEffect
+   │  │  │  └─ []
+   │  │  │     ├─ length
+   │  │  │     ├─ cone
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ region
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ sizeFrom
+   │  │  │     └─ sizeTo
+   │  │  ├─ smokeEffect
+   │  │  │  └─ []
+   │  │  │     ├─ particles
+   │  │  │     ├─ length
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ cone
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ interp
+   │  │  │     └─ sizeInterp
+   │  │  ├─ despawnEffect
+   │  │  └─ hitEffect
+   │  │     └─ []
+   │  │        ├─ length
+   │  │        ├─ lifetime
+   │  │        ├─ particles
+   │  │        ├─ colorFrom
+   │  │        ├─ colorTo
+   │  │        ├─ interp
+   │  │        ├─ sizeInterp
+   │  │        ├─ sizeFrom
+   │  │        └─ sizeTo
+   │  ├─ energia
+   │  │  ├─ speed
+   │  │  ├─ killShooter
+   │  │  ├─ lifetime
+   │  │  ├─ collides
+   │  │  ├─ absorbable
+   │  │  ├─ hittable
+   │  │  ├─ reflectable
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ sprite
+   │  │  ├─ backSprite
+   │  │  ├─ layer
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ shrinkY
+   │  │  ├─ frontColor
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ despawnUnit
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ speed
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ collides
+   │  │  │     ├─ absorbable
+   │  │  │     ├─ reflectable
+   │  │  │     ├─ hitEffect
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ fragBullets
+   │  │  │     ├─ fragOffsetMin
+   │  │  │     ├─ fragOffsetMax
+   │  │  │     ├─ fragRandomSpread
+   │  │  │     ├─ fragSpread
+   │  │  │     └─ fragBullet
+   │  │  │        ├─ speed
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ collides
+   │  │  │        ├─ absorbable
+   │  │  │        ├─ reflectable
+   │  │  │        ├─ ignoreSpawnAngle
+   │  │  │        ├─ hitEffect
+   │  │  │        ├─ despawnEffect
+   │  │  │        ├─ fragBullets
+   │  │  │        ├─ fragOffsetMin
+   │  │  │        ├─ fragOffsetMax
+   │  │  │        ├─ fragRandomSpread
+   │  │  │        ├─ fragAngle
+   │  │  │        └─ fragBullet
+   │  │  │           ├─ type
+   │  │  │           ├─ layer
+   │  │  │           ├─ lifetime
+   │  │  │           ├─ collides
+   │  │  │           ├─ length
+   │  │  │           ├─ width
+   │  │  │           ├─ colors
+   │  │  │           │  └─ []
+   │  │  │           ├─ drawFlare
+   │  │  │           ├─ shootEffect
+   │  │  │           ├─ smokeEffect
+   │  │  │           ├─ lengthInterp
+   │  │  │           ├─ oscScl
+   │  │  │           ├─ oscMag
+   │  │  │           ├─ hitEffect
+   │  │  │           ├─ lightColor
+   │  │  │           ├─ lightStroke
+   │  │  │           ├─ lightOpacity
+   │  │  │           ├─ collidesGround
+   │  │  │           ├─ damage
+   │  │  │           ├─ status
+   │  │  │           └─ statusDuration
+   │  │  ├─ trailChance
+   │  │  ├─ trailEffect
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ particles
+   │  │  │  ├─ interp
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ layer
+   │  │  ├─ spawnUnit
+   │  │  ├─ type
+   │  │  ├─ damage
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ damageInterval
+   │  │  ├─ setDefaults
+   │  │  ├─ despawnHit
+   │  │  ├─ largeHit
+   │  │  ├─ frontLength
+   │  │  ├─ backLength
+   │  │  ├─ shake
+   │  │  ├─ length
+   │  │  ├─ pierceCap
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ collides
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  └─ despawnEffect
+   │  │  │     └─ []
+   │  │  │        ├─ baseRotation
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ region
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ shootEffect
+   │  │  └─ smokeEffect
+   │  ├─ metaglass
+   │  │  ├─ type
+   │  │  ├─ collidesGround
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ collidesGround
+   │  │  │  ├─ pierceDamageFactor
+   │  │  │  ├─ pierce
+   │  │  │  ├─ damage
+   │  │  │  ├─ speed
+   │  │  │  ├─ drag
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ type
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  └─ pierceBuilding
+   │  │  ├─ sprite
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ pierce
+   │  │  ├─ rangeChange
+   │  │  ├─ trailColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ region
+   │  │  │        ├─ offsetX
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ knockback
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ fragCone
+   │  │  ├─ fragLifeMin
+   │  │  ├─ chargeEffect
+   │  │  ├─ chargeBeginEffect
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ trailChance
+   │  │  ├─ collides
+   │  │  ├─ collidesAir
+   │  │  ├─ collidesTiles
+   │  │  ├─ homingRange
+   │  │  └─ homingPower
+   │  ├─ phase-fabric
+   │  │  ├─ type
+   │  │  ├─ collidesGround
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ knockback
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ hitEffect
+   │  │  │  ├─ []
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  └─ interp
+   │  │  │  ├─ type
+   │  │  │  ├─ waveColor
+   │  │  │  ├─ sparkColor
+   │  │  │  ├─ smokes
+   │  │  │  ├─ smokeSize
+   │  │  │  ├─ smokeSizeBase
+   │  │  │  ├─ smokeRad
+   │  │  │  ├─ waveLife
+   │  │  │  ├─ waveStroke
+   │  │  │  ├─ waveRad
+   │  │  │  ├─ waveRadBase
+   │  │  │  ├─ sparkLen
+   │  │  │  └─ sparks
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ collidesGround
+   │  │  │  ├─ length
+   │  │  │  ├─ damage
+   │  │  │  ├─ knockback
+   │  │  │  ├─ pierceEffect
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ collides
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ despawnHit
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ collidesGround
+   │  │  │  │  ├─ killShooter
+   │  │  │  │  ├─ splashDamage
+   │  │  │  │  ├─ splashDamageRadius
+   │  │  │  │  └─ hitEffect
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ sizeFrom
+   │  │  │  │        ├─ sizeTo
+   │  │  │  │        ├─ strokeFrom
+   │  │  │  │        ├─ strokeTo
+   │  │  │  │        ├─ colorTo
+   │  │  │  │        └─ interp
+   │  │  │  ├─ width
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ offset
+   │  │  │  │  ├─ interp
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ lightColor
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ colors
+   │  │  │  │  └─ []
+   │  │  │  ├─ sideAngle
+   │  │  │  ├─ sideLength
+   │  │  │  └─ sideWidth
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ homingDelay
+   │  │  ├─ sprite
+   │  │  ├─ trailInterval
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ despawnHit
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ shootEffect
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ waveColor
+   │  │  │  ├─ sparkColor
+   │  │  │  ├─ smokes
+   │  │  │  ├─ smokeSize
+   │  │  │  ├─ smokeSizeBase
+   │  │  │  ├─ smokeRad
+   │  │  │  ├─ waveLife
+   │  │  │  ├─ waveStroke
+   │  │  │  ├─ waveRad
+   │  │  │  ├─ waveRadBase
+   │  │  │  ├─ sparkLen
+   │  │  │  └─ sparks
+   │  │  └─ smokeEffect
+   │  ├─ sand
+   │  │  ├─ type
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ speed
+   │  │  ├─ pierce
+   │  │  ├─ pierceBuilding
+   │  │  ├─ lifetime
+   │  │  ├─ hittable
+   │  │  ├─ knockback
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ collidesAir
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ layer
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ cone
+   │  │  │        ├─ particles
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ region
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  └─ smokeEffect
+   │  │     ├─ length
+   │  │     ├─ lifetime
+   │  │     ├─ layer
+   │  │     ├─ cone
+   │  │     ├─ particles
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ region
+   │  │     ├─ sizeFrom
+   │  │     ├─ sizeTo
+   │  │     ├─ colorFrom
+   │  │     └─ colorTo
+   │  ├─ blast-compound
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ lifetime
+   │  │  ├─ drag
+   │  │  ├─ speed
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ sprite
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ shrinkY
+   │  │  ├─ spin
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ type
+   │  │  ├─ collides
+   │  │  ├─ collidesGround
+   │  │  ├─ explodeRange
+   │  │  ├─ explodeDelay
+   │  │  ├─ trailColor
+   │  │  ├─ trailChance
+   │  │  ├─ hitEffect
+   │  │  ├─ status
+   │  │  ├─ inaccuracy
+   │  │  ├─ hitColor
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     ├─ despawnShake
+   │  │  │     ├─ ammoMultiplier
+   │  │  │     ├─ collides
+   │  │  │     ├─ hittable
+   │  │  │     ├─ absorbable
+   │  │  │     ├─ hitEffect
+   │  │  │     ├─ shootEffect
+   │  │  │     ├─ smokeEffect
+   │  │  │     ├─ fragBullets
+   │  │  │     ├─ fragRandomSpread
+   │  │  │     ├─ fragOffsetMin
+   │  │  │     ├─ fragOffsetMax
+   │  │  │     ├─ fragAngle
+   │  │  │     └─ fragBullet
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ collides
+   │  │  │        ├─ hittable
+   │  │  │        ├─ absorbable
+   │  │  │        ├─ hitEffect
+   │  │  │        ├─ despawnEffect
+   │  │  │        │  └─ []
+   │  │  │        │     ├─ length
+   │  │  │        │     ├─ particles
+   │  │  │        │     ├─ interp
+   │  │  │        │     ├─ sizeInterp
+   │  │  │        │     ├─ lifetime
+   │  │  │        │     ├─ cone
+   │  │  │        │     ├─ sizeFrom
+   │  │  │        │     ├─ sizeTo
+   │  │  │        │     ├─ colorFrom
+   │  │  │        │     ├─ colorTo
+   │  │  │        │     └─ baseRotation
+   │  │  │        ├─ fragBullets
+   │  │  │        ├─ fragRandomSpread
+   │  │  │        ├─ fragOffsetMin
+   │  │  │        ├─ fragOffsetMax
+   │  │  │        ├─ fragAngle
+   │  │  │        └─ fragBullet
+   │  │  │           ├─ type
+   │  │  │           ├─ damage
+   │  │  │           ├─ length
+   │  │  │           ├─ knockback
+   │  │  │           ├─ pointEffect
+   │  │  │           └─ spawnBullets
+   │  │  │              └─ []
+   │  │  │                 ├─ type
+   │  │  │                 ├─ damage
+   │  │  │                 ├─ maxDamageFraction
+   │  │  │                 ├─ length
+   │  │  │                 └─ pointEffect
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragOffsetMin
+   │  │  ├─ fragOffsetMax
+   │  │  ├─ fragAngle
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ collides
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ sizeInterp
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     └─ baseRotation
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragRandomSpread
+   │  │  │  ├─ fragOffsetMin
+   │  │  │  ├─ fragOffsetMax
+   │  │  │  ├─ fragAngle
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ damage
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ knockback
+   │  │  │  │  ├─ pointEffect
+   │  │  │  │  └─ spawnBullets
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ damage
+   │  │  │  │        ├─ maxDamageFraction
+   │  │  │  │        ├─ length
+   │  │  │  │        └─ pointEffect
+   │  │  │  ├─ liquid
+   │  │  │  ├─ status
+   │  │  │  ├─ speed
+   │  │  │  └─ damage
+   │  │  ├─ statusDuration
+   │  │  ├─ pierce
+   │  │  ├─ hitSize
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ weaveScale
+   │  │  ├─ weaveMag
+   │  │  ├─ incendAmount
+   │  │  ├─ incendSpread
+   │  │  ├─ incendChance
+   │  │  ├─ reflectable
+   │  │  └─ knockback
+   │  ├─ inseltiene
+   │  │  ├─ type
+   │  │  ├─ damage
+   │  │  ├─ length
+   │  │  ├─ rangeChange
+   │  │  ├─ pierceDamageFactor
+   │  │  ├─ pointEffectSpace
+   │  │  ├─ pointEffect
+   │  │  │  └─ []
+   │  │  │     ├─ lightOpacity
+   │  │  │     ├─ lightScl
+   │  │  │     ├─ type
+   │  │  │     ├─ length
+   │  │  │     ├─ baseLength
+   │  │  │     ├─ randLength
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ particles
+   │  │  │     ├─ cone
+   │  │  │     ├─ interp
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ region
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ line
+   │  │  │     ├─ cap
+   │  │  │     ├─ strokeFrom
+   │  │  │     ├─ strokeTo
+   │  │  │     ├─ lenFrom
+   │  │  │     ├─ lenTo
+   │  │  │     └─ layer
+   │  │  ├─ pierceEffect
+   │  │  │  └─ []
+   │  │  │     ├─ line
+   │  │  │     ├─ cone
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ length
+   │  │  │     ├─ particles
+   │  │  │     ├─ interp
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ strokeFrom
+   │  │  │     ├─ strokeTo
+   │  │  │     ├─ lenFrom
+   │  │  │     ├─ lenTo
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     └─ layer
+   │  │  ├─ shootEffect
+   │  │  │  └─ []
+   │  │  │     ├─ layer
+   │  │  │     ├─ lightOpacity
+   │  │  │     ├─ lightScl
+   │  │  │     ├─ length
+   │  │  │     ├─ offset
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ particles
+   │  │  │     ├─ cone
+   │  │  │     ├─ region
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ type
+   │  │  │     ├─ amount
+   │  │  │     ├─ lengthOffset
+   │  │  │     └─ effect
+   │  │  │        └─ []
+   │  │  │           ├─ particles
+   │  │  │           ├─ length
+   │  │  │           ├─ lifetime
+   │  │  │           ├─ baseRotation
+   │  │  │           ├─ region
+   │  │  │           ├─ interp
+   │  │  │           ├─ sizeFrom
+   │  │  │           ├─ sizeTo
+   │  │  │           ├─ colorFrom
+   │  │  │           ├─ colorTo
+   │  │  │           └─ layer
+   │  │  ├─ rangeOverride
+   │  │  ├─ setDefaults
+   │  │  ├─ despawnHit
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ createChance
+   │  │  │  ├─ lightningLength
+   │  │  │  ├─ lightningLengthRand
+   │  │  │  ├─ damage
+   │  │  │  └─ lightningColor
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ collidesGround
+   │  │  └─ ammoMultiplier
+   │  ├─ plastanium
+   │  │  ├─ collidesGround
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ sprite
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailColor
+   │  │  ├─ trailChance
+   │  │  ├─ fragBullets
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragBullet
+   │  │  │  ├─ collidesGround
+   │  │  │  ├─ damage
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ status
+   │  │  │  ├─ pierce
+   │  │  │  ├─ pierceBuilding
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  └─ hitEffect
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ sizeFrom
+   │  │  ├─ inaccuracy
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     └─ despawnShake
+   │  │  ├─ type
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ offset
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ smokeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ cone
+   │  │  ├─ despawnEffect
+   │  │  ├─ pierce
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ weaveScale
+   │  │  ├─ weaveMag
+   │  │  ├─ lightRadius
+   │  │  ├─ collidesAir
+   │  │  ├─ hittable
+   │  │  ├─ reflectable
+   │  │  ├─ status
+   │  │  ├─ incendAmount
+   │  │  ├─ hitSound
+   │  │  ├─ drag
+   │  │  ├─ knockback
+   │  │  ├─ hitSize
+   │  │  └─ fragVelocityMin
+   │  ├─ amethyst
+   │  │  ├─ type
+   │  │  ├─ inaccuracy
+   │  │  ├─ collidesGround
+   │  │  ├─ collides
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ explodeRange
+   │  │  ├─ explodeDelay
+   │  │  ├─ sprite
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailColor
+   │  │  ├─ hitEffect
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ interp
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ strokeFrom
+   │  │  │     ├─ strokeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     └─ colorTo
+   │  │  ├─ fragBullets
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragOffsetMin
+   │  │  ├─ fragOffsetMax
+   │  │  ├─ fragBullet
+   │  │  │  ├─ collidesTiles
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ drag
+   │  │  │  ├─ damage
+   │  │  │  ├─ sprite
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ shrinkX
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ despawnEffect
+   │  │  │  └─ status
+   │  │  └─ parts
+   │  │     └─ []
+   │  │        ├─ type
+   │  │        ├─ sides
+   │  │        ├─ color1
+   │  │        ├─ radius
+   │  │        ├─ radiusTo
+   │  │        ├─ stroke
+   │  │        ├─ innerRadScl
+   │  │        ├─ progress
+   │  │        │  ├─ type
+   │  │        │  ├─ op
+   │  │        │  └─ interp
+   │  │        └─ layer
+   │  ├─ crystal
+   │  │  ├─ type
+   │  │  ├─ damage
+   │  │  ├─ rangeOverride
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ lifetime
+   │  │  ├─ collides
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ fragVelocityMax
+   │  │  ├─ fragLifeMin
+   │  │  └─ fragBullet
+   │  │     ├─ speed
+   │  │     ├─ lifetime
+   │  │     ├─ drag
+   │  │     ├─ damage
+   │  │     ├─ status
+   │  │     ├─ statusDuration
+   │  │     ├─ sprite
+   │  │     ├─ width
+   │  │     ├─ height
+   │  │     ├─ shrinkY
+   │  │     ├─ shrinkX
+   │  │     ├─ frontColor
+   │  │     ├─ backColor
+   │  │     ├─ hitColor
+   │  │     ├─ despawnEffect
+   │  │     ├─ hitEffect
+   │  │     ├─ lightning
+   │  │     ├─ lightningLength
+   │  │     ├─ lightningLengthRand
+   │  │     ├─ lightningColor
+   │  │     ├─ lightningDamage
+   │  │     ├─ despawnHit
+   │  │     └─ setDefaults
+   │  ├─ scrap
+   │  │  ├─ damage
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ inaccuracy
+   │  │  ├─ rangeChange
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ hitColor
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  └─ spawnBullets
+   │  │     └─ []
+   │  │        ├─ type
+   │  │        ├─ lifetime
+   │  │        ├─ despawnEffect
+   │  │        ├─ despawnSound
+   │  │        └─ despawnShake
+   │  ├─ pyratite
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ hitEffect
+   │  │  │  └─ []
+   │  │  ├─ status
+   │  │  ├─ makeFire
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     └─ despawnShake
+   │  │  ├─ type
+   │  │  ├─ statusDuration
+   │  │  ├─ pierce
+   │  │  ├─ homingPower
+   │  │  └─ homingRange
+   │  ├─ silicon
+   │  │  ├─ damage
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ hitColor
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     └─ despawnShake
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ type
+   │  │  ├─ knockback
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ sprite
+   │  │  ├─ chargeEffect
+   │  │  ├─ chargeBeginEffect
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ trailChance
+   │  │  ├─ pierce
+   │  │  ├─ collides
+   │  │  ├─ collidesAir
+   │  │  ├─ collidesTiles
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ splashDamage
+   │  │  └─ trailColor
+   │  ├─ titanium
+   │  │  ├─ type
+   │  │  ├─ length
+   │  │  ├─ width
+   │  │  ├─ damage
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     ├─ despawnSound
+   │  │  │     └─ despawnShake
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ speed
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ knockback
+   │  │  ├─ height
+   │  │  ├─ pierce
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ hitEffect
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ liquid
+   │  │  │  ├─ status
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ speed
+   │  │  │  └─ damage
+   │  │  ├─ lifetime
+   │  │  ├─ despawnEffect
+   │  │  ├─ collidesTiles
+   │  │  ├─ trailEffect
+   │  │  └─ trailSpacing
+   │  ├─ coal
+   │  │  ├─ type
+   │  │  ├─ inaccuracy
+   │  │  ├─ damage
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ rangeChange
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ hitSize
+   │  │  ├─ pierce
+   │  │  ├─ shootEffect
+   │  │  │  └─ []
+   │  │  │     ├─ particles
+   │  │  │     ├─ cone
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ length
+   │  │  │     ├─ interp
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     └─ colorTo
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ status
+   │  │  ├─ keepVelocity
+   │  │  ├─ hittable
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ despawnEffect
+   │  │  │     └─ despawnSound
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ makeFire
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  └─ smokeEffect
+   │  ├─ astrolite
+   │  │  ├─ type
+   │  │  ├─ sprite
+   │  │  ├─ absorbable
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ trailColor
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailEffect
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ sizeInterp
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     └─ sizeTo
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ cone
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ sizeFrom
+   │  │  │  └─ sizeTo
+   │  │  ├─ status
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ lenFrom
+   │  │  │        └─ lenTo
+   │  │  ├─ despawnHit
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ collides
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ lightColor
+   │  │  └─ statusDuration
+   │  ├─ graphite
+   │  │  ├─ type
+   │  │  ├─ absorbable
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ damage
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ layer
+   │  │  │        ├─ cone
+   │  │  │        ├─ offset
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ cone
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ length
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ layer
+   │  │  │        ├─ region
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        └─ strokeTo
+   │  │  ├─ despawnHit
+   │  │  ├─ trailColor
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ pierce
+   │  │  ├─ knockback
+   │  │  ├─ smokeEffect
+   │  │  ├─ sprite
+   │  │  ├─ spin
+   │  │  ├─ trailRotation
+   │  │  ├─ layer
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ hitSound
+   │  │  ├─ hitShake
+   │  │  ├─ trailChance
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ speed
+   │  │  │  ├─ trailEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  └─ effects
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ particles
+   │  │  │  │        ├─ length
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ interp
+   │  │  │  │        ├─ sizeInterp
+   │  │  │  │        ├─ cone
+   │  │  │  │        ├─ offset
+   │  │  │  │        ├─ colorFrom
+   │  │  │  │        ├─ colorTo
+   │  │  │  │        ├─ sizeFrom
+   │  │  │  │        └─ sizeTo
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ damage
+   │  │  │  ├─ trailRotation
+   │  │  │  ├─ collidesTiles
+   │  │  │  ├─ trailChance
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ homingRange
+   │  │  │  ├─ homingPower
+   │  │  │  ├─ height
+   │  │  │  ├─ width
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ frontColor
+   │  │  │  └─ backColor
+   │  │  ├─ chargeEffect
+   │  │  ├─ chargeBeginEffect
+   │  │  ├─ collides
+   │  │  ├─ collidesAir
+   │  │  ├─ collidesTiles
+   │  │  ├─ homingRange
+   │  │  └─ homingPower
+   │  ├─ blue-titan-alloy
+   │  │  ├─ type
+   │  │  ├─ sprite
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ length
+   │  │  │        ├─ offsetX
+   │  │  │        ├─ layer
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ region
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ status
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ length
+   │  │  │        ├─ interp
+   │  │  │        ├─ layer
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ region
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ lightRadius
+   │  │  ├─ statusDuration
+   │  │  ├─ hitSound
+   │  │  ├─ trailColor
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailInterval
+   │  │  ├─ trailRotation
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ layer
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lightOpacity
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ randLength
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ region
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        └─ spin
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ absorbable
+   │  │  ├─ lightning
+   │  │  ├─ lightningColor
+   │  │  ├─ lightningDamage
+   │  │  ├─ lightningCone
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningType
+   │  │  │  ├─ type
+   │  │  │  ├─ length
+   │  │  │  ├─ width
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ lightColor
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ offset
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ lenFrom
+   │  │  │  │  ├─ lenTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ colors
+   │  │  │  │  └─ []
+   │  │  │  ├─ sideAngle
+   │  │  │  ├─ sideLength
+   │  │  │  └─ sideWidth
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lightOpacity
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ layer
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ homingRange
+   │  │  ├─ homingPower
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ splashDamage
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ fragBullets
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragAngle
+   │  │  └─ fragBullet
+   │  │     ├─ speed
+   │  │     ├─ damage
+   │  │     ├─ collidesGround
+   │  │     ├─ collidesAir
+   │  │     ├─ collides
+   │  │     ├─ type
+   │  │     ├─ lifetime
+   │  │     ├─ lightOpacity
+   │  │     ├─ shootEffect
+   │  │     ├─ height
+   │  │     ├─ width
+   │  │     ├─ hitEffect
+   │  │     ├─ despawnEffect
+   │  │     ├─ fragBullets
+   │  │     └─ fragBullet
+   │  │        ├─ type
+   │  │        ├─ sprite
+   │  │        ├─ status
+   │  │        ├─ lightning
+   │  │        ├─ lightningColor
+   │  │        ├─ lightningDamage
+   │  │        ├─ lightningCone
+   │  │        ├─ lightningLengthRand
+   │  │        ├─ lightningLength
+   │  │        ├─ lightningType
+   │  │        │  ├─ type
+   │  │        │  ├─ length
+   │  │        │  ├─ width
+   │  │        │  ├─ lifetime
+   │  │        │  ├─ damage
+   │  │        │  ├─ lightColor
+   │  │        │  ├─ hitEffect
+   │  │        │  │  ├─ type
+   │  │        │  │  ├─ line
+   │  │        │  │  ├─ particles
+   │  │        │  │  ├─ lifetime
+   │  │        │  │  ├─ offset
+   │  │        │  │  ├─ length
+   │  │        │  │  ├─ cone
+   │  │        │  │  ├─ lenFrom
+   │  │        │  │  ├─ lenTo
+   │  │        │  │  ├─ colorFrom
+   │  │        │  │  └─ colorTo
+   │  │        │  ├─ colors
+   │  │        │  │  └─ []
+   │  │        │  ├─ sideAngle
+   │  │        │  ├─ sideLength
+   │  │        │  └─ sideWidth
+   │  │        ├─ lightRadius
+   │  │        ├─ statusDuration
+   │  │        ├─ hitSound
+   │  │        ├─ trailColor
+   │  │        ├─ trailParam
+   │  │        ├─ trailLength
+   │  │        ├─ trailWidth
+   │  │        ├─ trailInterval
+   │  │        ├─ trailRotation
+   │  │        ├─ trailEffect
+   │  │        ├─ shrinkY
+   │  │        ├─ shrinkX
+   │  │        ├─ absorbable
+   │  │        ├─ speed
+   │  │        ├─ lifetime
+   │  │        ├─ damage
+   │  │        ├─ height
+   │  │        ├─ width
+   │  │        ├─ hitEffect
+   │  │        │  ├─ type
+   │  │        │  └─ effects
+   │  │        │     └─ []
+   │  │        │        ├─ type
+   │  │        │        ├─ lightOpacity
+   │  │        │        ├─ particles
+   │  │        │        ├─ length
+   │  │        │        ├─ baseLength
+   │  │        │        ├─ lifetime
+   │  │        │        ├─ layer
+   │  │        │        ├─ interp
+   │  │        │        ├─ sizeFrom
+   │  │        │        ├─ sizeTo
+   │  │        │        ├─ colorFrom
+   │  │        │        └─ colorTo
+   │  │        ├─ splashDamageRadius
+   │  │        ├─ splashDamage
+   │  │        ├─ frontColor
+   │  │        ├─ backColor
+   │  │        ├─ fragBullets
+   │  │        ├─ fragLifeMin
+   │  │        └─ fragBullet
+   │  │           ├─ type
+   │  │           ├─ sprite
+   │  │           ├─ status
+   │  │           ├─ lightRadius
+   │  │           ├─ statusDuration
+   │  │           ├─ hitSound
+   │  │           ├─ trailColor
+   │  │           ├─ absorbable
+   │  │           ├─ trailParam
+   │  │           ├─ trailLength
+   │  │           ├─ trailWidth
+   │  │           ├─ shrinkY
+   │  │           ├─ shrinkX
+   │  │           ├─ lightning
+   │  │           ├─ lightningDamage
+   │  │           ├─ lightningColor
+   │  │           ├─ lightningCone
+   │  │           ├─ lightningLengthRand
+   │  │           ├─ lightningLength
+   │  │           ├─ speed
+   │  │           ├─ lifetime
+   │  │           ├─ damage
+   │  │           ├─ height
+   │  │           ├─ width
+   │  │           ├─ hitEffect
+   │  │           │  ├─ type
+   │  │           │  └─ effects
+   │  │           │     └─ []
+   │  │           │        ├─ type
+   │  │           │        ├─ lightOpacity
+   │  │           │        ├─ particles
+   │  │           │        ├─ length
+   │  │           │        ├─ baseLength
+   │  │           │        ├─ lifetime
+   │  │           │        ├─ layer
+   │  │           │        ├─ interp
+   │  │           │        ├─ sizeFrom
+   │  │           │        ├─ sizeTo
+   │  │           │        ├─ colorFrom
+   │  │           │        └─ colorTo
+   │  │           ├─ trailEffect
+   │  │           ├─ homingRange
+   │  │           ├─ homingPower
+   │  │           ├─ splashDamageRadius
+   │  │           ├─ splashDamage
+   │  │           ├─ frontColor
+   │  │           ├─ backColor
+   │  │           ├─ fragBullets
+   │  │           ├─ fragLifeMin
+   │  │           └─ fragBullet
+   │  │              ├─ type
+   │  │              ├─ sprite
+   │  │              ├─ status
+   │  │              ├─ statusDuration
+   │  │              ├─ splashDamageRadius
+   │  │              ├─ splashDamage
+   │  │              ├─ absorbable
+   │  │              ├─ speed
+   │  │              ├─ shrinkY
+   │  │              ├─ shrinkX
+   │  │              ├─ trailColor
+   │  │              ├─ trailParam
+   │  │              ├─ trailLength
+   │  │              ├─ trailWidth
+   │  │              ├─ lifetime
+   │  │              ├─ damage
+   │  │              ├─ trailEffect
+   │  │              ├─ height
+   │  │              ├─ width
+   │  │              ├─ hitEffect
+   │  │              │  ├─ type
+   │  │              │  ├─ particles
+   │  │              │  ├─ length
+   │  │              │  ├─ lifetime
+   │  │              │  ├─ interp
+   │  │              │  ├─ cone
+   │  │              │  ├─ colorFrom
+   │  │              │  ├─ colorTo
+   │  │              │  ├─ sizeFrom
+   │  │              │  └─ sizeTo
+   │  │              ├─ frontColor
+   │  │              ├─ backColor
+   │  │              ├─ fragBullets
+   │  │              └─ fragBullet
+   │  │                 ├─ type
+   │  │                 ├─ serrations
+   │  │                 ├─ splashDamageRadius
+   │  │                 ├─ length
+   │  │                 ├─ lifetime
+   │  │                 ├─ width
+   │  │                 ├─ lightColor
+   │  │                 ├─ fromColor
+   │  │                 ├─ toColor
+   │  │                 └─ damage
+   │  ├─ omega-blue
+   │  │  ├─ type
+   │  │  ├─ status
+   │  │  ├─ lifetime
+   │  │  ├─ speed
+   │  │  ├─ damage
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ trailColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ despawnHit
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ line
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ strokeTo
+   │  │  │  │     ├─ lightColor
+   │  │  │  │     ├─ lenFrom
+   │  │  │  │     ├─ lenTo
+   │  │  │  │     ├─ strokeFrom
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ spin
+   │  │  │  │     ├─ region
+   │  │  │  │     ├─ sides
+   │  │  │  │     ├─ rotation
+   │  │  │  │     └─ baseLength
+   │  │  │  └─ lifetime
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ statusDuration
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ hitSound
+   │  │  ├─ trailParam
+   │  │  ├─ trailInterval
+   │  │  ├─ trailChance
+   │  │  ├─ trailRotation
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ region
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ sizeInterp
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     └─ sizeTo
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ cone
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ sizeFrom
+   │  │  │  └─ sizeTo
+   │  │  ├─ fragBullets
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragAngle
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ sprite
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ shootEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ interp
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ lightColor
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  └─ sizeTo
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ shrinkX
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ damage
+   │  │  │  ├─ lightColor
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailParam
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ trailEffect
+   │  │  │  ├─ status
+   │  │  │  ├─ statusDuration
+   │  │  │  ├─ height
+   │  │  │  ├─ width
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  └─ effects
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ particles
+   │  │  │  │        ├─ sizeFrom
+   │  │  │  │        ├─ sizeTo
+   │  │  │  │        ├─ length
+   │  │  │  │        ├─ spin
+   │  │  │  │        ├─ interp
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ region
+   │  │  │  │        ├─ lightColor
+   │  │  │  │        ├─ colorFrom
+   │  │  │  │        └─ colorTo
+   │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  └─ effects
+   │  │  │  │     └─ []
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ particles
+   │  │  │  │        ├─ sizeFrom
+   │  │  │  │        ├─ sizeTo
+   │  │  │  │        ├─ length
+   │  │  │  │        ├─ spin
+   │  │  │  │        ├─ interp
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ region
+   │  │  │  │        ├─ lightColor
+   │  │  │  │        ├─ colorFrom
+   │  │  │  │        └─ colorTo
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ serrations
+   │  │  │  ├─ length
+   │  │  │  ├─ fromColor
+   │  │  │  └─ toColor
+   │  │  ├─ length
+   │  │  ├─ lightningColor
+   │  │  ├─ pointEffectspace
+   │  │  ├─ lightning
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningDamage
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ pierce
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ pierceEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ region
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ pointEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ region
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ lineEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ region
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ knockback
+   │  │  ├─ hitSize
+   │  │  ├─ lightningCone
+   │  │  └─ lightningLengthRand
+   │  ├─ terrilium
+   │  │  ├─ type
+   │  │  ├─ status
+   │  │  ├─ lifetime
+   │  │  ├─ speed
+   │  │  ├─ damage
+   │  │  ├─ trailColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ frontColor
+   │  │  └─ backColor
+   │  ├─ cold-plasma
+   │  │  ├─ type
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ damage
+   │  │  ├─ flareWidth
+   │  │  ├─ flareLength
+   │  │  ├─ flareColor
+   │  │  ├─ width
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ divisions
+   │  │  ├─ length
+   │  │  ├─ drawSize
+   │  │  ├─ status
+   │  │  └─ statusDuration
+   │  ├─ dytrix
+   │  │  ├─ pierceArmor
+   │  │  ├─ speed
+   │  │  ├─ trailColor
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailEffect
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ damage
+   │  │  ├─ lifetime
+   │  │  ├─ hitSize
+   │  │  ├─ shootEffect
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ cone
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ frontColor
+   │  │  └─ backColor
+   │  ├─ gamma-green
+   │  │  ├─ type
+   │  │  ├─ sprite
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ hitSound
+   │  │  ├─ scaleLife
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ rotWithParent
+   │  │  │  ├─ followParent
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ trailChance
+   │  │  ├─ trailRotation
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ statusDuration
+   │  │  ├─ status
+   │  │  ├─ absorbable
+   │  │  ├─ splashDamage
+   │  │  ├─ collides
+   │  │  ├─ scaledSplashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ spin
+   │  │  ├─ hitShake
+   │  │  ├─ speed
+   │  │  ├─ hitSize
+   │  │  ├─ lifetime
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ shrinkX
+   │  │  ├─ shrinkY
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ region
+   │  │  │  │     ├─ lightOpacity
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ randLength
+   │  │  │  │     ├─ useRotation
+   │  │  │  │     ├─ casingFlip
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ sizeInterp
+   │  │  │  │     ├─ lightColor
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     └─ colorTo
+   │  │  │  ├─ waveColor
+   │  │  │  ├─ sparkColor
+   │  │  │  ├─ smokes
+   │  │  │  ├─ smokeSize
+   │  │  │  ├─ smokeSizeBase
+   │  │  │  ├─ smokeRad
+   │  │  │  ├─ waveLife
+   │  │  │  ├─ waveStroke
+   │  │  │  ├─ waveRad
+   │  │  │  ├─ waveRadBase
+   │  │  │  ├─ sparkLen
+   │  │  │  └─ sparks
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ offset
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ cone
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ damage
+   │  │  ├─ knockback
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ waveColor
+   │  │  │  ├─ sparkColor
+   │  │  │  ├─ smokes
+   │  │  │  ├─ smokeSize
+   │  │  │  ├─ smokeSizeBase
+   │  │  │  ├─ smokeRad
+   │  │  │  ├─ waveLife
+   │  │  │  ├─ waveStroke
+   │  │  │  ├─ waveRad
+   │  │  │  ├─ waveRadBase
+   │  │  │  ├─ sparkLen
+   │  │  │  └─ sparks
+   │  │  ├─ pierce
+   │  │  └─ smokeEffect
+   │  ├─ valvanite
+   │  │  ├─ type
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ damage
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ offset
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ cone
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ line
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ lenFrom
+   │  │  │        └─ lenTo
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ rotWithParent
+   │  │  │  ├─ followParent
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ fragBullets
+   │  │  │     ├─ fragRandomSpread
+   │  │  │     ├─ fragVelocityMin
+   │  │  │     ├─ fragSpread
+   │  │  │     ├─ fragBullet
+   │  │  │     │  ├─ damage
+   │  │  │     │  ├─ buildingDamageMultiplier
+   │  │  │     │  ├─ shrinkX
+   │  │  │     │  ├─ shrinkY
+   │  │  │     │  ├─ speed
+   │  │  │     │  ├─ height
+   │  │  │     │  ├─ width
+   │  │  │     │  ├─ type
+   │  │  │     │  ├─ sprite
+   │  │  │     │  ├─ bulletInterval
+   │  │  │     │  ├─ intervalBullet
+   │  │  │     │  │  ├─ type
+   │  │  │     │  │  ├─ status
+   │  │  │     │  │  ├─ lightningColor
+   │  │  │     │  │  ├─ damage
+   │  │  │     │  │  └─ lightningLength
+   │  │  │     │  ├─ scaleLife
+   │  │  │     │  ├─ lifetime
+   │  │  │     │  ├─ trailColor
+   │  │  │     │  ├─ trailLength
+   │  │  │     │  ├─ trailWidth
+   │  │  │     │  ├─ frontColor
+   │  │  │     │  └─ backColor
+   │  │  │     ├─ type
+   │  │  │     └─ lifetime
+   │  │  ├─ instantDisappear
+   │  │  ├─ sprite
+   │  │  ├─ absorbable
+   │  │  ├─ width
+   │  │  ├─ spin
+   │  │  ├─ height
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ status
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  └─ offset
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ fragBullets
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ sprite
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ shrinkX
+   │  │  │  ├─ width
+   │  │  │  ├─ spin
+   │  │  │  ├─ height
+   │  │  │  ├─ speed
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ status
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ frontColor
+   │  │  │  └─ backColor
+   │  │  ├─ lightRadius
+   │  │  ├─ collidesAir
+   │  │  ├─ smokeEffect
+   │  │  ├─ hittable
+   │  │  ├─ reflectable
+   │  │  ├─ pierce
+   │  │  └─ incendAmount
+   │  ├─ primal-red
+   │  │  ├─ type
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ chargeEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ offset
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ cone
+   │  │  │        ├─ lenFrom
+   │  │  │        ├─ lenTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ baseLength
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ laserEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ interp
+   │  │  │  ├─ region
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ width
+   │  │  ├─ lifetime
+   │  │  ├─ drawSize
+   │  │  ├─ length
+   │  │  ├─ sideAngle
+   │  │  ├─ sideWidth
+   │  │  ├─ sideLength
+   │  │  ├─ damage
+   │  │  ├─ lightningSpacing
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningDelay
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ lightningDamage
+   │  │  ├─ lightningAngleRand
+   │  │  ├─ lightningType
+   │  │  │  ├─ damage
+   │  │  │  ├─ width
+   │  │  │  ├─ type
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ serrations
+   │  │  │  ├─ fromColor
+   │  │  │  ├─ toColor
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ offset
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ baseLength
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ lenFrom
+   │  │  │  │  ├─ lenTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ statusDuration
+   │  │  │  └─ status
+   │  │  ├─ largeHit
+   │  │  ├─ lightColor
+   │  │  ├─ lightningColor
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ line
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ offset
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ baseLength
+   │  │  │  │     ├─ cone
+   │  │  │  │     ├─ lenFrom
+   │  │  │  │     ├─ lenTo
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     └─ colorTo
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ region
+   │  │  │  ├─ offsetX
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ speed
+   │  │  ├─ weaveScale
+   │  │  ├─ weaveMag
+   │  │  ├─ height
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ knockback
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ fragBullets
+   │  │  │     ├─ fragRandomSpread
+   │  │  │     ├─ fragBullet
+   │  │  │     │  ├─ type
+   │  │  │     │  ├─ shootEffect
+   │  │  │     │  ├─ despawnEffect
+   │  │  │     │  ├─ lifetime
+   │  │  │     │  ├─ fragBullets
+   │  │  │     │  ├─ fragRandomSpread
+   │  │  │     │  └─ fragBullet
+   │  │  │     │     ├─ type
+   │  │  │     │     ├─ width
+   │  │  │     │     ├─ height
+   │  │  │     │     ├─ frontColor
+   │  │  │     │     ├─ backColor
+   │  │  │     │     ├─ lifetime
+   │  │  │     │     ├─ speed
+   │  │  │     │     ├─ buildingDamageMultiplier
+   │  │  │     │     ├─ damage
+   │  │  │     │     ├─ shrinkY
+   │  │  │     │     ├─ shrinkX
+   │  │  │     │     ├─ shootEffect
+   │  │  │     │     ├─ despawnEffect
+   │  │  │     │     ├─ hitEffect
+   │  │  │     │     ├─ trailColor
+   │  │  │     │     ├─ trailLength
+   │  │  │     │     └─ trailWidth
+   │  │  │     ├─ type
+   │  │  │     └─ lifetime
+   │  │  ├─ hitShake
+   │  │  ├─ sprite
+   │  │  ├─ trailEffect
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ fragBullets
+   │  │  ├─ fragAngle
+   │  │  └─ fragBullet
+   │  │     ├─ buildingDamageMultiplier
+   │  │     ├─ damage
+   │  │     ├─ status
+   │  │     ├─ statusDuration
+   │  │     ├─ width
+   │  │     ├─ pierce
+   │  │     ├─ type
+   │  │     ├─ lifetime
+   │  │     ├─ length
+   │  │     ├─ shootEffect
+   │  │     │  ├─ type
+   │  │     │  ├─ line
+   │  │     │  ├─ particles
+   │  │     │  ├─ lifetime
+   │  │     │  ├─ length
+   │  │     │  ├─ cone
+   │  │     │  ├─ lenFrom
+   │  │     │  ├─ lenTo
+   │  │     │  ├─ lightColor
+   │  │     │  ├─ strokeFrom
+   │  │     │  ├─ strokeTo
+   │  │     │  ├─ colorFrom
+   │  │     │  └─ colorTo
+   │  │     ├─ hitEffect
+   │  │     │  ├─ type
+   │  │     │  ├─ line
+   │  │     │  ├─ particles
+   │  │     │  ├─ lifetime
+   │  │     │  ├─ length
+   │  │     │  ├─ cone
+   │  │     │  ├─ lenFrom
+   │  │     │  ├─ lenTo
+   │  │     │  ├─ lightColor
+   │  │     │  ├─ strokeFrom
+   │  │     │  ├─ strokeTo
+   │  │     │  ├─ colorFrom
+   │  │     │  └─ colorTo
+   │  │     └─ toColor
+   │  ├─ beryllium
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ type
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ cone
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ hitSize
+   │  │  ├─ width
+   │  │  ├─ lifetime
+   │  │  ├─ length
+   │  │  ├─ sideAngle
+   │  │  ├─ sideLength
+   │  │  ├─ sideWidth
+   │  │  ├─ damage
+   │  │  ├─ shootEffect
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ speed
+   │  │  ├─ height
+   │  │  ├─ shrinkX
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ smokeEffect
+   │  │  ├─ trailColor
+   │  │  ├─ trailMult
+   │  │  ├─ trailSize
+   │  │  ├─ despawnHit
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ knockback
+   │  │  ├─ despawnEffect
+   │  │  ├─ serrations
+   │  │  ├─ fromColor
+   │  │  ├─ toColor
+   │  │  └─ pierce
+   │  ├─ volcanite
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ type
+   │  │  ├─ speed
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ lifetime
+   │  │  ├─ weaveScale
+   │  │  ├─ weaveMag
+   │  │  ├─ damage
+   │  │  ├─ knockback
+   │  │  ├─ shootEffect
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailParam
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ smokeEffect
+   │  │  ├─ sprite
+   │  │  ├─ spin
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ layer
+   │  │  ├─ trailRotation
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ hitSound
+   │  │  ├─ hitShake
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailColor
+   │  │  ├─ trailChance
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ layer
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ cone
+   │  │  │        ├─ offset
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ fragBullets
+   │  │  └─ fragBullet
+   │  │     ├─ type
+   │  │     ├─ speed
+   │  │     ├─ damage
+   │  │     ├─ trailRotation
+   │  │     ├─ collidesTiles
+   │  │     ├─ trailChance
+   │  │     ├─ trailEffect
+   │  │     │  ├─ type
+   │  │     │  └─ effects
+   │  │     │     └─ []
+   │  │     │        ├─ type
+   │  │     │        ├─ particles
+   │  │     │        ├─ length
+   │  │     │        ├─ lifetime
+   │  │     │        ├─ interp
+   │  │     │        ├─ sizeInterp
+   │  │     │        ├─ cone
+   │  │     │        ├─ offset
+   │  │     │        ├─ colorFrom
+   │  │     │        ├─ colorTo
+   │  │     │        ├─ sizeFrom
+   │  │     │        └─ sizeTo
+   │  │     ├─ lifetime
+   │  │     ├─ splashDamage
+   │  │     ├─ splashDamageRadius
+   │  │     ├─ homingRange
+   │  │     ├─ homingPower
+   │  │     ├─ height
+   │  │     ├─ width
+   │  │     ├─ hitEffect
+   │  │     ├─ despawnEffect
+   │  │     ├─ frontColor
+   │  │     └─ backColor
+   │  ├─ tungsten
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ pierce
+   │  │  ├─ type
+   │  │  ├─ damage
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ speed
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ shrinkX
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ trailColor
+   │  │  ├─ trailMult
+   │  │  ├─ trailSize
+   │  │  ├─ despawnHit
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ baseLength
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ cone
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        └─ strokeTo
+   │  │  ├─ sprite
+   │  │  ├─ spin
+   │  │  ├─ shrinkY
+   │  │  ├─ trailRotation
+   │  │  ├─ layer
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ hitSound
+   │  │  ├─ hitShake
+   │  │  ├─ knockback
+   │  │  ├─ lifetime
+   │  │  ├─ trailChance
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ layer
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeInterp
+   │  │  │        ├─ cone
+   │  │  │        ├─ offset
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ sizeFrom
+   │  │  │        └─ sizeTo
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ interp
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ fragBullets
+   │  │  └─ fragBullet
+   │  │     ├─ type
+   │  │     ├─ speed
+   │  │     ├─ damage
+   │  │     ├─ trailRotation
+   │  │     ├─ trailChance
+   │  │     ├─ trailEffect
+   │  │     │  ├─ type
+   │  │     │  └─ effects
+   │  │     │     └─ []
+   │  │     │        ├─ type
+   │  │     │        ├─ particles
+   │  │     │        ├─ length
+   │  │     │        ├─ lifetime
+   │  │     │        ├─ interp
+   │  │     │        ├─ sizeInterp
+   │  │     │        ├─ cone
+   │  │     │        ├─ offset
+   │  │     │        ├─ colorFrom
+   │  │     │        ├─ colorTo
+   │  │     │        ├─ sizeFrom
+   │  │     │        └─ sizeTo
+   │  │     ├─ lifetime
+   │  │     ├─ splashDamage
+   │  │     ├─ splashDamageRadius
+   │  │     ├─ homingRange
+   │  │     ├─ homingPower
+   │  │     ├─ height
+   │  │     ├─ width
+   │  │     ├─ hitEffect
+   │  │     ├─ despawnEffect
+   │  │     ├─ frontColor
+   │  │     └─ backColor
+   │  ├─ alpha-yellow
+   │  │  ├─ type
+   │  │  ├─ speed
+   │  │  ├─ damage
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ drag
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ reflectable
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ interp
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ cone
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ particles
+   │  │  │  ├─ offset
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  └─ cone
+   │  │  ├─ hitSound
+   │  │  ├─ knockback
+   │  │  ├─ hitShake
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ pierceBuilding
+   │  │  ├─ pierceCap
+   │  │  ├─ pierce
+   │  │  ├─ lightning
+   │  │  ├─ lightningDamage
+   │  │  ├─ lightningCone
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ lightningLength
+   │  │  ├─ collidesAir
+   │  │  ├─ trailColor
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  └─ sprite
+   │  ├─ slag
+   │  │  ├─ buildingDamageMultiplier
+   │  │  ├─ type
+   │  │  ├─ sprite
+   │  │  ├─ status
+   │  │  ├─ damage
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ shrinkX
+   │  │  ├─ shrinkY
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ trailParam
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ trailChance
+   │  │  ├─ trailEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ lightColor
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ baseLength
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ interp
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ trailColor
+   │  │  ├─ backColor
+   │  │  ├─ frontColor
+   │  │  ├─ fragBullets
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ liquid
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ puddleSize
+   │  │  │  ├─ orbSize
+   │  │  │  ├─ speed
+   │  │  │  └─ damage
+   │  │  ├─ liquid
+   │  │  ├─ puddleSize
+   │  │  ├─ drag
+   │  │  └─ orbSize
+   │  ├─ voltirium-alloy
+   │  │  ├─ sprite
+   │  │  ├─ speed
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ pierce
+   │  │  ├─ trailColor
+   │  │  ├─ trailLength
+   │  │  ├─ trailWidth
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ region
+   │  │  │        ├─ offsetX
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ lightOpacity
+   │  │  │        ├─ cone
+   │  │  │        └─ sizeInterp
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        ├─ colorTo
+   │  │  │        ├─ lightOpacity
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ interp
+   │  │  │        └─ sizeInterp
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ fragBullets
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ fragCone
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ status
+   │  │  │  ├─ height
+   │  │  │  ├─ width
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ damage
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ pierce
+   │  │  │  ├─ pierceBuilding
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ buildingDamageMultiplier
+   │  │  │  ├─ instantDisappear
+   │  │  │  ├─ lightOpacity
+   │  │  │  ├─ hitColor
+   │  │  │  ├─ radius
+   │  │  │  ├─ hitPowerEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ lenFrom
+   │  │  │  │  ├─ lenTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ timeIncrease
+   │  │  │  ├─ powerDamageScl
+   │  │  │  ├─ powerSclDecrease
+   │  │  │  ├─ unitDamageScl
+   │  │  │  └─ statusDuration
+   │  │  ├─ type
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ hitShake
+   │  │  ├─ trailSpacing
+   │  │  ├─ hitColor
+   │  │  └─ trailEffect
+   │  │     ├─ type
+   │  │     ├─ particles
+   │  │     ├─ length
+   │  │     ├─ lifetime
+   │  │     ├─ sizeFrom
+   │  │     ├─ region
+   │  │     ├─ colorFrom
+   │  │     └─ colorTo
+   │  ├─ xytranite
+   │  │  ├─ speed
+   │  │  ├─ height
+   │  │  ├─ width
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ rangeChange
+   │  │  ├─ reloadMultiplier
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ shootEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ particles
+   │  │  │        ├─ length
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ interp
+   │  │  │        ├─ region
+   │  │  │        ├─ offsetX
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ despawnEffect
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  └─ effects
+   │  │  │     └─ []
+   │  │  │        ├─ type
+   │  │  │        ├─ line
+   │  │  │        ├─ particles
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ offset
+   │  │  │        ├─ interp
+   │  │  │        ├─ length
+   │  │  │        ├─ cone
+   │  │  │        ├─ strokeTo
+   │  │  │        ├─ strokeFrom
+   │  │  │        ├─ sizeFrom
+   │  │  │        ├─ sizeTo
+   │  │  │        ├─ lightColor
+   │  │  │        ├─ colorFrom
+   │  │  │        └─ colorTo
+   │  │  ├─ fragBullets
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragSpread
+   │  │  └─ fragBullet
+   │  │     ├─ type
+   │  │     ├─ frontColor
+   │  │     ├─ backColor
+   │  │     ├─ height
+   │  │     ├─ width
+   │  │     ├─ splashDamage
+   │  │     ├─ splashDamageRadius
+   │  │     ├─ speed
+   │  │     ├─ lifetime
+   │  │     ├─ damage
+   │  │     ├─ shrinkY
+   │  │     ├─ despawnEffect
+   │  │     │  ├─ type
+   │  │     │  └─ effects
+   │  │     │     └─ []
+   │  │     │        ├─ type
+   │  │     │        ├─ lifetime
+   │  │     │        ├─ sizeFrom
+   │  │     │        ├─ sizeTo
+   │  │     │        ├─ strokeFrom
+   │  │     │        ├─ strokeTo
+   │  │     │        ├─ lightColor
+   │  │     │        ├─ colorFrom
+   │  │     │        └─ colorTo
+   │  │     └─ hitEffect
+   │  │        ├─ type
+   │  │        └─ effects
+   │  │           └─ []
+   │  │              ├─ type
+   │  │              ├─ lifetime
+   │  │              ├─ sizeFrom
+   │  │              ├─ sizeTo
+   │  │              ├─ strokeFrom
+   │  │              ├─ strokeTo
+   │  │              ├─ lightColor
+   │  │              ├─ colorFrom
+   │  │              └─ colorTo
+   │  ├─ liquid-baenara
+   │  │  ├─ type
+   │  │  ├─ ammoMultiplier
+   │  │  ├─ keepVelocity
+   │  │  ├─ radius
+   │  │  ├─ rangeChange
+   │  │  ├─ lifetime
+   │  │  ├─ hitEffect
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ interp
+   │  │  │     ├─ strokeFrom
+   │  │  │     ├─ strokeTo
+   │  │  │     └─ colorTo
+   │  │  ├─ despawnEffect
+   │  │  ├─ shootEffect
+   │  │  ├─ smokeEffect
+   │  │  ├─ hitShake
+   │  │  ├─ hitSound
+   │  │  ├─ despawnHit
+   │  │  ├─ hitPowerEffect
+   │  │  ├─ applyEffect
+   │  │  ├─ hitColor
+   │  │  ├─ timeDuration
+   │  │  ├─ timeIncrease
+   │  │  ├─ speed
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ reflectable
+   │  │  ├─ pierce
+   │  │  ├─ collidesTeam
+   │  │  ├─ healPercent
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ killShooter
+   │  │  │     ├─ fragBullets
+   │  │  │     ├─ fragVelocityMin
+   │  │  │     ├─ fragVelocityMax
+   │  │  │     └─ fragBullet
+   │  │  │        ├─ type
+   │  │  │        ├─ pierce
+   │  │  │        ├─ pierceBuilding
+   │  │  │        ├─ speed
+   │  │  │        ├─ lifetime
+   │  │  │        ├─ collidesTeam
+   │  │  │        ├─ healAmount
+   │  │  │        ├─ hitEffect
+   │  │  │        └─ despawnEffect
+   │  │  ├─ trailInterval
+   │  │  └─ trailEffect
+   │  │     ├─ line
+   │  │     ├─ length
+   │  │     ├─ baseLength
+   │  │     ├─ particles
+   │  │     ├─ lifetime
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ lenFrom
+   │  │     ├─ lenTo
+   │  │     ├─ strokeFrom
+   │  │     ├─ strokeTo
+   │  │     ├─ colorFrom
+   │  │     └─ colorTo
+   │  └─ shadow
+   │     ├─ killShooter
+   │     ├─ speed
+   │     ├─ lifetime
+   │     ├─ ammoMultiplier
+   │     ├─ reloadMultiplier
+   │     ├─ damage
+   │     ├─ maxDamageFraction
+   │     ├─ collidesGround
+   │     ├─ absorbable
+   │     ├─ hittable
+   │     ├─ sprite
+   │     ├─ shrinkY
+   │     ├─ width
+   │     ├─ height
+   │     ├─ frontColor
+   │     ├─ backColor
+   │     ├─ parts
+   │     │  └─ []
+   │     │     ├─ type
+   │     │     ├─ name
+   │     │     ├─ outline
+   │     │     ├─ rotation
+   │     │     ├─ color
+   │     │     ├─ xScl
+   │     │     └─ yScl
+   │     ├─ setDefaults
+   │     ├─ despawnHit
+   │     ├─ hitSound
+   │     ├─ fragBullets
+   │     ├─ fragOffsetMin
+   │     ├─ fragOffsetMax
+   │     ├─ fragVelocityMin
+   │     ├─ fragVelocityMax
+   │     ├─ fragRandomSpread
+   │     ├─ fragBullet
+   │     │  ├─ speed
+   │     │  ├─ pierce
+   │     │  ├─ killShooter
+   │     │  ├─ drag
+   │     │  ├─ lifetime
+   │     │  ├─ damage
+   │     │  ├─ maxDamageFraction
+   │     │  ├─ collides
+   │     │  ├─ absorbable
+   │     │  ├─ hittable
+   │     │  ├─ splashDamage
+   │     │  ├─ splashDamageRadius
+   │     │  ├─ sprite
+   │     │  ├─ shrinkY
+   │     │  ├─ width
+   │     │  ├─ height
+   │     │  ├─ frontColor
+   │     │  ├─ backColor
+   │     │  ├─ parts
+   │     │  │  └─ []
+   │     │  │     ├─ type
+   │     │  │     ├─ name
+   │     │  │     ├─ outline
+   │     │  │     ├─ rotation
+   │     │  │     ├─ color
+   │     │  │     ├─ xScl
+   │     │  │     └─ yScl
+   │     │  ├─ hitSound
+   │     │  ├─ fragBullets
+   │     │  ├─ fragOffsetMin
+   │     │  ├─ fragOffsetMax
+   │     │  ├─ fragBullet
+   │     │  │  ├─ type
+   │     │  │  ├─ damage
+   │     │  │  ├─ speed
+   │     │  │  ├─ lifetime
+   │     │  │  ├─ pierce
+   │     │  │  ├─ pierceBuilding
+   │     │  │  ├─ absorbable
+   │     │  │  └─ hittable
+   │     │  └─ despawnEffect
+   │     │     └─ []
+   │     │        ├─ type
+   │     │        ├─ lifetime
+   │     │        ├─ sizeFrom
+   │     │        ├─ sizeTo
+   │     │        ├─ strokeFrom
+   │     │        └─ interp
+   │     ├─ trailInterval
+   │     ├─ trailRotation
+   │     ├─ trailEffect
+   │     │  ├─ line
+   │     │  ├─ cone
+   │     │  ├─ cap
+   │     │  ├─ particles
+   │     │  ├─ lifetime
+   │     │  ├─ length
+   │     │  ├─ lenFrom
+   │     │  ├─ lenTo
+   │     │  ├─ strokeFrom
+   │     │  ├─ strokeTo
+   │     │  └─ colorTo
+   │     ├─ shootEffect
+   │     │  └─ []
+   │     │     ├─ particles
+   │     │     ├─ cone
+   │     │     ├─ length
+   │     │     ├─ lifetime
+   │     │     ├─ interp
+   │     │     ├─ sizeInterp
+   │     │     ├─ sizeFrom
+   │     │     └─ sizeTo
+   │     └─ hitEffect
+   │        └─ []
+   │           ├─ followParent
+   │           ├─ particles
+   │           ├─ length
+   │           ├─ randLength
+   │           ├─ lifetime
+   │           ├─ cone
+   │           ├─ offset
+   │           ├─ region
+   │           ├─ sizeFrom
+   │           ├─ sizeTo
+   │           └─ colorTo
+   ├─ name
+   ├─ laserRange
+   ├─ maxNodes
+   ├─ laserColor1
+   ├─ laserColor2
+   ├─ displayEfficiency
+   ├─ minEfficiency
+   ├─ ambientSound
+   ├─ ambientSoundVolume
+   ├─ baseExplosiveness
+   ├─ explosionRadius
+   ├─ explosionDamage
+   ├─ hasLiquids
+   ├─ warmupSpeed
+   ├─ itemDuration
+   ├─ loopSound
+   ├─ loopSoundVolume
+   ├─ plasma1
+   ├─ plasma2
+   ├─ heating
+   ├─ hasItems
+   ├─ craftEffect
+   │  ├─ type
+   │  ├─ effects
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ line
+   │  │     ├─ particles
+   │  │     ├─ lifetime
+   │  │     ├─ offset
+   │  │     ├─ length
+   │  │     ├─ cone
+   │  │     ├─ strokeTo
+   │  │     ├─ lightColor
+   │  │     ├─ strokeFrom
+   │  │     ├─ sizeFrom
+   │  │     ├─ sizeTo
+   │  │     ├─ colorFrom
+   │  │     ├─ colorTo
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ layer
+   │  │     ├─ region
+   │  │     └─ lightOpacity
+   │  ├─ line
+   │  ├─ particles
+   │  ├─ lifetime
+   │  ├─ length
+   │  ├─ cone
+   │  ├─ lenFrom
+   │  ├─ lenTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ region
+   │  ├─ strokeFrom
+   │  ├─ strokeTo
+   │  ├─ baseLength
+   │  ├─ offset
+   │  ├─ interp
+   │  ├─ lightColor
+   │  ├─ lengthOffset
+   │  ├─ rotationOffset
+   │  ├─ effect
+   │  │  ├─ length
+   │  │  ├─ lifetime
+   │  │  ├─ cone
+   │  │  ├─ particles
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ interp
+   │  │  └─ sizeInterp
+   │  ├─ []
+   │  │  ├─ type
+   │  │  ├─ layer
+   │  │  ├─ rotationSpacing
+   │  │  ├─ amount
+   │  │  ├─ lengthOffset
+   │  │  ├─ effect
+   │  │  │  ├─ particles
+   │  │  │  ├─ length
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ cone
+   │  │  │  ├─ baseRotation
+   │  │  │  ├─ useRotation
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ sizeInterp
+   │  │  │  ├─ interp
+   │  │  │  ├─ layer
+   │  │  │  ├─ type
+   │  │  │  ├─ rotationSpacing
+   │  │  │  ├─ amount
+   │  │  │  ├─ lengthOffset
+   │  │  │  ├─ effect
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ baseLength
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ useRotation
+   │  │  │  │  ├─ baseRotation
+   │  │  │  │  ├─ lenFrom
+   │  │  │  │  ├─ lenTo
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  ├─ interp
+   │  │  │  │  ├─ sizeInterp
+   │  │  │  │  ├─ layer
+   │  │  │  │  ├─ region
+   │  │  │  │  ├─ offset
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  └─ sizeTo
+   │  │  │  ├─ []
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ baseRotation
+   │  │  │  │  ├─ useRotation
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  ├─ sizeInterp
+   │  │  │  │  ├─ interp
+   │  │  │  │  └─ layer
+   │  │  │  └─ rotationOffset
+   │  │  └─ rotationOffset
+   │  └─ sizeInterp
+   ├─ outputLiquids
+   │  └─ []
+   ├─ dumpExtraLiquid
+   ├─ outputItems
+   │  └─ []
+   ├─ updateEffectChance
+   ├─ spinnerSpeed
+   ├─ results
+   │  └─ []
+   │     ├─ item
+   │     └─ amount
+   ├─ tier
+   ├─ rotateSpeed
+   ├─ drawRim
+   ├─ expanded
+   ├─ heatRequirement
+   ├─ heatColor
+   ├─ hardnessDrillMultiplier
+   ├─ hasLiquid
+   ├─ flameColor
+   ├─ customShadow
+   ├─ allowDerelictRepair
+   ├─ alwaysReplace
+   ├─ rotationRand
+   ├─ layer
+   ├─ shadowLayer
+   ├─ shadowOffset
+   ├─ shadowAlpha
+   ├─ buildTime
+   ├─ instantDeconstruct
+   ├─ clipSize
+   ├─ breakSound
+   ├─ destroySound
+   ├─ drawCracks
+   ├─ createRubble
+   ├─ breakEffect
+   │  ├─ []
+   │  │  ├─ type
+   │  │  ├─ amount
+   │  │  ├─ lengthOffset
+   │  │  ├─ rotationSpacing
+   │  │  ├─ effect
+   │  │  │  └─ []
+   │  │  │     ├─ particles
+   │  │  │     ├─ region
+   │  │  │     ├─ length
+   │  │  │     ├─ baseLength
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     └─ layer
+   │  │  ├─ rotation
+   │  │  ├─ lifetime
+   │  │  ├─ sides
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  ├─ colorFrom
+   │  │  └─ colorTo
+   │  ├─ particles
+   │  ├─ baseLength
+   │  ├─ length
+   │  ├─ lifetime
+   │  ├─ region
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ layer
+   │  ├─ type
+   │  ├─ rotation
+   │  ├─ sides
+   │  ├─ strokeFrom
+   │  └─ strokeTo
+   ├─ destroyEffect
+   │  ├─ []
+   │  │  ├─ type
+   │  │  ├─ amount
+   │  │  ├─ lengthOffset
+   │  │  ├─ rotationSpacing
+   │  │  ├─ effect
+   │  │  │  └─ []
+   │  │  │     ├─ particles
+   │  │  │     ├─ region
+   │  │  │     ├─ length
+   │  │  │     ├─ baseLength
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     └─ layer
+   │  │  ├─ lifetime
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ interp
+   │  │  ├─ layer
+   │  │  ├─ length
+   │  │  ├─ particles
+   │  │  └─ sizeInterp
+   │  ├─ particles
+   │  ├─ baseLength
+   │  ├─ length
+   │  ├─ lifetime
+   │  ├─ region
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ layer
+   │  ├─ interp
+   │  ├─ type
+   │  └─ effects
+   │     └─ []
+   │        ├─ length
+   │        ├─ particles
+   │        ├─ lifetime
+   │        ├─ interp
+   │        ├─ sizeInterp
+   │        ├─ sizeFrom
+   │        ├─ sizeTo
+   │        ├─ colorFrom
+   │        └─ colorTo
+   ├─ targetable
+   ├─ botAngle
+   ├─ parent
+   ├─ effectSpacing
+   ├─ effect
+   │  ├─ []
+   │  │  ├─ particles
+   │  │  ├─ length
+   │  │  ├─ lifetime
+   │  │  ├─ region
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ sizeFrom
+   │  │  └─ sizeTo
+   │  ├─ type
+   │  ├─ lifetime
+   │  ├─ layer
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ strokeFrom
+   │  ├─ strokeTo
+   │  ├─ colorFrom
+   │  └─ colorTo
+   ├─ shoot
+   │  ├─ type
+   │  ├─ shots
+   │  ├─ shotDelay
+   │  ├─ radius
+   │  ├─ spread
+   │  ├─ barrels
+   │  │  └─ []
+   │  ├─ firstShotDelay
+   │  ├─ source
+   │  │  ├─ type
+   │  │  ├─ spread
+   │  │  └─ shots
+   │  ├─ dest
+   │  │  └─ []
+   │  │     ├─ shots
+   │  │     └─ shotDelay
+   │  ├─ scl
+   │  └─ mag
+   ├─ recoil
+   ├─ outlineIcon
+   ├─ alwaysShooting
+   ├─ shootY
+   ├─ shootSound
+   ├─ inaccuracy
+   ├─ shootType
+   │  ├─ speed
+   │  ├─ lifetime
+   │  ├─ drag
+   │  ├─ width
+   │  ├─ height
+   │  ├─ shrinkY
+   │  ├─ createChance
+   │  ├─ collidesGround
+   │  ├─ lightOpacity
+   │  ├─ hitSize
+   │  ├─ setDefaults
+   │  ├─ despawnHit
+   │  ├─ absorbable
+   │  ├─ lightRadius
+   │  ├─ fragRandomSpread
+   │  ├─ fragBullets
+   │  ├─ fragOffsetMin
+   │  ├─ fragOffsetMax
+   │  ├─ fragBullet
+   │  │  ├─ speed
+   │  │  ├─ drag
+   │  │  ├─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ shrinkY
+   │  │  ├─ homingPower
+   │  │  ├─ homingRange
+   │  │  ├─ homingDelay
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ strokeFrom
+   │  │  │  │     ├─ strokeTo
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     ├─ colorTo
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ spin
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ region
+   │  │  │  │     └─ lightColor
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ waveColor
+   │  │  │  ├─ sparkColor
+   │  │  │  ├─ smokes
+   │  │  │  ├─ smokeSize
+   │  │  │  ├─ smokeSizeBase
+   │  │  │  ├─ smokeRad
+   │  │  │  ├─ waveLife
+   │  │  │  ├─ waveStroke
+   │  │  │  ├─ waveRad
+   │  │  │  ├─ waveRadBase
+   │  │  │  ├─ sparkLen
+   │  │  │  └─ sparks
+   │  │  ├─ despawnEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ effects
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ spin
+   │  │  │  │     ├─ interp
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ region
+   │  │  │  │     ├─ lightColor
+   │  │  │  │     ├─ colorFrom
+   │  │  │  │     └─ colorTo
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  ├─ colorTo
+   │  │  │  ├─ waveColor
+   │  │  │  ├─ sparkColor
+   │  │  │  ├─ smokes
+   │  │  │  ├─ smokeSize
+   │  │  │  ├─ smokeSizeBase
+   │  │  │  ├─ smokeRad
+   │  │  │  ├─ waveLife
+   │  │  │  ├─ waveStroke
+   │  │  │  ├─ waveRad
+   │  │  │  ├─ waveRadBase
+   │  │  │  ├─ sparkLen
+   │  │  │  ├─ sparks
+   │  │  │  ├─ sizeFrom
+   │  │  │  ├─ sizeTo
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ []
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ sizeFrom
+   │  │  │  │  ├─ sizeTo
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ interp
+   │  │  │  └─ sizeInterp
+   │  │  ├─ trailWidth
+   │  │  ├─ trailLength
+   │  │  ├─ lightning
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningCone
+   │  │  ├─ lightningDamage
+   │  │  ├─ lightRadius
+   │  │  ├─ setDefaults
+   │  │  ├─ despawnHit
+   │  │  ├─ absorbable
+   │  │  ├─ type
+   │  │  ├─ collides
+   │  │  ├─ hittable
+   │  │  ├─ killShooter
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     └─ spawnUnit
+   │  │  ├─ spin
+   │  │  ├─ splashDamage
+   │  │  ├─ splashDamageRadius
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ trailColor
+   │  │  ├─ trailParam
+   │  │  ├─ trailEffect
+   │  │  ├─ status
+   │  │  ├─ shrinkX
+   │  │  ├─ sprite
+   │  │  ├─ pierce
+   │  │  ├─ pierceBuilding
+   │  │  ├─ statusDuration
+   │  │  ├─ hitSize
+   │  │  ├─ incendChance
+   │  │  ├─ incendSpread
+   │  │  ├─ incendAmount
+   │  │  ├─ lightningColor
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ fragBullets
+   │  │  ├─ fragAngle
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ spin
+   │  │  │  ├─ sprite
+   │  │  │  ├─ status
+   │  │  │  ├─ statusDuration
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ speed
+   │  │  │  ├─ shrinkY
+   │  │  │  ├─ shrinkX
+   │  │  │  ├─ trailColor
+   │  │  │  ├─ trailParam
+   │  │  │  ├─ trailLength
+   │  │  │  ├─ trailWidth
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ pierceCap
+   │  │  │  ├─ pierce
+   │  │  │  ├─ damage
+   │  │  │  ├─ trailEffect
+   │  │  │  ├─ height
+   │  │  │  ├─ width
+   │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ waveColor
+   │  │  │  │  ├─ sparkColor
+   │  │  │  │  ├─ smokes
+   │  │  │  │  ├─ smokeSize
+   │  │  │  │  ├─ smokeSizeBase
+   │  │  │  │  ├─ smokeRad
+   │  │  │  │  ├─ waveLife
+   │  │  │  │  ├─ waveStroke
+   │  │  │  │  ├─ waveRad
+   │  │  │  │  ├─ waveRadBase
+   │  │  │  │  ├─ sparkLen
+   │  │  │  │  ├─ sparks
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ lenFrom
+   │  │  │  │  ├─ lenTo
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  └─ colorTo
+   │  │  │  ├─ despawnEffect
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ waveColor
+   │  │  │  │  ├─ sparkColor
+   │  │  │  │  ├─ smokes
+   │  │  │  │  ├─ smokeSize
+   │  │  │  │  ├─ smokeSizeBase
+   │  │  │  │  ├─ smokeRad
+   │  │  │  │  ├─ waveLife
+   │  │  │  │  ├─ waveStroke
+   │  │  │  │  ├─ waveRad
+   │  │  │  │  ├─ waveRadBase
+   │  │  │  │  ├─ sparkLen
+   │  │  │  │  ├─ sparks
+   │  │  │  │  ├─ particles
+   │  │  │  │  ├─ length
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ line
+   │  │  │  │  ├─ cone
+   │  │  │  │  ├─ lenFrom
+   │  │  │  │  ├─ lenTo
+   │  │  │  │  ├─ strokeFrom
+   │  │  │  │  ├─ strokeTo
+   │  │  │  │  ├─ colorFrom
+   │  │  │  │  ├─ colorTo
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ particles
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ sizeFrom
+   │  │  │  │     ├─ sizeTo
+   │  │  │  │     └─ colorTo
+   │  │  │  ├─ frontColor
+   │  │  │  ├─ backColor
+   │  │  │  ├─ pierceBuilding
+   │  │  │  ├─ timeIncrease
+   │  │  │  ├─ timeDuration
+   │  │  │  ├─ despawnHit
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ collidesTiles
+   │  │  │  ├─ radius
+   │  │  │  ├─ unitDamageScl
+   │  │  │  ├─ hitPowerEffect
+   │  │  │  ├─ applyEffect
+   │  │  │  ├─ hitColor
+   │  │  │  ├─ spawnBullets
+   │  │  │  │  └─ []
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ length
+   │  │  │  │     ├─ damage
+   │  │  │  │     ├─ hitEffect
+   │  │  │  │     ├─ pierceEffect
+   │  │  │  │     ├─ pierceDamageFactor
+   │  │  │  │     ├─ status
+   │  │  │  │     └─ statusDuration
+   │  │  │  ├─ fragBullets
+   │  │  │  ├─ fragRandomSpread
+   │  │  │  ├─ fragVelocityMax
+   │  │  │  ├─ fragVelocityMin
+   │  │  │  ├─ fragBullet
+   │  │  │  │  ├─ type
+   │  │  │  │  ├─ spawnBullets
+   │  │  │  │  │  └─ []
+   │  │  │  │  │     ├─ type
+   │  │  │  │  │     ├─ length
+   │  │  │  │  │     ├─ damage
+   │  │  │  │  │     ├─ hitEffect
+   │  │  │  │  │     ├─ pierceEffect
+   │  │  │  │  │     ├─ pierceDamageFactor
+   │  │  │  │  │     ├─ status
+   │  │  │  │  │     └─ statusDuration
+   │  │  │  │  ├─ collidesTiles
+   │  │  │  │  ├─ speed
+   │  │  │  │  ├─ lifetime
+   │  │  │  │  ├─ damage
+   │  │  │  │  ├─ trailEffect
+   │  │  │  │  ├─ lightning
+   │  │  │  │  ├─ lightningLength
+   │  │  │  │  ├─ lightningCone
+   │  │  │  │  ├─ lightningType
+   │  │  │  │  │  ├─ type
+   │  │  │  │  │  ├─ spawnBullets
+   │  │  │  │  │  │  └─ []
+   │  │  │  │  │  │     ├─ type
+   │  │  │  │  │  │     ├─ length
+   │  │  │  │  │  │     ├─ damage
+   │  │  │  │  │  │     ├─ hitEffect
+   │  │  │  │  │  │     ├─ pierceEffect
+   │  │  │  │  │  │     ├─ pierceDamageFactor
+   │  │  │  │  │  │     ├─ status
+   │  │  │  │  │  │     └─ statusDuration
+   │  │  │  │  │  ├─ collidesTiles
+   │  │  │  │  │  ├─ speed
+   │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  ├─ damage
+   │  │  │  │  │  ├─ trailEffect
+   │  │  │  │  │  ├─ lightning
+   │  │  │  │  │  ├─ lightningLength
+   │  │  │  │  │  ├─ lightningCone
+   │  │  │  │  │  ├─ lightningType
+   │  │  │  │  │  │  ├─ type
+   │  │  │  │  │  │  ├─ collidesTiles
+   │  │  │  │  │  │  ├─ speed
+   │  │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  │  ├─ damage
+   │  │  │  │  │  │  ├─ trailEffect
+   │  │  │  │  │  │  ├─ lightning
+   │  │  │  │  │  │  ├─ lightningLength
+   │  │  │  │  │  │  ├─ lightningCone
+   │  │  │  │  │  │  ├─ lightningType
+   │  │  │  │  │  │  │  ├─ type
+   │  │  │  │  │  │  │  ├─ collidesTiles
+   │  │  │  │  │  │  │  ├─ speed
+   │  │  │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  │  │  ├─ damage
+   │  │  │  │  │  │  │  ├─ trailEffect
+   │  │  │  │  │  │  │  ├─ despawnHit
+   │  │  │  │  │  │  │  └─ despawnEffect
+   │  │  │  │  │  │  │     └─ []
+   │  │  │  │  │  │  │        ├─ length
+   │  │  │  │  │  │  │        ├─ particles
+   │  │  │  │  │  │  │        ├─ lifetime
+   │  │  │  │  │  │  │        ├─ sizeFrom
+   │  │  │  │  │  │  │        ├─ sizeTo
+   │  │  │  │  │  │  │        └─ colorTo
+   │  │  │  │  │  │  ├─ despawnHit
+   │  │  │  │  │  │  └─ despawnEffect
+   │  │  │  │  │  │     └─ []
+   │  │  │  │  │  │        ├─ length
+   │  │  │  │  │  │        ├─ particles
+   │  │  │  │  │  │        ├─ lifetime
+   │  │  │  │  │  │        ├─ sizeFrom
+   │  │  │  │  │  │        ├─ sizeTo
+   │  │  │  │  │  │        └─ colorTo
+   │  │  │  │  │  ├─ despawnHit
+   │  │  │  │  │  └─ despawnEffect
+   │  │  │  │  │     └─ []
+   │  │  │  │  │        ├─ length
+   │  │  │  │  │        ├─ particles
+   │  │  │  │  │        ├─ lifetime
+   │  │  │  │  │        ├─ sizeFrom
+   │  │  │  │  │        ├─ sizeTo
+   │  │  │  │  │        └─ colorTo
+   │  │  │  │  ├─ despawnHit
+   │  │  │  │  ├─ despawnEffect
+   │  │  │  │  │  ├─ []
+   │  │  │  │  │  │  ├─ length
+   │  │  │  │  │  │  ├─ particles
+   │  │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  │  ├─ sizeFrom
+   │  │  │  │  │  │  ├─ sizeTo
+   │  │  │  │  │  │  └─ colorTo
+   │  │  │  │  │  ├─ line
+   │  │  │  │  │  ├─ particles
+   │  │  │  │  │  ├─ length
+   │  │  │  │  │  ├─ cone
+   │  │  │  │  │  ├─ lifetime
+   │  │  │  │  │  ├─ colorTo
+   │  │  │  │  │  ├─ lenFrom
+   │  │  │  │  │  ├─ lenTo
+   │  │  │  │  │  ├─ strokeFrom
+   │  │  │  │  │  └─ strokeTo
+   │  │  │  │  ├─ createChance
+   │  │  │  │  ├─ status
+   │  │  │  │  ├─ statusDuration
+   │  │  │  │  ├─ hittable
+   │  │  │  │  ├─ absorbable
+   │  │  │  │  ├─ pierce
+   │  │  │  │  ├─ pierceBuilding
+   │  │  │  │  ├─ hitEffect
+   │  │  │  │  ├─ fragBullets
+   │  │  │  │  ├─ fragRandomSpread
+   │  │  │  │  ├─ fragAngle
+   │  │  │  │  ├─ fragOffsetMin
+   │  │  │  │  ├─ fragOffsetMax
+   │  │  │  │  └─ fragBullet
+   │  │  │  │     ├─ type
+   │  │  │  │     ├─ createChance
+   │  │  │  │     ├─ speed
+   │  │  │  │     ├─ damage
+   │  │  │  │     ├─ status
+   │  │  │  │     ├─ statusDuration
+   │  │  │  │     ├─ lifetime
+   │  │  │  │     ├─ hittable
+   │  │  │  │     ├─ absorbable
+   │  │  │  │     ├─ pierce
+   │  │  │  │     ├─ pierceBuilding
+   │  │  │  │     ├─ hitEffect
+   │  │  │  │     ├─ despawnEffect
+   │  │  │  │     │  ├─ line
+   │  │  │  │     │  ├─ particles
+   │  │  │  │     │  ├─ length
+   │  │  │  │     │  ├─ cone
+   │  │  │  │     │  ├─ lifetime
+   │  │  │  │     │  ├─ colorTo
+   │  │  │  │     │  ├─ lenFrom
+   │  │  │  │     │  ├─ lenTo
+   │  │  │  │     │  ├─ strokeFrom
+   │  │  │  │     │  └─ strokeTo
+   │  │  │  │     ├─ fragBullets
+   │  │  │  │     ├─ fragRandomSpread
+   │  │  │  │     ├─ fragAngle
+   │  │  │  │     ├─ fragOffsetMin
+   │  │  │  │     ├─ fragOffsetMax
+   │  │  │  │     └─ fragBullet
+   │  │  │  │        ├─ type
+   │  │  │  │        ├─ createChance
+   │  │  │  │        ├─ speed
+   │  │  │  │        ├─ damage
+   │  │  │  │        ├─ status
+   │  │  │  │        ├─ statusDuration
+   │  │  │  │        ├─ lifetime
+   │  │  │  │        ├─ hittable
+   │  │  │  │        ├─ absorbable
+   │  │  │  │        ├─ pierce
+   │  │  │  │        ├─ pierceBuilding
+   │  │  │  │        ├─ hitEffect
+   │  │  │  │        ├─ despawnEffect
+   │  │  │  │        │  ├─ line
+   │  │  │  │        │  ├─ particles
+   │  │  │  │        │  ├─ length
+   │  │  │  │        │  ├─ cone
+   │  │  │  │        │  ├─ lifetime
+   │  │  │  │        │  ├─ colorTo
+   │  │  │  │        │  ├─ lenFrom
+   │  │  │  │        │  ├─ lenTo
+   │  │  │  │        │  ├─ strokeFrom
+   │  │  │  │        │  └─ strokeTo
+   │  │  │  │        ├─ fragBullets
+   │  │  │  │        ├─ fragRandomSpread
+   │  │  │  │        ├─ fragAngle
+   │  │  │  │        ├─ fragOffsetMin
+   │  │  │  │        ├─ fragOffsetMax
+   │  │  │  │        └─ fragBullet
+   │  │  │  │           ├─ type
+   │  │  │  │           ├─ createChance
+   │  │  │  │           ├─ speed
+   │  │  │  │           ├─ damage
+   │  │  │  │           ├─ status
+   │  │  │  │           ├─ statusDuration
+   │  │  │  │           ├─ lifetime
+   │  │  │  │           ├─ hittable
+   │  │  │  │           ├─ absorbable
+   │  │  │  │           ├─ pierce
+   │  │  │  │           ├─ pierceBuilding
+   │  │  │  │           ├─ hitEffect
+   │  │  │  │           ├─ despawnEffect
+   │  │  │  │           │  ├─ line
+   │  │  │  │           │  ├─ particles
+   │  │  │  │           │  ├─ length
+   │  │  │  │           │  ├─ cone
+   │  │  │  │           │  ├─ lifetime
+   │  │  │  │           │  ├─ colorTo
+   │  │  │  │           │  ├─ lenFrom
+   │  │  │  │           │  ├─ lenTo
+   │  │  │  │           │  ├─ strokeFrom
+   │  │  │  │           │  └─ strokeTo
+   │  │  │  │           ├─ fragBullets
+   │  │  │  │           ├─ fragRandomSpread
+   │  │  │  │           ├─ fragAngle
+   │  │  │  │           ├─ fragOffsetMin
+   │  │  │  │           ├─ fragOffsetMax
+   │  │  │  │           └─ fragBullet
+   │  │  │  │              ├─ type
+   │  │  │  │              ├─ createChance
+   │  │  │  │              ├─ speed
+   │  │  │  │              ├─ damage
+   │  │  │  │              ├─ status
+   │  │  │  │              ├─ statusDuration
+   │  │  │  │              ├─ lifetime
+   │  │  │  │              ├─ hittable
+   │  │  │  │              ├─ absorbable
+   │  │  │  │              ├─ pierce
+   │  │  │  │              ├─ pierceBuilding
+   │  │  │  │              ├─ hitEffect
+   │  │  │  │              └─ despawnEffect
+   │  │  │  │                 ├─ line
+   │  │  │  │                 ├─ particles
+   │  │  │  │                 ├─ length
+   │  │  │  │                 ├─ cone
+   │  │  │  │                 ├─ lifetime
+   │  │  │  │                 ├─ colorTo
+   │  │  │  │                 ├─ lenFrom
+   │  │  │  │                 ├─ lenTo
+   │  │  │  │                 ├─ strokeFrom
+   │  │  │  │                 └─ strokeTo
+   │  │  │  ├─ createChance
+   │  │  │  ├─ hittable
+   │  │  │  ├─ fragAngle
+   │  │  │  ├─ fragOffsetMin
+   │  │  │  └─ fragOffsetMax
+   │  │  ├─ trailInterval
+   │  │  ├─ explodeRange
+   │  │  ├─ collidesTiles
+   │  │  ├─ collidesGround
+   │  │  ├─ collidesAir
+   │  │  ├─ weaveMag
+   │  │  ├─ weaveScale
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragVelocityMin
+   │  │  ├─ hitSound
+   │  │  ├─ hitSoundVolume
+   │  │  ├─ fragVelocityMax
+   │  │  ├─ pierceCap
+   │  │  ├─ pierceDamageFactor
+   │  │  ├─ hitColor
+   │  │  ├─ createChance
+   │  │  ├─ fragOffsetMin
+   │  │  ├─ fragOffsetMax
+   │  │  ├─ shootEffect
+   │  │  └─ smokeEffect
+   │  ├─ shootEffect
+   │  │  ├─ type
+   │  │  ├─ particles
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ length
+   │  │  ├─ interp
+   │  │  ├─ lifetime
+   │  │  ├─ region
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ effects
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ particles
+   │  │  │     ├─ length
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ interp
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ cone
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     └─ lightColor
+   │  │  ├─ layer
+   │  │  ├─ spin
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  ├─ offsetX
+   │  │  ├─ line
+   │  │  ├─ cone
+   │  │  ├─ sizeInterp
+   │  │  ├─ lenFrom
+   │  │  ├─ lenTo
+   │  │  └─ []
+   │  │     ├─ line
+   │  │     ├─ cone
+   │  │     ├─ particles
+   │  │     ├─ lifetime
+   │  │     ├─ length
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ lenFrom
+   │  │     ├─ lenTo
+   │  │     ├─ strokeFrom
+   │  │     ├─ strokeTo
+   │  │     └─ colorTo
+   │  ├─ smokeEffect
+   │  │  ├─ type
+   │  │  ├─ layer
+   │  │  ├─ effects
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ particles
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ length
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ lightOpacity
+   │  │  │     ├─ interp
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     └─ cone
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ amount
+   │  │     ├─ lengthOffset
+   │  │     └─ effect
+   │  │        └─ []
+   │  │           ├─ clip
+   │  │           ├─ line
+   │  │           ├─ baseRotation
+   │  │           ├─ particles
+   │  │           ├─ lifetime
+   │  │           ├─ length
+   │  │           ├─ baseLength
+   │  │           ├─ randLength
+   │  │           ├─ cone
+   │  │           ├─ lenFrom
+   │  │           ├─ lenTo
+   │  │           ├─ strokeFrom
+   │  │           ├─ strokeTo
+   │  │           ├─ colorFrom
+   │  │           └─ colorTo
+   │  ├─ hitEffect
+   │  │  ├─ type
+   │  │  ├─ line
+   │  │  ├─ particles
+   │  │  ├─ lifetime
+   │  │  ├─ length
+   │  │  ├─ cone
+   │  │  ├─ lenFrom
+   │  │  ├─ lenTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ offset
+   │  │  ├─ interp
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  ├─ effects
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ particles
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ length
+   │  │  │     ├─ spin
+   │  │  │     ├─ interp
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ region
+   │  │  │     ├─ lightColor
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ lightOpacity
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ cone
+   │  │  │     ├─ strokeFrom
+   │  │  │     ├─ strokeTo
+   │  │  │     ├─ line
+   │  │  │     ├─ offset
+   │  │  │     └─ baseLength
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ baseLength
+   │  │  ├─ waveColor
+   │  │  ├─ sparkColor
+   │  │  ├─ smokes
+   │  │  ├─ smokeSize
+   │  │  ├─ smokeSizeBase
+   │  │  ├─ smokeRad
+   │  │  ├─ waveLife
+   │  │  ├─ waveStroke
+   │  │  ├─ waveRad
+   │  │  ├─ waveRadBase
+   │  │  ├─ sparkLen
+   │  │  ├─ sparks
+   │  │  ├─ layer
+   │  │  └─ []
+   │  │     ├─ line
+   │  │     ├─ cone
+   │  │     ├─ particles
+   │  │     ├─ lifetime
+   │  │     ├─ length
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ lenFrom
+   │  │     ├─ lenTo
+   │  │     ├─ strokeFrom
+   │  │     ├─ strokeTo
+   │  │     └─ colorTo
+   │  ├─ despawnEffect
+   │  │  ├─ type
+   │  │  ├─ line
+   │  │  ├─ particles
+   │  │  ├─ lifetime
+   │  │  ├─ length
+   │  │  ├─ cone
+   │  │  ├─ lenFrom
+   │  │  ├─ lenTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ effects
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ particles
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ length
+   │  │  │     ├─ spin
+   │  │  │     ├─ interp
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ region
+   │  │  │     ├─ lightColor
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ line
+   │  │  │     ├─ offset
+   │  │  │     ├─ cone
+   │  │  │     ├─ strokeFrom
+   │  │  │     └─ strokeTo
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  ├─ interp
+   │  │  ├─ waveColor
+   │  │  ├─ sparkColor
+   │  │  ├─ smokes
+   │  │  ├─ smokeSize
+   │  │  ├─ smokeSizeBase
+   │  │  ├─ smokeRad
+   │  │  ├─ waveLife
+   │  │  ├─ waveStroke
+   │  │  ├─ waveRad
+   │  │  ├─ waveRadBase
+   │  │  ├─ sparkLen
+   │  │  ├─ sparks
+   │  │  └─ sizeInterp
+   │  ├─ trailWidth
+   │  ├─ trailLength
+   │  ├─ type
+   │  ├─ damage
+   │  ├─ length
+   │  ├─ ammoMultiplier
+   │  ├─ pierceDamageFactor
+   │  ├─ pierceEffect
+   │  ├─ collides
+   │  ├─ hittable
+   │  ├─ spawnBullets
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ speed
+   │  │     ├─ lifetime
+   │  │     ├─ collides
+   │  │     ├─ hittable
+   │  │     ├─ absorbable
+   │  │     ├─ despawnHit
+   │  │     ├─ hitEffect
+   │  │     │  └─ []
+   │  │     │     ├─ particles
+   │  │     │     ├─ cone
+   │  │     │     ├─ randLength
+   │  │     │     ├─ length
+   │  │     │     ├─ lifetime
+   │  │     │     ├─ region
+   │  │     │     ├─ sizeFrom
+   │  │     │     ├─ sizeTo
+   │  │     │     ├─ layer
+   │  │     │     ├─ baseRotation
+   │  │     │     └─ clip
+   │  │     ├─ despawnEffect
+   │  │     │  └─ []
+   │  │     │     ├─ type
+   │  │     │     ├─ amount
+   │  │     │     ├─ lengthOffset
+   │  │     │     ├─ rotationOffset
+   │  │     │     └─ effect
+   │  │     │        ├─ startDelay
+   │  │     │        ├─ lifetime
+   │  │     │        ├─ length
+   │  │     │        ├─ cone
+   │  │     │        ├─ particles
+   │  │     │        ├─ line
+   │  │     │        ├─ colorTo
+   │  │     │        ├─ lenFrom
+   │  │     │        ├─ lenTo
+   │  │     │        ├─ strokeFrom
+   │  │     │        ├─ strokeTo
+   │  │     │        ├─ interp
+   │  │     │        ├─ sizeInterp
+   │  │     │        └─ clip
+   │  │     ├─ fragBullets
+   │  │     ├─ fragRandomSpread
+   │  │     ├─ fragSpread
+   │  │     ├─ fragBullet
+   │  │     │  ├─ damage
+   │  │     │  ├─ width
+   │  │     │  ├─ type
+   │  │     │  ├─ lifetime
+   │  │     │  ├─ length
+   │  │     │  ├─ serrations
+   │  │     │  ├─ fromColor
+   │  │     │  ├─ toColor
+   │  │     │  ├─ hitEffect
+   │  │     │  │  ├─ type
+   │  │     │  │  ├─ line
+   │  │     │  │  ├─ particles
+   │  │     │  │  ├─ offset
+   │  │     │  │  ├─ lifetime
+   │  │     │  │  ├─ length
+   │  │     │  │  ├─ baseLength
+   │  │     │  │  ├─ cone
+   │  │     │  │  ├─ lenFrom
+   │  │     │  │  ├─ lenTo
+   │  │     │  │  ├─ colorFrom
+   │  │     │  │  └─ colorTo
+   │  │     │  ├─ statusDuration
+   │  │     │  ├─ status
+   │  │     │  ├─ speed
+   │  │     │  ├─ pierce
+   │  │     │  ├─ pierceBuilding
+   │  │     │  ├─ pierceCap
+   │  │     │  ├─ pierceDamageFactor
+   │  │     │  ├─ drag
+   │  │     │  ├─ sprite
+   │  │     │  ├─ height
+   │  │     │  ├─ shrinkY
+   │  │     │  ├─ shrinkX
+   │  │     │  ├─ frontColor
+   │  │     │  ├─ backColor
+   │  │     │  ├─ hitColor
+   │  │     │  ├─ despawnEffect
+   │  │     │  └─ spawnUnit
+   │  │     ├─ damage
+   │  │     ├─ shootEffect
+   │  │     ├─ smokeEffect
+   │  │     ├─ fragVelocityMin
+   │  │     ├─ fragVelocityMax
+   │  │     ├─ fragLifeMin
+   │  │     ├─ killShooter
+   │  │     ├─ fragOffsetMin
+   │  │     └─ fragOffsetMax
+   │  ├─ drawSize
+   │  ├─ fadeTime
+   │  ├─ colors
+   │  │  └─ []
+   │  ├─ backLength
+   │  ├─ frontLength
+   │  ├─ bulletInterval
+   │  ├─ intervalRandomSpread
+   │  ├─ intervalBullet
+   │  │  ├─ type
+   │  │  ├─ lifetime
+   │  │  ├─ instantDisappear
+   │  │  ├─ spawnBullets
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ damage
+   │  │  │     ├─ lightningLength
+   │  │  │     ├─ lightningLengthRand
+   │  │  │     └─ lightningColor
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ damage
+   │  │  ├─ width
+   │  │  ├─ drawFlare
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ strokeFrom
+   │  │  │  ├─ strokeTo
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ divisions
+   │  │  ├─ length
+   │  │  ├─ drawSize
+   │  │  ├─ status
+   │  │  └─ statusDuration
+   │  ├─ spin
+   │  ├─ frontColor
+   │  ├─ backColor
+   │  ├─ trailColor
+   │  ├─ weaveMag
+   │  ├─ weaveScale
+   │  ├─ trailParam
+   │  ├─ trailEffect
+   │  │  ├─ type
+   │  │  ├─ particles
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ length
+   │  │  ├─ lifetime
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ effects
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ offset
+   │  │  │     ├─ particles
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ length
+   │  │  │     ├─ baseLength
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ cone
+   │  │  │     ├─ region
+   │  │  │     └─ lightColor
+   │  │  ├─ region
+   │  │  ├─ baseLength
+   │  │  ├─ interp
+   │  │  ├─ cone
+   │  │  ├─ offset
+   │  │  ├─ line
+   │  │  ├─ sizeInterp
+   │  │  ├─ lenFrom
+   │  │  ├─ lenTo
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  └─ []
+   │  │     ├─ line
+   │  │     ├─ cone
+   │  │     ├─ particles
+   │  │     ├─ lifetime
+   │  │     ├─ length
+   │  │     ├─ baseLength
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ lenFrom
+   │  │     ├─ lenTo
+   │  │     ├─ strokeFrom
+   │  │     ├─ strokeTo
+   │  │     └─ colorTo
+   │  ├─ status
+   │  │  ├─ name
+   │  │  ├─ speedMultiplier
+   │  │  └─ dragMultiplier
+   │  ├─ homingPower
+   │  ├─ homingRange
+   │  ├─ shrinkX
+   │  ├─ sprite
+   │  ├─ statusDuration
+   │  ├─ reflectable
+   │  ├─ pierce
+   │  ├─ pierceBuilding
+   │  ├─ chargeEffect
+   │  │  ├─ type
+   │  │  ├─ lifetime
+   │  │  ├─ effects
+   │  │  │  └─ []
+   │  │  │     ├─ type
+   │  │  │     ├─ particles
+   │  │  │     ├─ sizeFrom
+   │  │  │     ├─ sizeTo
+   │  │  │     ├─ length
+   │  │  │     ├─ spin
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ layer
+   │  │  │     ├─ region
+   │  │  │     ├─ colorFrom
+   │  │  │     ├─ colorTo
+   │  │  │     ├─ cone
+   │  │  │     ├─ line
+   │  │  │     ├─ offset
+   │  │  │     ├─ baseLength
+   │  │  │     ├─ interp
+   │  │  │     ├─ sizeInterp
+   │  │  │     ├─ strokeFrom
+   │  │  │     ├─ strokeTo
+   │  │  │     ├─ lenFrom
+   │  │  │     └─ lenTo
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ sound
+   │  │  ├─ startDelay
+   │  │  ├─ minPitch
+   │  │  ├─ maxPitch
+   │  │  ├─ minVolume
+   │  │  ├─ maxVolume
+   │  │  ├─ effect
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ lifetime
+   │  │     ├─ interp
+   │  │     ├─ strokeFrom
+   │  │     ├─ strokeTo
+   │  │     ├─ sizeFrom
+   │  │     ├─ sizeTo
+   │  │     ├─ colorFrom
+   │  │     └─ colorTo
+   │  ├─ buildingDamageMultiplier
+   │  ├─ lightningColor
+   │  ├─ lightning
+   │  ├─ lightningLengthRand
+   │  ├─ lightningLength
+   │  ├─ lightningDamage
+   │  ├─ trailInterval
+   │  ├─ trailRotation
+   │  ├─ fragLifeMin
+   │  ├─ beamEffect
+   │  │  ├─ type
+   │  │  └─ effects
+   │  │     └─ []
+   │  │        ├─ type
+   │  │        ├─ particles
+   │  │        ├─ length
+   │  │        ├─ lifetime
+   │  │        ├─ interp
+   │  │        ├─ colorFrom
+   │  │        ├─ colorTo
+   │  │        ├─ sizeFrom
+   │  │        └─ sizeTo
+   │  ├─ splashDamageRadius
+   │  ├─ splashDamage
+   │  ├─ color
+   │  ├─ trailChance
+   │  ├─ timeIncrease
+   │  ├─ powerDamageScl
+   │  ├─ powerSclDecrease
+   │  ├─ unitDamageScl
+   │  ├─ hitSound
+   │  ├─ hitColor
+   │  ├─ lightningCone
+   │  ├─ radius
+   │  ├─ hitPowerEffect
+   │  │  ├─ type
+   │  │  ├─ line
+   │  │  ├─ particles
+   │  │  ├─ lifetime
+   │  │  ├─ length
+   │  │  ├─ cone
+   │  │  ├─ lenFrom
+   │  │  ├─ lenTo
+   │  │  ├─ lightColor
+   │  │  ├─ colorFrom
+   │  │  └─ colorTo
+   │  ├─ intervalBullets
+   │  ├─ trailSinScl
+   │  ├─ trailSinMag
+   │  ├─ knockback
+   │  ├─ hitShake
+   │  ├─ collidesAir
+   │  ├─ collidesTiles
+   │  ├─ collidesTeam
+   │  ├─ healPercent
+   │  ├─ pierceCap
+   │  ├─ incendChance
+   │  ├─ shake
+   │  ├─ laserEffect
+   │  │  ├─ type
+   │  │  ├─ particles
+   │  │  ├─ lifetime
+   │  │  ├─ length
+   │  │  ├─ interp
+   │  │  ├─ region
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ colorFrom
+   │  │  └─ colorTo
+   │  ├─ lightColor
+   │  ├─ sideAngle
+   │  ├─ sideWidth
+   │  ├─ sideLength
+   │  ├─ flareWidth
+   │  ├─ flareLength
+   │  ├─ flareColor
+   │  ├─ divisions
+   │  ├─ lightningType
+   │  │  ├─ type
+   │  │  ├─ colors
+   │  │  │  └─ []
+   │  │  ├─ damage
+   │  │  ├─ width
+   │  │  ├─ divisions
+   │  │  ├─ length
+   │  │  ├─ lifetime
+   │  │  ├─ hitEffect
+   │  │  │  ├─ type
+   │  │  │  ├─ line
+   │  │  │  ├─ particles
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ length
+   │  │  │  ├─ cone
+   │  │  │  ├─ lenFrom
+   │  │  │  ├─ lenTo
+   │  │  │  ├─ colorFrom
+   │  │  │  └─ colorTo
+   │  │  ├─ drawFlare
+   │  │  ├─ status
+   │  │  ├─ statusDuration
+   │  │  ├─ collides
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ speed
+   │  │  ├─ fragBullets
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ speed
+   │  │  │  ├─ damage
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ collides
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ hittable
+   │  │  │  ├─ lightning
+   │  │  │  ├─ lightningDamage
+   │  │  │  ├─ lightningLength
+   │  │  │  ├─ lightningLengthRand
+   │  │  │  ├─ lightningColor
+   │  │  │  ├─ splashDamage
+   │  │  │  ├─ splashDamageRadius
+   │  │  │  ├─ knockback
+   │  │  │  ├─ lightRadius
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ keepVelocity
+   │  │  │  ├─ despawnEffect
+   │  │  │  ├─ fragBullets
+   │  │  │  └─ fragBullet
+   │  │  │     ├─ type
+   │  │  │     ├─ damage
+   │  │  │     ├─ knockback
+   │  │  │     ├─ lifetime
+   │  │  │     ├─ pierce
+   │  │  │     ├─ length
+   │  │  │     ├─ width
+   │  │  │     ├─ lightColor
+   │  │  │     ├─ hitEffect
+   │  │  │     ├─ status
+   │  │  │     └─ statusDuration
+   │  │  └─ spawnUnit
+   │  ├─ homingDelay
+   │  ├─ incendSpread
+   │  ├─ incendAmount
+   │  ├─ fragAngle
+   │  ├─ maxRange
+   │  ├─ trailSpacing
+   │  ├─ explodeRange
+   │  ├─ chargeBeginEffect
+   │  │  ├─ type
+   │  │  ├─ particles
+   │  │  ├─ region
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ interp
+   │  │  ├─ length
+   │  │  ├─ lifetime
+   │  │  ├─ colorFrom
+   │  │  └─ colorTo
+   │  ├─ oscScl
+   │  ├─ oscMag
+   │  ├─ fragVelocityMin
+   │  ├─ fragVelocityMax
+   │  ├─ largeHit
+   │  ├─ scaleVelocity
+   │  ├─ spaceMag
+   │  ├─ fragCone
+   │  ├─ spawnUnit
+   │  ├─ parts
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ name
+   │  │     ├─ outline
+   │  │     ├─ rotation
+   │  │     ├─ color
+   │  │     ├─ xScl
+   │  │     ├─ yScl
+   │  │     └─ moves
+   │  │        └─ []
+   │  │           ├─ gx
+   │  │           ├─ gy
+   │  │           └─ progress
+   │  │              ├─ type
+   │  │              └─ op
+   │  ├─ shrinkInterp
+   │  ├─ rotationOffset
+   │  ├─ backSprite
+   │  ├─ pointEffectSpace
+   │  ├─ pointEffect
+   │  │  ├─ length
+   │  │  ├─ cone
+   │  │  ├─ region
+   │  │  ├─ lifetime
+   │  │  ├─ particles
+   │  │  ├─ randLength
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  └─ []
+   │  │     ├─ line
+   │  │     ├─ particles
+   │  │     ├─ cone
+   │  │     ├─ length
+   │  │     ├─ baseLength
+   │  │     ├─ cap
+   │  │     ├─ lifetime
+   │  │     ├─ strokeFrom
+   │  │     ├─ strokeTo
+   │  │     ├─ lenFrom
+   │  │     ├─ lenTo
+   │  │     ├─ colorFrom
+   │  │     ├─ colorTo
+   │  │     └─ layer
+   │  └─ killShooter
+   ├─ rotate
+   ├─ boostScale
+   ├─ maxBoost
+   ├─ attribute
+   ├─ ignoreLiquidFullness
+   ├─ liquidOutputDirections
+   │  └─ []
+   ├─ rotateDraw
+   ├─ quickRotate
+   ├─ envEnabled
+   ├─ envDisabled
+   ├─ floating
+   ├─ dumpTime
+   ├─ enableDrawStatus
+   ├─ flashHit
+   ├─ payloadLimit
+   ├─ moveTime
+   ├─ interp
+   ├─ invert
+   ├─ loadTime
+   ├─ payloadSpeed
+   ├─ loadPowerDynamic
+   ├─ maxBlockSize
+   ├─ saveConfig
+   ├─ clearOnDoubleTap
+   ├─ offloadSpeed
+   ├─ buildSpeed
+   ├─ filter
+   │  └─ []
+   ├─ maxPayloadSize
+   ├─ deconstructSpeed
+   ├─ shootEffect
+   │  ├─ lightScl
+   │  ├─ lightOpacity
+   │  ├─ length
+   │  ├─ cone
+   │  ├─ particles
+   │  ├─ lifetime
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ region
+   │  ├─ layer
+   │  ├─ randLength
+   │  ├─ interp
+   │  ├─ useRotation
+   │  ├─ spin
+   │  ├─ baseRotation
+   │  ├─ offset
+   │  ├─ []
+   │  │  ├─ cone
+   │  │  ├─ baseLength
+   │  │  ├─ length
+   │  │  ├─ lifetime
+   │  │  ├─ particles
+   │  │  ├─ interp
+   │  │  ├─ sizeInterp
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ region
+   │  │  ├─ line
+   │  │  ├─ baseRotation
+   │  │  ├─ cap
+   │  │  ├─ lenFrom
+   │  │  ├─ lenTo
+   │  │  ├─ strokeFrom
+   │  │  ├─ strokeTo
+   │  │  └─ layer
+   │  ├─ type
+   │  ├─ line
+   │  ├─ lenFrom
+   │  ├─ lenTo
+   │  ├─ effects
+   │  │  └─ []
+   │  │     ├─ type
+   │  │     ├─ particles
+   │  │     ├─ lifetime
+   │  │     ├─ length
+   │  │     ├─ interp
+   │  │     ├─ region
+   │  │     ├─ sizeFrom
+   │  │     ├─ sizeTo
+   │  │     ├─ lightColor
+   │  │     ├─ colorFrom
+   │  │     ├─ colorTo
+   │  │     ├─ layer
+   │  │     ├─ cone
+   │  │     └─ offsetX
+   │  ├─ strokeFrom
+   │  └─ strokeTo
+   ├─ smokeEffect
+   │  ├─ lightOpacity
+   │  ├─ length
+   │  ├─ particles
+   │  ├─ interp
+   │  ├─ sizeInterp
+   │  ├─ lifetime
+   │  ├─ cone
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ []
+   │  │  ├─ length
+   │  │  ├─ particles
+   │  │  ├─ interp
+   │  │  ├─ sizeInterp
+   │  │  ├─ lifetime
+   │  │  ├─ cone
+   │  │  ├─ sizeFrom
+   │  │  ├─ sizeTo
+   │  │  ├─ colorFrom
+   │  │  ├─ colorTo
+   │  │  ├─ layer
+   │  │  └─ region
+   │  ├─ type
+   │  ├─ effects
+   │  │  └─ []
+   │  │     ├─ length
+   │  │     ├─ randLength
+   │  │     ├─ lifetime
+   │  │     ├─ sizeFrom
+   │  │     ├─ sizeTo
+   │  │     ├─ interp
+   │  │     ├─ useRotation
+   │  │     ├─ particles
+   │  │     ├─ cone
+   │  │     ├─ spin
+   │  │     ├─ baseRotation
+   │  │     ├─ offset
+   │  │     ├─ colorFrom
+   │  │     ├─ colorTo
+   │  │     └─ region
+   │  └─ baseLength
+   ├─ receiveEffect
+   ├─ transferEffect
+   ├─ shake
+   ├─ length
+   ├─ placeablePlayer
+   ├─ shownPlanets
+   │  └─ []
+   ├─ liquidPadding
+   ├─ fullOverride
+   ├─ fogRadius
+   ├─ polyColor
+   ├─ maxTextLength
+   ├─ fuelItem
+   ├─ destroyBullet
+   │  ├─ type
+   │  ├─ speed
+   │  ├─ lifetime
+   │  ├─ damage
+   │  ├─ collides
+   │  ├─ absorbable
+   │  ├─ hittable
+   │  ├─ hitEffect
+   │  ├─ despawnEffect
+   │  ├─ fragBullets
+   │  ├─ fragVelocityMin
+   │  ├─ fragVelocityMax
+   │  ├─ fragLifeMin
+   │  ├─ fragBullet
+   │  │  ├─ type
+   │  │  ├─ radius
+   │  │  ├─ speed
+   │  │  ├─ lifetime
+   │  │  ├─ velMin
+   │  │  ├─ velMax
+   │  │  ├─ drag
+   │  │  ├─ hittable
+   │  │  ├─ absorbable
+   │  │  ├─ fragBullets
+   │  │  ├─ fragRandomSpread
+   │  │  ├─ fragLifeMin
+   │  │  ├─ fragBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ hittable
+   │  │  │  ├─ speed
+   │  │  │  ├─ velMin
+   │  │  │  ├─ velMax
+   │  │  │  └─ lifetime
+   │  │  ├─ damage
+   │  │  ├─ pierce
+   │  │  ├─ pierceBuilding
+   │  │  ├─ hitEffect
+   │  │  ├─ despawnEffect
+   │  │  ├─ reflectable
+   │  │  ├─ bulletInterval
+   │  │  ├─ intervalBullets
+   │  │  ├─ intervalBullet
+   │  │  │  ├─ type
+   │  │  │  ├─ width
+   │  │  │  ├─ height
+   │  │  │  ├─ damage
+   │  │  │  ├─ powerDamageScl
+   │  │  │  ├─ timeDuration
+   │  │  │  ├─ radius
+   │  │  │  ├─ lifetime
+   │  │  │  ├─ speed
+   │  │  │  ├─ despawnHit
+   │  │  │  ├─ hittable
+   │  │  │  ├─ absorbable
+   │  │  │  ├─ hitColor
+   │  │  │  ├─ hitEffect
+   │  │  │  ├─ hitPowerEffect
+   │  │  │  ├─ despawnEffect
+   │  │  │  └─ applyEffect
+   │  │  ├─ sprite
+   │  │  ├─ width
+   │  │  ├─ height
+   │  │  ├─ shrinkY
+   │  │  ├─ shrinkX
+   │  │  ├─ frontColor
+   │  │  ├─ backColor
+   │  │  ├─ collides
+   │  │  ├─ lightning
+   │  │  ├─ lightningLength
+   │  │  ├─ lightningLengthRand
+   │  │  ├─ lightningCone
+   │  │  ├─ lightningColor
+   │  │  └─ lightningDamage
+   │  ├─ hitShake
+   │  ├─ hitSound
+   │  ├─ hitSoundVolume
+   │  ├─ hitSoundPitch
+   │  ├─ lightning
+   │  ├─ lightningLength
+   │  ├─ lightningLengthRand
+   │  ├─ lightningColor
+   │  ├─ lightningDamage
+   │  ├─ shootEffect
+   │  ├─ smokeEffect
+   │  └─ spawnUnit
+   ├─ sparks
+   ├─ sparkRecurrence
+   ├─ sparkLife
+   ├─ sparkSpread
+   ├─ sparkRange
+   ├─ boostHeatColor
+   ├─ optionalBoostIntensity
+   ├─ output
+   ├─ invertedTime
+   ├─ blockedItem
+   ├─ arrows
+   ├─ drillSoundVolume
+   ├─ drillEffect
+   │  └─ []
+   │     ├─ type
+   │     ├─ amount
+   │     ├─ lengthOffset
+   │     ├─ effect
+   │     │  └─ []
+   │     │     ├─ type
+   │     │     ├─ amount
+   │     │     ├─ rotationOffset
+   │     │     ├─ lengthOffset
+   │     │     ├─ effect
+   │     │     │  ├─ type
+   │     │     │  ├─ startDelay
+   │     │     │  ├─ sound
+   │     │     │  ├─ minPitch
+   │     │     │  ├─ maxPitch
+   │     │     │  ├─ minVolume
+   │     │     │  ├─ maxVolume
+   │     │     │  └─ effect
+   │     │     │     └─ []
+   │     │     │        ├─ length
+   │     │     │        ├─ useRotation
+   │     │     │        ├─ particles
+   │     │     │        ├─ layer
+   │     │     │        ├─ region
+   │     │     │        ├─ sizeFrom
+   │     │     │        ├─ sizeTo
+   │     │     │        ├─ lifetime
+   │     │     │        ├─ interp
+   │     │     │        ├─ colorFrom
+   │     │     │        ├─ colorTo
+   │     │     │        ├─ clip
+   │     │     │        └─ startDelay
+   │     │     ├─ particles
+   │     │     ├─ length
+   │     │     ├─ baseLength
+   │     │     ├─ lifetime
+   │     │     ├─ cone
+   │     │     ├─ interp
+   │     │     ├─ sizeInterp
+   │     │     ├─ sizeFrom
+   │     │     ├─ layer
+   │     │     ├─ colorFrom
+   │     │     └─ colorTo
+   │     ├─ rotationSpacing
+   │     ├─ lifetime
+   │     ├─ interp
+   │     ├─ sizeFrom
+   │     ├─ sizeTo
+   │     ├─ strokeFrom
+   │     ├─ strokeTo
+   │     ├─ colorFrom
+   │     └─ colorTo
+   ├─ cooldownTime
+   ├─ targetAir
+   ├─ ammoUseEffect
+   │  ├─ casingFlip
+   │  ├─ baseRotation
+   │  ├─ lifetime
+   │  ├─ particles
+   │  ├─ length
+   │  ├─ randLength
+   │  ├─ cone
+   │  ├─ offset
+   │  ├─ spin
+   │  ├─ region
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ interp
+   │  ├─ sizeInterp
+   │  ├─ colorFrom
+   │  ├─ colorTo
+   │  ├─ type
+   │  ├─ effects
+   │  │  └─ []
+   │  │     ├─ baseRotation
+   │  │     ├─ lifetime
+   │  │     ├─ particles
+   │  │     ├─ length
+   │  │     ├─ randLength
+   │  │     ├─ cone
+   │  │     ├─ offset
+   │  │     ├─ spin
+   │  │     ├─ region
+   │  │     ├─ sizeFrom
+   │  │     ├─ sizeTo
+   │  │     ├─ interp
+   │  │     ├─ sizeInterp
+   │  │     ├─ colorFrom
+   │  │     └─ colorTo
+   │  └─ baseLength
+   ├─ coolantMultiplier
+   ├─ targetGround
+   ├─ recoilTime
+   ├─ velocityRnd
+   ├─ shootCone
+   ├─ ammoPerShot
+   ├─ maxAmmo
+   ├─ scaledHealth
+   ├─ targetHealing
+   ├─ ammoEjectBack
+   ├─ outlineRadius
+   ├─ placeEffect
+   │  └─ []
+   │     ├─ type
+   │     ├─ lifetime
+   │     ├─ interp
+   │     ├─ clip
+   │     ├─ sizeFrom
+   │     ├─ sizeTo
+   │     ├─ strokeFrom
+   │     ├─ strokeTo
+   │     ├─ colorFrom
+   │     ├─ colorTo
+   │     ├─ particles
+   │     ├─ length
+   │     ├─ region
+   │     └─ useRotation
+   ├─ shootWarmupSpeed
+   ├─ minWarmup
+   ├─ linearWarmup
+   ├─ rebuildable
+   ├─ heatOutput
+   ├─ conductivePower
+   ├─ maxEfficiency
+   ├─ overheatScale
+   ├─ optionalMultiplier
+   ├─ insulated
+   ├─ chanceDeflect
+   ├─ schematicPriority
+   ├─ sides
+   ├─ shieldRotation
+   ├─ consumeCoolant
+   ├─ shieldBreakEffect
+   │  ├─ type
+   │  ├─ amount
+   │  ├─ lengthOffset
+   │  ├─ rotationOffset
+   │  └─ effect
+   ├─ coolantConsumption
+   ├─ itemConsumer
+   │  ├─ type
+   │  └─ items
+   │     └─ []
+   ├─ generateEffect
+   │  ├─ particles
+   │  ├─ length
+   │  ├─ lifetime
+   │  ├─ cone
+   │  ├─ baseRotation
+   │  ├─ sizeFrom
+   │  ├─ sizeTo
+   │  ├─ colorTo
+   │  ├─ sizeInterp
+   │  └─ interp
+   ├─ arrowOffset
+   ├─ arrowSpacing
+   ├─ arrowColor
+   ├─ glowColor
+   ├─ drillSound
+   ├─ bulletDamage
+   ├─ coolant
+   │  ├─ type
+   │  ├─ liquid
+   │  ├─ amount
+   │  └─ booster
+   ├─ shootDuration
+   ├─ consumeAmmoOnce
+   ├─ recoils
+   ├─ areaSize
+   ├─ dronesCreated
+   ├─ droneType
+   ├─ plans
+   │  └─ []
+   │     ├─ type
+   │     ├─ unit
+   │     ├─ time
+   │     └─ requirements
+   │        └─ []
+   │           ├─ item
+   │           └─ amount
+   ├─ incinerateSound
+   ├─ incinerateEffect
+   ├─ outlineColor
+   ├─ enDisabled
+   ├─ chargeSound
+   ├─ moveWhileCharging
+   ├─ liquidConsumed
+   ├─ smoothReloadSpeed
+   ├─ accurateDelay
+   ├─ maxHeatEfficiency
+   ├─ minRange
+   ├─ xRand
+   ├─ acceptsCoolant
+   ├─ cooldown
+   ├─ coolantUsage
+   ├─ recoilAmount
+   ├─ shootShake
+   ├─ restitution
+   ├─ spread
+   ├─ firingMoveFract
+   ├─ alternate
+   ├─ shootLength
+   ├─ force
+   ├─ damage
+   ├─ laserColor
+   ├─ laserWidth
+   ├─ velocityInaccuracy
+   ├─ unitSort
+   ├─ shots
+   ├─ scaledForce
+   ├─ powerUse
+   ├─ constructTime
+   ├─ upgrades
+   │  └─ []
+   ├─ droneConstructTime
+   ├─ configurable
+   ├─ regionSuffix
+   ├─ deflectSound
+   ├─ flashColor
+   ├─ lightningSound
+   ├─ lightningChance
+   ├─ lightningColor
+   ├─ lightningDamage
+   ├─ lightningLength
+   ├─ warmupRate
+   ├─ Type
+   ├─ hideDetails
+   ├─ priority
+   ├─ group
+   ├─ regionRotated1
+   ├─ polySides
+   ├─ breakCooldown
+   ├─ regenSpeed
+   ├─ bridgeReplacement
+   ├─ visualMaxHeat
+   ├─ recharge
+   ├─ extinguish
+   ├─ consumesPower
+   ├─ outputsPower
+   ├─ thrusterLength
+   ├─ polyRadius
+   ├─ botColor
+   ├─ junctionReplacement
+   ├─ fadeIn
+   ├─ arrowPeriod
+   ├─ palette
+   │  └─ []
+   ├─ canvasSize
+   ├─ padding
+   ├─ effectChance
+   ├─ generateEffectRange
+   ├─ pulseScl
+   ├─ pulseMag
+   ├─ laserScale
+   ├─ drawLiquidLight
+   ├─ predictTarget
+   ├─ moveForce
+   └─ outputFacing
