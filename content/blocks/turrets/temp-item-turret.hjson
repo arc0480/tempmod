@@ -115,6 +115,8 @@ ammoTypes: {
         
         # 弾の速度
         speed: 2
+
+# (特別な事情が無い限り､lifetime*speed=rangeになるように設定すると良い)
         
         # 弾のダメージ量
         damage: 15
