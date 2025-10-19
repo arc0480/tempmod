@@ -230,6 +230,12 @@ ammoTypes: {
 		width: 10
 		drawSize: 100
 		hitSize: 15
+
+		frontColor: DE30A6
+		#backColor:
+		#mixColorFrom:
+		#mixColorTo:
+
 		bulletShrink: 0.0
 		ammoMultiplier: 2.0
 		reloadMultiplier: 1.0
