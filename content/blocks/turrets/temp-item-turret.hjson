@@ -225,7 +225,7 @@ ammoTypes: {
     }
 
 	spore-pod: {
-		type: BasicBulletType
+		type: basicBulletType
 		height: 5
 		width: 10
 		drawSize: 100
@@ -274,7 +274,7 @@ ammoTypes: {
 		fragLifeMin: 0.5
 		fragLifeMax: 1.0
 		fragBullet: {
-			bulletType: LiquidBulletType
+			bulletType: liquidBulletType
 			liquid: spored-liquid
 			damage: 3
 			puddleSize: 3.0
